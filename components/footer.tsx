@@ -110,7 +110,7 @@ export default function Footer() {
       {/* bottom section */}
       <div className="footer_product col-12">
         <hr className="footer_line col-10" />
-        <div className="footer_line_down col-12">
+        <div className="footer_line_down col-10">
           <div className="footer_product ">کلیه حقوق این سایت متعلق به شرکت کلان داده گستران می باشد.</div>
           <div className="">
             <Image src={"/image/e-namad.png"} width={56} height={43} alt="" />

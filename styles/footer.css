@@ -1,0 +1,206 @@
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* قسمت عکس دار */
+.footer_image {
+  background-image: url("../public/image/family.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 338px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_image_text_title {
+  color: #faf4f4;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50.09px;
+  word-wrap: break-word;
+}
+.footer_image_text_desc {
+  color: #faf4f4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+.footer_image_button {
+  background-color: var(--bi-orange);
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  color: #faf4f4;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  word-wrap: break-word;
+}
+/* قسمت متن */
+.footer_texts {
+  background-color: var(--bi-Navy);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  padding: 10px;
+}
+/* سه ستون سمت راست */
+.footer_texts_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer_texts_right_col {
+  display: flex;
+  flex-direction: column;
+}
+.footer_texts_right_col p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+
+.footer_texts_right_col div {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+/* دو ستون سمت چپ */
+.footer_texts_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* تماس با ما */
+.footer_texts_left_right p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+.footer_texts_left_right div {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+
+.footer_texts_socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_texts_socials_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 10px;
+  margin-right: 10px;
+}
+
+.footer_texts_socials_icon_bg {
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer_texts_socials_icon {
+  color: var(--bi-Navy);
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* درباره ما */
+.footer_texts_left_left p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+.footer_texts_left_left_desc {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 33.4px;
+  word-wrap: break-word;
+}
+.footer_texts_email_title {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.footer_texts_email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.footer_texts_email input {
+  text-align: right;
+  direction: ltr;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  height: 38px;
+  padding-right: 8px;
+}
+.footer_texts_email button {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29.22px;
+  word-wrap: break-word;
+  border: none;
+  border-radius: 10px;
+  height: 38px;
+  background-color: var(--bi-orange);
+  color: white;
+  margin-right: -30px;
+}
+.footer_product {
+  background-color: var(--bi-Navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_line_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer_line {
+  color: rgba(250, 244, 244, 0.7) ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.footer_product {
+  color: #c1c1c1;
+  font-size: 14px;
+font-weight: 300;
+line-height: 29.22px;
+word-wrap: break-word;
+}
