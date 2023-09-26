@@ -27,6 +27,10 @@ body{
   width: 100%;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 /* dsktop size*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
