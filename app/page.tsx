@@ -8,10 +8,7 @@ import "./globals.css";
 export default function Home() {
   return (
     <main>
-      <Header />
       <Mojtama />
-      <Eror />
-      <Moshaverin />
     </main>
   );
 }
