@@ -1,0 +1,61 @@
+.upside-h{
+    color: #000;
+text-align: center;
+font-family: IRANYekanFN;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 208.727%; 
+}
+.upside-p{
+    color: #000;
+font-family: IRANYekanFN;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 0%;
+margin-bottom: 50px;
+}
+.upside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-top: 50px;
+}
+.home-pics{
+    display: flex;
+    justify-content: space-around;
+
+margin: 50px; 
+}
+.bgpics{  position: relative;
+    top: 0;
+    left: 0;}
+    .image{
+        position: relative;
+  top: 0;
+  left: 0;
+  /* border: 1px red solid; */
+    }
+    .cover{
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        /* border: 1px green solid; */
+    }
+.value{
+    display: flex;
+    justify-content: center;
+    color: #023047;
+text-align: right;
+font-family: IRANYekanFN;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 208.727%; /* 33.396px */
+}
+.cover :hover{
+    transform: scale(1.25) ;
+
+
+}

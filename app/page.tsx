@@ -1,18 +1,17 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import './globals.css'
-import Footer from '@/components/footer'
-import Register from '@/pages/register'
-import VertificationCode from '@/pages/vertificationCode'
-import HouseCrad from '@/components/houseCard'
+import Image from "next/image";
+import Header from "./header";
+import Moshaverin from "@/app/header/moshaverin";
+import Eror from "./header/eror";
+import Mojtama from "./header/mojtama";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <main >
-      <HouseCrad/>
-      {/* <VertificationCode/> */}
-      {/* <Register/> */}
-      {/* <Footer/> */}
+    <main>
+      <Header />
+      <Mojtama />
+      <Eror />
+      <Moshaverin />
     </main>
-  )
+  );
 }

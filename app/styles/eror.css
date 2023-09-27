@@ -1,0 +1,59 @@
+.kol {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  direction: ltr;
+}
+.error-left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.eror-img {
+  margin-right: 300px;
+}
+.error-right-side {
+  display: flex;
+  flex-direction: column;
+}
+.ch-o-ch {
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  font-family: IRANSansXFaNum;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(
+    180deg,
+    #023047 0%,
+    rgba(2, 48, 71, 0.8) 47.92%,
+    rgba(251, 133, 0, 0.3) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ch-p {
+  color: #292d32;
+  font-family: IRANYekanFN;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-top: 10px;
+}
+.eror-btn {
+  width: 160px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #fb8500;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+}
