@@ -21,37 +21,37 @@
   margin-left: 200px;
 }
 
-.selectbox {
+.header_selectbox {
   color: white;
   background-color: unset;
   outline: unset;
   border: unset;
 }
-.right-side {
+.header_rightside {
   display: flex;
 }
-.left-side {
+.header_leftside {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.left-side button {
+.header_leftside button {
   margin-left: 40px;
   font-size: 16px;
 }
-.right-side button {
+.header_rightside button {
   font-size: 16px;
   margin-right: 40px;
 }
-.right-side-image {
+.header_rightside_image {
   margin-right: 200px;
   margin-left: 80px;
   margin-top: 10px;
 }
-.left-side-image {
+.header_leftside_image {
   margin-left: 10px;
 }
-.label{
+.header_label{
     margin-top: 22px;
 }
 hr{

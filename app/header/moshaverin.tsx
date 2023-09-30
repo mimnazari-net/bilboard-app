@@ -3,7 +3,8 @@ import Image from "next/image";
 import Rating from "@mui/material/Rating";
 export default function Moshaverin() {
   return (
-    <div className="container">
+    <div className="moshaverin_container">
+      <h1>مشاورین املاک منتخب در سطح کشور</h1>
       <div className="moshaverin-kol">
         <Image
           className="moshaverin-pic"
@@ -13,7 +14,7 @@ export default function Moshaverin() {
           src={"/image/Frame 67.png"}
         ></Image>
         <div className="moshaverin-tik">
-          <div className="right-tik">
+          <div className="moshverin-right-tik">
             {" "}
             <Image
               alt="tik-abi"
@@ -21,7 +22,7 @@ export default function Moshaverin() {
               height={15}
               src={"/image/Group.png"}
             ></Image>
-            <p className="tik-p">مشاورین املاک ققنوس</p>
+            <p className="moshaverin-tik-p">مشاورین املاک ققنوس</p>
           </div>
           <Image
             alt="save"
@@ -39,12 +40,12 @@ export default function Moshaverin() {
                 height={16}
                 src={"/image/location.png"}
               ></Image>
-              <p className="tehran">تهران</p>{" "}
+              <p className="moshaverin-tehran">تهران</p>{" "}
             </div>
 
-            <Rating className="stars" name="size-medium" defaultValue={2} readOnly />
+            <Rating className="moshaverin-stars" name="size-medium" defaultValue={2} readOnly />
           </div>
-          <button className="profile">نمایش پروفایل </button>
+          <button className="moshaverin-profile">نمایش پروفایل </button>
         </div>
       </div>
     </div>

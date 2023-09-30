@@ -4,11 +4,13 @@ import Moshaverin from "@/app/header/moshaverin";
 import Eror from "./header/eror";
 import Mojtama from "./header/mojtama";
 import "./globals.css";
+import Newest from "./header/newset";
+import Dastebandi from "./header/dastebandi";
 
 export default function Home() {
   return (
-    <main>
-      <Mojtama />
-    </main>
+    <main><Header />
+     <Dastebandi />
+<Mojtama />    </main>
   );
 }

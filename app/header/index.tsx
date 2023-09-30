@@ -5,10 +5,10 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="navbar">
-        <div className="left-side">
+        <div className="header_leftside">
           {" "}
           <Image
-            className="left-side-image"
+            className="header_leftside_image"
             alt="jostojo"
             src={"/image/search-normal.png"}
             width={24}
@@ -16,7 +16,7 @@ export default function Header() {
           ></Image>
           <button> جستجو</button><hr/>
           <Image
-            className="left-side-image"
+            className="header_leftside_image"
             alt="afzudan"
             src={"/image/add-circle.png"}
             width={24}
@@ -24,7 +24,7 @@ export default function Header() {
           ></Image>
           <button> افزودن ملک</button><hr/>
           <Image
-            className="left-side-image"
+            className="header_leftside_image"
             alt="vurud"
             src={"/image/profile-circle.png"}
             width={24}
@@ -35,16 +35,16 @@ export default function Header() {
             ورود | عضویت
           </Link>
         </div>
-        <div className="right-side">
+        <div className="header_rightside">
           <Image
-            className="right-side-image"
+            className="header_rightside_image"
             alt="layer"
             width={60}
             height={50}
             src={"/image/Layer 1.png"}
           ></Image>
-          <label className="label">دسته بندی ها</label>
-          <select className="selectbox"></select>
+          <label className="header_label">دسته بندی ها</label>
+          <select className="header_selectbox"></select>
           <button>خرید زمین</button>
           <button>درخواست مشاور </button>
           <button>وبلاگ</button>

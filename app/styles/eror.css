@@ -1,4 +1,4 @@
-.kol {
+.eror_kol {
   display: flex;
   justify-content: space-evenly;
   justify-content: center;
@@ -6,19 +6,19 @@
   margin-top: 100px;
   direction: ltr;
 }
-.error-left-side {
+.error_leftside {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.eror-img {
+.eror_img {
   margin-right: 300px;
 }
-.error-right-side {
+.error_rightside {
   display: flex;
   flex-direction: column;
 }
-.ch-o-ch {
+.eror_h1 {
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   font-family: IRANSansXFaNum;
   font-size: 250px;
@@ -35,7 +35,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ch-p {
+.eror_p {
   color: #292d32;
   font-family: IRANYekanFN;
   font-size: 24px;
