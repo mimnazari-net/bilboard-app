@@ -10,7 +10,6 @@ import Dastebandi from "./header/dastebandi";
 export default function Home() {
   return (
     <main><Header />
-     <Dastebandi />
-<Mojtama />    </main>
+    <Moshaverin/>  </main>
   );
 }
