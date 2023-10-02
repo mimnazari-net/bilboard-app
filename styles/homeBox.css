@@ -1,0 +1,50 @@
+.homeBox_container {
+  display: flex;
+  flex-direction: column;
+}
+.homeBox_up_side {
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.homeBox_buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bi-Navy);
+  border-top-right-radius: 20px;
+  color: white;
+}
+
+.homeBox_mortage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.homeBox_rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top-left-radius: 20px;
+
+}
+.homeBox_down_side {
+  background-color: white;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.homeBox_btn {
+  background-color: var(--bi-Navy);
+  color: white;
+width: 120px;
+height: 40px;
+border: none;
+border-radius: 8px;
+}

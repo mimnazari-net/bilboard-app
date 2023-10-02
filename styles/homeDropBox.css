@@ -1,0 +1,33 @@
+.HomeDropBox_continer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.HomeDropBox_continer div {
+  border: none;
+}
+.HomeDropBox_continer_item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.HomeDropBox_continer hr {
+  margin-right: 10px;
+  color: #6363634d;
+  height: 79px;
+}
+
+.HomeDropBox_item {
+  width: 100px;
+}
+
+.css-1hb7zxy-IndicatorsContainer span {
+  visibility: hidden;
+}
+.css-1xc3v61-indicatorContainer svg {
+  color: var(--bi-orange);
+}
+.css-1fdsijx-ValueContainer div {
+  color: #1e1e1e;
+}

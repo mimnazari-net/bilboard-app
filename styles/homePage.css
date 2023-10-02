@@ -1,0 +1,27 @@
+.home_container {
+  display: flex;
+  background-image: url('/image/home-bg.jpg');
+  height: 619px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.home_container_right_side {
+  display: flex;
+  flex-direction: column;
+  padding-right: 80px;
+  padding-top: 100px;
+
+}
+.home_container_text h1 {
+  color: var(--bi-orange);
+}
+
+.home_container_text p {
+  color: var(--bi-Navy);
+  font-size: medium;
+}
+
+.home_container_box{
+    margin-top: 70px;
+}
