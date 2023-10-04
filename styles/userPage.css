@@ -28,7 +28,6 @@
 .userpage_rightside_inputs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 .userpage_rightside_inputs input {
   width: 203px;
@@ -53,7 +52,6 @@
 .userpage_leftside_inputs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 .userpage_leftside_inputs input {
   width: 203px;
@@ -67,7 +65,6 @@
   font-weight: 300;
   line-height: normal;
   padding-right: 10px;
-
 }
 .userpage_leftside_inputs p {
   color: #000;

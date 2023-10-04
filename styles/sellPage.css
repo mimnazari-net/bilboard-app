@@ -1,0 +1,113 @@
+.forush_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 200px;
+}
+.forush_box {
+  width: 350px;
+  height: 390px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #faf4f4;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+}
+.forush_kol {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 100px;
+}
+.forush_texts p {
+  color: #292d32;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 20px;
+}
+.forush_loc {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  gap: 10px;
+}
+.forush_loc p {
+  color: #636363;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.forush_price p {
+  color: #292d32;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.forush_price {
+  display: flex;
+  align-items: center;
+}
+.forush_price_kol {
+  display: flex;
+  justify-content: space-around;
+}
+.forush_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25px;
+  border: 0.25px solid rgb(159, 155, 155);
+  border-radius: 20px;
+  justify-content: space-around;
+  color: black;
+}
+.forush_price_down {
+  display: flex;
+  justify-content: space-around;
+}
+.forush_mahal {
+  display: flex;
+  justify-content: space-around;
+}
+.forush_city {
+  display: flex;
+  width: 50px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 20px;
+  justify-content: space-around;
+  color: #585858;
+  font-size: 12px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.forush_street {
+  display: flex;
+  width: 50px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 20px;
+  justify-content: space-around;
+  color: #585858;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.forush_map {
+  width: 330px;
+  height: 380px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+}

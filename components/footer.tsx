@@ -23,7 +23,6 @@ export default function Footer() {
           با تیم مشاوران بیلبورد، به جواب پرسش های خود می رسید.{" "}
         </p>
         <button className="footer_image_button col-3">درخواست مشاوره</button>
-        {/* <Image src={'/image/family.jpg'} width={1350} height={338} alt=''  /> */}
       </div>
       {/* center section */}
       <div className="footer_texts col-12">
@@ -113,9 +112,9 @@ export default function Footer() {
         <div className="footer_line_down col-10">
           <div className="footer_product ">کلیه حقوق این سایت متعلق به شرکت کلان داده گستران می باشد.</div>
           <div className="">
-            <Image src={"/image/e-namad.png"} width={56} height={43} alt="" />
-            <Image src={"/image/e-namad2.png"} width={38} height={48} alt="" />
-            <Image src={"/image/e-namad3.png"} width={39} height={48} alt="" />
+            <Image src={"/image/footer/e-namad1.png"} width={56} height={43} alt="" />
+            <Image src={"/image/footer/e-namad2.png"} width={38} height={48} alt="" />
+            <Image src={"/image/footer/e-namad3.png"} width={39} height={48} alt="" />
           </div>
         </div>
       </div>

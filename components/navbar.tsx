@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import "../styles/header.css";
-export default function Header() {
+import "../styles/navbar.css";
+export default function Navbar() {
   return (
-    <header className="header">
-      <nav className="navbar">
+    <header>
+      <nav className="navbar_container">
         <div className="header_leftside">
-          {" "}
           <Image
             className="header_leftside_image"
             alt="jostojo"
@@ -14,7 +13,8 @@ export default function Header() {
             width={24}
             height={24}
           ></Image>
-          <button> جستجو</button><hr/>
+          <button> جستجو</button>
+          <hr />
           <Image
             className="header_leftside_image"
             alt="afzudan"
@@ -22,7 +22,8 @@ export default function Header() {
             width={24}
             height={24}
           ></Image>
-          <button> افزودن ملک</button><hr/>
+          <button> افزودن ملک</button>
+          <hr />
           <Image
             className="header_leftside_image"
             alt="vurud"
@@ -31,7 +32,6 @@ export default function Header() {
             height={24}
           ></Image>
           <Link href={""} className="navbar-link">
-            {" "}
             ورود | عضویت
           </Link>
         </div>

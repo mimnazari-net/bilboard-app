@@ -4,22 +4,20 @@
   margin-right: 100px;
   margin-right: 100px;
 }
-.moshaverin_container h1{color: #292D32;
+.moshaverin_container h1 {
+  color: #292d32;
   text-align: right;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 208.727%;
-
 }
 .moshaverin-kol {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap:25px;
+  gap: 25px;
   margin-left: 100px;
-  
-
 }
 .moshaverin-tik-p {
   color: #292d32;
@@ -69,12 +67,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 208.727%; /* 33.396px */
-  margin-top:15px;
- 
+  margin-top: 15px;
 }
 .moshaverin-pic {
   border-radius: 16px 16px 0px 0px;
-   width: 330px;
+  width: 330px;
 }
 .moshaverin-mid {
   display: flex;
@@ -85,12 +82,13 @@
 .moshaverin-bottom {
   display: flex;
 }
-.moshaverin-stars{
-    margin-right: 70px;
-    direction: ltr;
-    margin-top: 15px;
+.moshaverin-stars {
+  margin-right: 70px;
+  direction: ltr;
+  margin-top: 15px;
 }
-.moshaverin_map{width: 330px;
+.moshaverin_map {
+  width: 330px;
   height: 380px;
   border-radius: 16px;
   background: #fff;

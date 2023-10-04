@@ -1,12 +1,22 @@
+// import css
 import Image from "next/image";
-import "../styles/forush.css";
+
+// import css
+import "<div styleName="" />
+<styles />
+<sellPage></sellPage>.css";
+
+// import icons
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaBath } from "react-icons/fa";
 import { IoBed } from "react-icons/io5";
-import Pagination from '@mui/material/Pagination';
 
-export default function Forush() {
-  const sell = [
+// import Pagination
+import Pagination from "@mui/material/Pagination";
+
+export default function Sell() {
+  //data
+  const sells = [
     {
       image: "/image/forushx1.png",
       text: "آپارتمان 315 متری نیاوران",
@@ -17,27 +27,29 @@ export default function Forush() {
       eachm: "قیمت هر متر : 150,000,000",
       city: "تهران",
       street: "نیاوران",
-    },{
-        image: "/image/forushx2.png",
-        text: "آپارتمان 315 متری نیاوران",
-        loc: "شمال کاخ نیاوران",
-        price: " 47,250,000,000",
-        bed: "5",
-        bath: "3",
-        eachm: "قیمت هر متر : 150,000,000",
-        city: "تهران",
-        street: "نیاوران",
-      },{
-        image: "/image/forushx3.png",
-        text: "آپارتمان 315 متری نیاوران",
-        loc: "شمال کاخ نیاوران",
-        price: " 47,250,000,000",
-        bed: "5",
-        bath: "3",
-        eachm: "قیمت هر متر : 150,000,000",
-        city: "تهران",
-        street: "نیاوران",
-      },
+    },
+    {
+      image: "/image/forushx2.png",
+      text: "آپارتمان 315 متری نیاوران",
+      loc: "شمال کاخ نیاوران",
+      price: " 47,250,000,000",
+      bed: "5",
+      bath: "3",
+      eachm: "قیمت هر متر : 150,000,000",
+      city: "تهران",
+      street: "نیاوران",
+    },
+    {
+      image: "/image/forushx3.png",
+      text: "آپارتمان 315 متری نیاوران",
+      loc: "شمال کاخ نیاوران",
+      price: " 47,250,000,000",
+      bed: "5",
+      bath: "3",
+      eachm: "قیمت هر متر : 150,000,000",
+      city: "تهران",
+      street: "نیاوران",
+    },
     {
       image: "/image/forushx4.png",
       text: "آپارتمان 315 متری نیاوران",
@@ -136,7 +148,8 @@ export default function Forush() {
       eachm: "قیمت هر متر : 150,000,000",
       city: "تهران",
       street: "نیاوران",
-    }, {
+    },
+    {
       image: "/image/forush.png",
       text: "آپارتمان 315 متری نیاوران",
       loc: "شمال کاخ نیاوران",
@@ -179,7 +192,8 @@ export default function Forush() {
       eachm: "قیمت هر متر : 150,000,000",
       city: "تهران",
       street: "نیاوران",
-    }, {
+    },
+    {
       image: "/image/forush.png",
       text: "آپارتمان 315 متری نیاوران",
       loc: "شمال کاخ نیاوران",
@@ -227,7 +241,7 @@ export default function Forush() {
   return (
     <div className="forush_container">
       <div className="forush_kol">
-        {sell.map((item, index) => {
+        {sells.map((item, index) => {
           return (
             <div key={index} className="forush_box">
               <Image alt="" width={350} height={190} src={item.image}></Image>
@@ -264,7 +278,8 @@ export default function Forush() {
             </div>
           );
         })}
-<Pagination count={10} shape="rounded" />     </div>
+        <Pagination count={10} shape="rounded" />
+      </div>
     </div>
   );
 }

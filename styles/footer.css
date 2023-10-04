@@ -6,7 +6,7 @@
 }
 /* قسمت عکس دار */
 .footer_image {
-  background-image: url("../public/image/family.jpg");
+  background-image: url("../public/image/footer/family.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

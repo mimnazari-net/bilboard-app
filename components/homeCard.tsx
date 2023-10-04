@@ -1,5 +1,5 @@
 //import css
-import "../styles/houseCard.css";
+import "../styles/homeCard.css";
 //import image
 import Image from "next/image";
 //import icons
@@ -9,7 +9,7 @@ import { FaBath } from "react-icons/fa";
 import { IoBed } from "react-icons/io5";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
-export default function HouseCrad() {
+export default function HomeCrad() {
   //data
 
   const houseCardData = [

@@ -1,25 +1,31 @@
+// import css
 import "../styles/moshaverin.css";
+// import image
 import Image from "next/image";
+// import material
 import Rating from "@mui/material/Rating";
-export default function Moshaverin() {
+
+export default function Consultants() {
   interface Itemtype {
     image: string;
     text: string;
     loc: string;
     star: number;
   }
+
+  // data
   const consultant = [
     {
       image: "/image/Frame 67.png",
       loc: "نیاوران",
       text: "مشاورین املاک ققنوس",
-      star:"3",
+      star: "3",
     },
     {
       image: "/image/gheytariye.png",
       loc: "اندرزگو",
       text: " مشاورین املاک قیطریه ",
-      star:"4",
+      star: "4",
     },
     {
       image: "/image/salamat.png",
@@ -107,8 +113,7 @@ export default function Moshaverin() {
                     defaultValue={parseInt(item.star)}
                     readOnly
                   />
-                  
-                </div>{" "}
+                </div>
                 <button className="moshaverin-profile">نمایش پروفایل </button>
               </div>
             </div>

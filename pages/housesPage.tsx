@@ -1,6 +1,6 @@
 import '../styles/housesPage.css'
 
-import HouseCrad from "@/components/houseCard";
+import HouseCrad from "@/components/homeCard";
 
 export default function HousesPage (){
     return(

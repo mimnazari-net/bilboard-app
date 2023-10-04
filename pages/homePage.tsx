@@ -1,8 +1,8 @@
 import "../styles/homePage.css";
 
 //import components
-import HomeBox from "@/components/home/homeBox";
-import HomeImage from "@/components/home/homeImg";
+import HomeBox from "@/components/home-modules/homeBox";
+import HomeImage from "@/components/home-modules/homeImg";
 
 export default function HomePage() {
   return (

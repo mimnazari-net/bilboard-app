@@ -1,30 +1,35 @@
-import "../styles/mojtama.css";
+// import css
+import "../styles/homeGroups.css";
+//import image
 import Image from "next/image";
-export default function Mojtama() {
+
+export default function HomeGroups() {
+
+  //data
   const backgrounds = [
     {
-      cover: "/image/Ellipse11.png",
-      image: "/image/yyyyyy1.png",
+      cover: "/image/GroupingHouse/orangeCircle.png",
+      image: "/image/GroupingHouse/vila.png",
       value: "ویلا",
     },
     {
-      cover: "/image/Ellipse10.png",
-      image: "/image/Untitled-1.png",
+      cover: "/image/GroupingHouse/blueCircle.png",
+      image: "/image/GroupingHouse/aparteman.png",
       value: "آپارتمان",
     },
     {
-      cover: "/image/Ellipse11.png",
-      image: "/image/ideicekfejl1.png",
+      cover: "/image/GroupingHouse/Ellipse11.png",
+      image: "/image/GroupingHouse/tejari.png",
       value: "مجتمع تجاری",
     },
     {
-      cover: "/image/Ellipse10.png",
-      image: "/image/kckkj1.png",
+      cover: "/image/GroupingHouse/Ellipse10.png",
+      image: "/image/GroupingHouse/shakhsi.png",
       value: "آپارتمان شخصی",
     },
     {
-      cover: "/image/Ellipse11.png",
-      image: "/image/vertical-shot-white-building-clear-sky2.png",
+      cover: "/image/GroupingHouse/Ellipse11.png",
+      image: "/image/GroupingHouse/edari.png",
       value: "مجتمع اداری",
     },
   ];
