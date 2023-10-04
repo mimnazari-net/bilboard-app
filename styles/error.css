@@ -1,24 +1,25 @@
 .error_container {
   display: flex;
-  justify-content: space-evenly;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   direction: ltr;
+  justify-content: space-around;
 }
 .error_left_side {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  /* margin-left: 100px; */
 }
-.eror_img {
+/* .eror_img {
   margin-right: 300px;
-}
-.error_right_side {
+} */
+.error_rightside {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
-.eror_h1 {
+.error_rightside h1 {
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   font-size: 250px;
   font-style: normal;
@@ -34,24 +35,24 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.eror_p {
+.error_rightside p {
   color: #292d32;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1.2px;
-  margin-top: 10px;
 }
-.eror-btn {
-  width: 160px;
+.error_rightside button {
+  display: flex;
+  width: 188px;
   height: 55px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   border-radius: 8px;
   background: #fb8500;
   border: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: white;
   font-size: 16px;
 }

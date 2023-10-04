@@ -9,6 +9,8 @@ import HousesPage from "@/pages/housesPage";
 import Notfound from "@/app/not-found";
 import Navbar from "@/components/navbar";
 import GroupingHouse from "../components/HomeGroups";
+import UserPage from "./header/userpage";
+import Eror from "./header/eror";
 
 export default function Home() {
   return (
