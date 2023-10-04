@@ -8,11 +8,14 @@ import Newest from "./header/newset";
 import Dastebandi from "./header/dastebandi";
 import Forush from "./header/furush";
 import HouseCrad from "@/components/houseCard";
+import UserPage from "./header/userpage";
+
 
 export default function Home() {
   return (
-    <main>
-    <Forush/> 
+<main>
+<UserPage/>
+
     </main>
   );
 }

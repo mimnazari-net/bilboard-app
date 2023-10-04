@@ -1,0 +1,49 @@
+.userpage_container {
+  background: #023047;
+  width: 100vw;
+  height: 100vh;
+}
+.userpage_box {
+  display: inline-flex;
+  padding: 40px 75px 33px 76px;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-right: 700px;
+  gap: 32px;
+  border-radius: 10px;
+  background: #fff;
+  width: 900px;
+  height: 430px;
+}
+.userPage_header {
+  display: flex;
+  justify-content: space-around;
+
+}
+.userPage_header_leftside {
+  display: flex;
+  align-items: center;
+  direction: ltr;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 500px;
+
+}
+.userPage_header_lef p {
+  color: #292d32;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+hr {
+  height: 42px;
+  background: rgba(30, 77, 101, 0.2);
+}
+.userPage_header_rightside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+
+}

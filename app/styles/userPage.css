@@ -1,0 +1,75 @@
+.userpage_container {
+  background: #023047;
+  width: 100vw;
+  height: 100vh;
+}
+.userpage_box {
+  display: inline-flex;
+  padding: 40px 75px 33px 76px;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-right: 700px;
+  gap: 32px;
+  border-radius: 10px;
+  background: #fff;
+  width: 900px;
+  height: 430px;
+}
+.userpage_inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userpage_profile {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.userpage_rightside_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.userpage_rightside_inputs input {
+  width: 203px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  color: #929292;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.userpage_rightside_inputs p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.userpage_leftside_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.userpage_leftside_inputs input {
+  width: 203px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  color: #929292;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.userpage_leftside_inputs p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
