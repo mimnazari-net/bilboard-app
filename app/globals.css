@@ -64,7 +64,13 @@ button:hover {
 
 @font-face {
   font-family: "IRANYekan";
-  src: url("../public/fonts/Yekan.ttf") format("truetype"),
-    url("../public/fonts/iranyekanwebblack.woff") format("woff"),
-    
+  src:
+   /* url("../public/fonts/Yekan.ttf") format("truetype"), */
+    /* url("../public/fonts/iranyekanwebblack.woff") format("woff"),
+    url("../public/fonts/iranyekanwebbold.woff") format("woff"),
+    url("../public/fonts/iranyekanwebextrablack.woff") format("woff"),
+    url("../public/fonts/iranyekanweblight.woff") format("woff"),
+    url("../public/fonts/iranyekanwebmedium.woff") format("woff"), */
+    url("../public/fonts/iranyekanwebregular.woff") format("woff");
+    /* url("../public/fonts/iranyekanwebthin.woff") format("woff"); */
 }
