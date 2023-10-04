@@ -1,0 +1,63 @@
+.navbar {
+  direction: ltr;
+  background-color: #023047;
+  color: white;
+  width: 100%;
+  height: 72px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar button {
+  color: white;
+  background-color: unset;
+  outline: unset;
+  border: unset;
+}
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 200px;
+}
+
+.header_selectbox {
+  color: white;
+  background-color: unset;
+  outline: unset;
+  border: unset;
+}
+.header_rightside {
+  display: flex;
+}
+.header_leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_leftside button {
+  margin-left: 40px;
+  font-size: 16px;
+}
+.header_rightside button {
+  font-size: 16px;
+  margin-right: 40px;
+}
+.header_rightside_image {
+  margin-right: 200px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.header_leftside_image {
+  margin-left: 10px;
+}
+.header_label{
+    margin-top: 22px;
+}
+hr{
+    width: 1px;
+    height: 42px;
+    margin-left: 30px;
+   background-color: #1E4D65;
+   border: none;
+}

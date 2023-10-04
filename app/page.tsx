@@ -9,12 +9,10 @@ import HousesPage from "@/pages/housesPage";
 
 export default function Home() {
   return (
-    <main>
-      
+    <div>
       <HomePage />
-       <HousesPage />
-      
-      <Footer /> 
-    </main>
+      <HousesPage />
+      <Footer />
+    </div>
   );
 }
