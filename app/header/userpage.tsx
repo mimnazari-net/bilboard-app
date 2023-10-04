@@ -13,7 +13,7 @@ export default function UserPage() {
           <p>نام خانوادگی</p>
           <input type="text" placeholder="نام خانوادگی خود را وارد نمایید."></input>
           <p>شماره همراهی</p>
-          <input type="text" placeholder="98 |" style={{direction:"ltr" }}></input>
+          <input type="text" placeholder="98 |" style={{direction:"ltr", paddingLeft:"10px"}}></input>
         </div>
         <div className="userpage_leftside_inputs">
         <p>رمز عبور قبلی</p>
@@ -21,7 +21,7 @@ export default function UserPage() {
           <p>رمز عبور جدید</p>
           <input type="text" placeholder="رمز عبور جدید خود را وارد نمایید"></input>
           <p> ایمیل</p>
-          <input type="text" placeholder="abcd@gmail.com" style={{direction:"ltr" }}></input>
+          <input type="text" placeholder="abcd@gmail.com" style={{direction:"ltr" ,paddingLeft:"10px" }}></input>
         </div>
         <Image
         alt=""
