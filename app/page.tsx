@@ -3,22 +3,14 @@ import Footer from "@/components/footer";
 import Register from "@/pages/registerPage";
 import VertificationCode from "@/pages/vertificationCodePage";
 import HouseCrad from "@/components/homeCard";
-import HomeBox from "@/components/home-modules/homeBox";
+import HomeBox from "@/components/homeBox";
 import HomePage from "@/pages/homePage";
 import HousesPage from "@/pages/housesPage";
-import Notfound from "@/app/not-found";
-import Navbar from "@/components/navbar";
-import GroupingHouse from "../components/HomeGroups";
-import UserPage from "./header/userpage";
-import Eror from "./header/eror";
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
       <HomePage />
-      <GroupingHouse />
-      <Notfound/>
       <HousesPage />
       <Footer />
     </div>
