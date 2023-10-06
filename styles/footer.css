@@ -45,7 +45,7 @@
 }
 /* قسمت متن */
 .footer_texts {
-  background-color: var(--bi-Navy);
+  background-color: var(--bi-navy);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -124,7 +124,7 @@
   align-items: center;
 }
 .footer_texts_socials_icon {
-  color: var(--bi-Navy);
+  color: var(--bi-navy);
   font-size: large;
   display: flex;
   justify-content: center;
@@ -181,7 +181,7 @@
   margin-right: -30px;
 }
 .footer_product {
-  background-color: var(--bi-Navy);
+  background-color: var(--bi-navy);
   display: flex;
   flex-direction: column;
   justify-content: center;
