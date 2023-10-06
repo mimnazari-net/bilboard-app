@@ -49,15 +49,6 @@ export default function HomeCrad() {
       metrage: "350",
       location: "البرز،کردان،شهرک خور",
     },
-    {
-      Image: "/image/house1.png",
-      titleImg: "برای فروش",
-      subtitleImg: "ویلا کردان",
-      bedRooms: "5",
-      bathRooms: "3",
-      metrage: "350",
-      location: "البرز،کردان،شهرک خور",
-    },
   ];
 
   return (
@@ -88,10 +79,12 @@ export default function HomeCrad() {
               <p className="houseCrad_subtitle"> {item.subtitleImg} </p>
               <div className="houseCrad_options col-10">
                 <div className="houseCrad_rooms">
-                  <IoBed />{item.bedRooms} خوابه
+                  <IoBed />
+                  {item.bedRooms} خوابه
                 </div>
                 <div className="houseCrad_bath">
-                  <FaBath />{item.bathRooms} حمام
+                  <FaBath />
+                  {item.bathRooms} حمام
                 </div>
                 <div className="houseCrad_metr">
                   <AiFillHome />

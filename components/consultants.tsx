@@ -80,7 +80,6 @@ export default function Consultants() {
               ></Image>
               <div className="moshaverin-tik">
                 <div className="moshverin-right-tik">
-                  {" "}
                   <Image
                     alt="tik-abi"
                     width={16}
