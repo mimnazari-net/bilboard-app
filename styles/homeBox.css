@@ -13,10 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--bi-navy); */
-  border-top-right-radius: 20px;
-  /* color: white; */
-  
+  border-top-right-radius: 20px;  
 }
 
 .homeBox_mortage {
