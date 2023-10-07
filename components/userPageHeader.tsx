@@ -21,8 +21,8 @@ export default function UserPageHeader() {
       </div>
       <div className="userPage_header_leftside">
         <p>جستجو</p>
-        <LuSearch size={24} />
-        <hr />
+        <LuSearch size={24}  />
+        <hr className="userpage_header_hr"/>
         <p>خانه</p>
         <RiHome5Line size={24} />
       </div>

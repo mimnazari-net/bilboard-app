@@ -1,0 +1,52 @@
+.recentvisit_container {
+  display: inline-flex;
+  padding: 40px 75px 31px 76px;
+  border-radius: 8px;
+  background: #fff;
+  width: 890px;
+  height: 700px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recentvisit_map {
+  display: flex;
+  width: 800;
+  height: 75px;
+  border-radius: 8px;
+  border: 1px solid #585858;
+  justify-content: space-around;
+  align-items: center;
+  gap: 115px;
+}
+.recentvisit_map h1 {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.recentvisit_map p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.recentvisit_map button{
+    display: flex;
+padding: 12px 16px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background: #023047;
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 120px;
+height: 60px;
+}

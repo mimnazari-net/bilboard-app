@@ -9,18 +9,14 @@ import HousesPage from "@/pages/housesPage";
 import Notfound from "@/app/not-found";
 import Navbar from "@/components/navbar";
 import GroupingHouse from "../components/HomeGroups";
-import UserPage from "./header/userpage";
-import Eror from "./header/eror";
+import UserPageBox from "../components/userPageBox";
+import UserPage from "@/pages/userPage";
+import Userpagefirstpage from "@/components/userpagefirstpage";
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <HomePage />
-      <GroupingHouse />
-      <Notfound/>
-      <HousesPage />
-      <Footer />
-    </div>
+      <UserPage/>
+   </div>
   );
 }

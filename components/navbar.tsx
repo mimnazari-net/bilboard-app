@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 export default function Navbar() {
   return (
     <header>
-      <nav className="navbar_container">
+      <nav className="navbar_container clo-12">
         <div className="header_leftside">
           <Image
             className="header_leftside_image"

@@ -1,7 +1,7 @@
 .home_container {
   display: flex;
   background-image: url('/image/home-bg.jpg');
-  height: 619px;
+  height: 100vh;
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
