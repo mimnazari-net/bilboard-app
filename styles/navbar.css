@@ -54,7 +54,8 @@
 .header_label {
   margin-top: 22px;
 }
-hr {
+
+.header_hr {
   width: 1px;
   height: 42px;
   margin-left: 30px;

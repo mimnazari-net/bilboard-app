@@ -22,8 +22,8 @@ export default function Navbar() {
             width={24}
             height={24}
           ></Image>
-          <button> افزودن ملک</button>
-          <hr />
+          <button> افزودن ملک</button> 
+          <hr className="header_hr" />
           <Image
             className="header_leftside_image"
             alt="vurud"

@@ -3,15 +3,18 @@ import Footer from "@/components/footer";
 import HomePage from "@/pages/homePage";
 import HousesPage from "@/pages/housesPage";
 import Navbar from "@/components/navbar";
-import GroupingHouse from "../components/HomeGroups";
-import UserPageBox from "../components/userPageBox";
-import UserPage from "@/pages/userPage";
-import Userpagefirstpage from "@/components/userpagefirstpage";
+import HomeGroups from "@/components/HomeGroups";
+import Consultants from "@/components/consultants";
 
 export default function Home() {
   return (
     <div>
-      <UserPage/>
-   </div>
+      <Navbar/>
+      <HomePage />
+      <HomeGroups />
+      <HousesPage />
+      <Consultants />
+      <Footer />
+    </div>
   );
 }
