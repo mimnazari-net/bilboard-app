@@ -18,17 +18,17 @@ export default function HomeGroups() {
       value: "آپارتمان",
     },
     {
-      cover: "/image/GroupingHouse/Ellipse11.png",
+      cover: "/image/GroupingHouse/orangeCircle.png",
       image: "/image/GroupingHouse/tejari.png",
       value: "مجتمع تجاری",
     },
     {
-      cover: "/image/GroupingHouse/Ellipse10.png",
+      cover: "/image/GroupingHouse/blueCircle.png",
       image: "/image/GroupingHouse/shakhsi.png",
       value: "آپارتمان شخصی",
     },
     {
-      cover: "/image/GroupingHouse/Ellipse11.png",
+      cover: "/image/GroupingHouse/orangeCircle.png",
       image: "/image/GroupingHouse/edari.png",
       value: "مجتمع اداری",
     },

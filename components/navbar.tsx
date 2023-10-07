@@ -41,7 +41,7 @@ export default function Navbar() {
             alt="layer"
             width={60}
             height={50}
-            src={"/image/Layer 1.png"}
+            src={"/image/logo.png"}
           ></Image>
           <label className="header_label">دسته بندی ها</label>
           <select className="header_selectbox"></select>
