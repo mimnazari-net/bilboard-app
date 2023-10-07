@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
 }
-.error_rightside h1 {
+.error_right_side h1 {
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   font-size: 250px;
   font-style: normal;
@@ -30,7 +30,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.error_rightside p {
+.error_right_side p {
   color: #292d32;
   font-size: 24px;
   font-style: normal;
@@ -38,7 +38,7 @@
   line-height: normal;
   letter-spacing: -1.2px;
 }
-.error_rightside button {
+.error_right_side button {
   display: flex;
   width: 188px;
   height: 55px;
