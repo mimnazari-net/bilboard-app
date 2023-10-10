@@ -1,5 +1,8 @@
 "use client"
+// import icon 
 import { FaChevronDown } from "react-icons/fa";
+
+// import css
 import "../styles/homePage.css";
 
 //import components

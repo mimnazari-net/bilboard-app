@@ -35,14 +35,14 @@ export default function HomeGroups() {
   ];
   return (
     <div className="homeGroup_container col-12">
-      <div className="homeGroup_up_side">
+      <div className="homeGroup_up_side col-10">
         <h1>با جستجو و ذخیره خانه مورد نظر خود،</h1>
         <p>
           ما چندین پیشنهاد ویژه که مناسب سلیقه تان می باشد را برایتان نمایش می
           دهیم.
         </p>
       </div>
-      <div className="homeGroup_pics">
+      <div className="homeGroup_pics col-10">
         {backgrounds.map((item, index) => (
           <div className="homeGroup_item">
             <div
@@ -53,8 +53,8 @@ export default function HomeGroups() {
               <Image
                 src={item.image}
                 alt="asicj"
-                height={index === 0 ? 250 : 300}
-                width={220}
+                height={index === 0 ? 200 : 250}
+                width={180}
               />
             </div>
             <p className="homeGroup_name">{item.value}</p>
