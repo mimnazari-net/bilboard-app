@@ -1,55 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
 import "../styles/navbar.css";
+import { FaChevronDown } from "react-icons/fa";
+import { RiSearch2Line } from "react-icons/ri";
+import { AiOutlinePlusCircle } from "react-icons/ai";
+import { PiUserCircle } from "react-icons/pi";
+
 export default function Navbar() {
   return (
-    <header>
       <nav className="navbar_container clo-12">
-        <div className="header_leftside">
-          <Image
-            className="header_leftside_image"
-            alt="jostojo"
-            src={"/image/search-normal.png"}
-            width={24}
-            height={24}
-          ></Image>
-          <button> جستجو</button>
-          <hr />
-          <Image
-            className="header_leftside_image"
-            alt="afzudan"
-            src={"/image/add-circle.png"}
-            width={24}
-            height={24}
-          ></Image>
-          <button> افزودن ملک</button>
-          <hr />
-          <Image
-            className="header_leftside_image"
-            alt="vurud"
-            src={"/image/profile-circle.png"}
-            width={24}
-            height={24}
-          ></Image>
-          <Link href={""} className="navbar-link">
-            ورود | عضویت
-          </Link>
-        </div>
-        <div className="header_rightside">
-          <Image
-            className="header_rightside_image"
-            alt="layer"
-            width={60}
-            height={50}
-            src={"/image/logo.png"}
-          ></Image>
-          <label className="header_label">دسته بندی ها</label>
-          <select className="header_selectbox"></select>
-          <button>خرید زمین</button>
-          <button>درخواست مشاور </button>
-          <button>وبلاگ</button>
+        <div className="navbar_contant col-10">
+          <div className="navbar_right_side col-5">
+            <div className="navbar_right_side_logo">
+              <Image
+                alt="logo image"
+                width={60}
+                height={50}
+                src={"/image/logo.png"}
+              ></Image>
+            </div>
+            <div className="navbar_right_side_group col-3 ">
+              <p className="navbar_label">دسته بندی ها</p>
+              <FaChevronDown style={{ marginTop: "5px" }} />
+            </div>
+            <p>خرید زمین</p>
+            <p>درخواست مشاور </p>
+            <p>وبلاگ</p>
+          </div>
+          <div className="navbar_left_side col-4 ">
+            <div className="navbar_left_search col-3">
+              <RiSearch2Line style={{fontSize:"22px"}} />
+              <p className="col-8">جستجو</p>
+            </div>
+            <div className="navbar_left_add col-4">
+              <AiOutlinePlusCircle  style={{fontSize:"22px"}} />
+              <p className="col-8" >افزودن ملک</p>
+            </div>
+            <div className="navbar_left_user col-4">
+              <PiUserCircle  style={{fontSize:"22px"}} />
+              <p>ورود | عضویت</p>
+            </div>
+          </div>
         </div>
       </nav>
-    </header>
   );
 }

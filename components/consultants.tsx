@@ -3,11 +3,10 @@ import "../styles/consultants.css";
 // import image
 import Image from "next/image";
 // import material
-import Rating from "@mui/material/Rating";
+// import {Rating} from '@mui/material/Rating' 
 
 export default function Consultants() {
  
-
   // data
   const consultant = [
     {
@@ -59,6 +58,7 @@ export default function Consultants() {
       star: "5",
     },
   ];
+  
   return (
     <div className="moshaverin_container">
       <h1>مشاورین املاک منتخب در سطح کشور</h1>
@@ -75,7 +75,6 @@ export default function Consultants() {
               ></Image>
               <div className="moshaverin-tik">
                 <div className="moshverin-right-tik">
-                  {" "}
                   <Image
                     alt="tik-abi"
                     width={16}
@@ -102,12 +101,12 @@ export default function Consultants() {
                     ></Image>
                     <p className="moshaverin-tehran">{item.loc}</p>{" "}
                   </div>
-                  <Rating
+                  {/* <Rating
                     className="moshaverin-stars"
                     name="size-medium"
                     defaultValue={parseInt(item.star)}
                     readOnly
-                  />
+                  /> */}
                 </div>
                 <button className="moshaverin-profile">نمایش پروفایل </button>
               </div>
