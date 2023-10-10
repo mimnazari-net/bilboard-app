@@ -1,17 +1,12 @@
 // import css
-import "../styles/moshaverin.css";
+import "../styles/consultants.css";
 // import image
 import Image from "next/image";
 // import material
 import Rating from "@mui/material/Rating";
 
 export default function Consultants() {
-  interface Itemtype {
-    image: string;
-    text: string;
-    loc: string;
-    star: number;
-  }
+ 
 
   // data
   const consultant = [

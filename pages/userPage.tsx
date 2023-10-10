@@ -7,7 +7,7 @@ export default function UserPage() {
     <div className="userpage_container ">
       <div className="userpage_kol">
         <UserPageBox />
-      <Userpagefirstpage/></div>
+      <Recentvisits/></div>
     </div>
   );
 }

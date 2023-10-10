@@ -35,7 +35,7 @@ btn:"مشاهده ملک"
 
 }]
     return(
-         <div className="recentvisit_container">
+         <div className="recentvisit_container col-10">
                   <UserPageHeader />
             {recently.map((item, index)=>{return(<div key={index} className="recentvisit_map"><Image
             alt=""
