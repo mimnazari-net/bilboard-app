@@ -26,14 +26,14 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 16px;
   border-bottom-style: solid;
   border-bottom-color: #929292;
   border-bottom-width: 2px;
 }
 
 .HousesPage_navbar_left_side p {
-  font-weight: 600;
+  font-weight: 590;
   margin: 0px;
   height: 100%;
   cursor: pointer;

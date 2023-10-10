@@ -3,10 +3,12 @@ import "../styles/consultants.css";
 // import image
 import Image from "next/image";
 // import material
-// import {Rating} from '@mui/material/Rating' 
+import VerifiedSharpIcon from "@mui/icons-material/VerifiedSharp";
+import BookmarksOutlinedIcon from "@mui/icons-material/BookmarksOutlined";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { Rating } from "@mui/material";
 
 export default function Consultants() {
- 
   // data
   const consultant = [
     {
@@ -58,57 +60,51 @@ export default function Consultants() {
       star: "5",
     },
   ];
-  
+
   return (
-    <div className="moshaverin_container">
-      <h1>مشاورین املاک منتخب در سطح کشور</h1>
-      <div className="moshaverin-kol">
+    <div className="moshaverin_container col-12">
+      <div className="moshaverin_title col-10">
+        <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
+        
+      </div>
+      <div className="moshaverin_content col-10">
         {consultant.map((item, index) => {
           return (
-            <div className="moshaverin_map" key={index}>
+            <div className="moshaverin_item col-2.5" key={index}>
               <Image
-                className="moshaverin-pic"
-                alt="moshaverin"
-                width={278}
+                className="moshaverin_pic col-12"
+                alt="مشاورین املاک"
+                width={250}
                 height={183}
                 src={item.image}
               ></Image>
-              <div className="moshaverin-tik">
-                <div className="moshverin-right-tik">
-                  <Image
-                    alt="tik-abi"
-                    width={16}
-                    height={15}
-                    src={"/image/Group.png"}
-                  ></Image>
-                  <p className="moshaverin-tik-p">{item.text}</p>
+
+              <div className="moshaverin_down col-12">
+                <div className="moshverin_down_title col-10">
+                  <VerifiedSharpIcon color="primary" />
+                  <p>{item.text}</p>
+                  <BookmarksOutlinedIcon />
                 </div>
-                <Image
-                  alt="save"
-                  width={24}
-                  height={24}
-                  src={"/image/save-2.png"}
-                ></Image>
-              </div>
-              <div className="moshaverin-mid">
-                <div className="moshaverin-bottom">
-                  <div className="moshaverin-loc">
-                    <Image
-                      alt="loc"
-                      width={16}
-                      height={16}
-                      src={"/image/location.png"}
-                    ></Image>
-                    <p className="moshaverin-tehran">{item.loc}</p>{" "}
+                <div className="moshaverin_loc col-10">
+                  <div className="moshaverin_loc_right col-4">
+                    <HiOutlineLocationMarker
+                      style={{
+                        color: "#292D32",
+                        fontSize: "large",
+                      }}
+                    />
+                    <p>{item.loc}</p>
                   </div>
-                  {/* <Rating
-                    className="moshaverin-stars"
-                    name="size-medium"
-                    defaultValue={parseInt(item.star)}
-                    readOnly
-                  /> */}
+                  <div className="moshaverin_loc_left">
+                    <Rating
+                      style={{ direction: "ltr" }}
+                      defaultValue={parseInt(item.star)}
+                      size="small"
+                      readOnly
+                    />
+                  </div>
                 </div>
-                <button className="moshaverin-profile">نمایش پروفایل </button>
+                <button className="moshaverin_btn col-10">نمایش پروفایل </button>
               </div>
             </div>
           );
