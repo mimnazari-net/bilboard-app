@@ -58,7 +58,7 @@ export default function HousesPage() {
         </div>
         <div className="HousesPage_navbar_left_side col-9">
           <div className="HousesPage_navbar_left_side_text col-12">
-              <p>آپارتمان</p>
+            <p>آپارتمان</p>
             <p>ویلا</p>
             <p>تجاری</p>
             <p>باغ</p>
@@ -66,7 +66,6 @@ export default function HousesPage() {
             <p>زمین</p>
           </div>
           <div className="HousesPage_navbar_left_side_Line col-12">
-            <hr />
           </div>
         </div>
       </div>
