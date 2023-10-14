@@ -9,11 +9,13 @@ import UserPage from "@/pages/userPage";
 import Userpagefirstpage from "@/components/userpagefirstpage";
 import SearchSection from "@/components/searchsection";
 import Consultants from "@/components/consultants";
+import Advertising from "@/components/advertising";
 
 export default function Home() {
   return (
     <div>
-      <SearchSection/>
+      <Navbar/>
+      <Advertising/>
    </div>
   );
 }
