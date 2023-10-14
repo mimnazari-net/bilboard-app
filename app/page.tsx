@@ -10,12 +10,13 @@ import Userpagefirstpage from "@/components/userpagefirstpage";
 import SearchSection from "@/components/searchsection";
 import Consultants from "@/components/consultants";
 import Advertising from "@/components/advertising";
+import Advertisementregistration from "@/components/Advertisementregistration";
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <Advertising/>
+      <UserPage />
+      
    </div>
   );
 }

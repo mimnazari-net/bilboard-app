@@ -1,0 +1,43 @@
+.advertisingreg_box {
+  width: 950px;
+  height: 503px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.adveritingreg_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 180px;
+}
+.advertisingreg_inside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.adveritingreg_text p {
+  color: #4b5259;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.adveritingreg_text button {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  width: 250px;
+  padding: 8px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #023047;
+}
