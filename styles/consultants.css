@@ -17,11 +17,47 @@
   font-style: normal;
   font-weight: 500;
 }
+
+.moshaverin_arow_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--bi-navy);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bi-navy);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
 .moshaverin_content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
+}
+
+.swiper {
+  height: 50px;
 }
 
 .moshaverin_item {
@@ -93,4 +129,33 @@
   border: none;
   color: #faf4f4;
   font-size: 14px;
+}
+
+.moshaverin_swiper {
+  display: flex;
+}
+
+.moshaverin_swiper_first_item {
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: var(--bi-orange);
+  border-radius: 8px;
+  color: white;
+}
+
+.moshaverin_swiper_btn {
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  border: 1px solid var(--bi-orange);
+  border-radius: 8px;
+  color: var(--bi-navy);
+}
+
+.moshaverin_swiper_item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }

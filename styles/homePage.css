@@ -80,7 +80,9 @@
 .homeBox_detail_title{
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
+  position: relative;
 }
 .homeBox_detail_icon{
   margin-right: 8px;
@@ -101,4 +103,26 @@
   height: 40px;
   border: none;
   border-radius: 8px;
+}
+.homeBox_dropdown_container {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(1,1,1,0.5);
+  z-index: 5;
+}
+.homeBox_dropdown_items {
+  height: 30px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(99, 99, 99);
+  transition: 0.2s ease-in-out;
+}
+.homeBox_dropdown_items:hover {
+  background-color: #dddddd;
 }

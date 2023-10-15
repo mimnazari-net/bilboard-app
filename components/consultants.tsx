@@ -1,12 +1,26 @@
+"use client";
+import React, { useRef, useState } from "react";
+
 // import css
 import "../styles/consultants.css";
+
 // import image
 import Image from "next/image";
+
 // import material
 import VerifiedSharpIcon from "@mui/icons-material/VerifiedSharp";
 import BookmarksOutlinedIcon from "@mui/icons-material/BookmarksOutlined";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Rating } from "@mui/material";
+
+// import carousel Swiper
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export default function Consultants() {
   // data
@@ -61,11 +75,72 @@ export default function Consultants() {
     },
   ];
 
+  const cities = [
+    "تهران",
+    "کیش",
+    "مشهد",
+    "اصفهان",
+    "شیراز",
+    "مازندران",
+    "گیلان",
+    "رشت",
+    "اراک",
+    "اهواز",
+    "قم",
+    "همدان",
+    "قشم",
+    "بوشهر",
+    "بندرعباس",
+    "تبریز",
+    "اردبیل",
+    "قزوین",
+    "شاهرود",
+    "بجنورد",
+    "آمل",
+    "بابل",
+    "رامسر",
+  ];
+
   return (
     <div className="moshaverin_container col-12">
       <div className="moshaverin_title col-10">
         <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
-        
+        <div className=" moshaverin_arow_btn col-1">
+          <button className="swiper-button-next">
+            <AiOutlineArrowRight style={{ fontSize: "18px" }} />
+          </button>
+          <button className="swiper-button-prev">
+            <AiOutlineArrowLeft style={{ fontSize: "18px" }} />
+          </button>
+        </div>
+      </div>
+      <div className="moshaverin_swiper col-10">
+        <Swiper
+          slidesPerView={15}
+          spaceBetween={30}
+          loop={true}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          {cities.map((item, index) => {
+            return (
+              <div className="moshaverin_swiper_item" key={index}>
+                <SwiperSlide>
+                  <button
+                    className={
+                      index === 0
+                        ? "moshaverin_swiper_first_item"
+                        : "moshaverin_swiper_btn"
+                    }
+                  >
+                    {item}
+                  </button>
+                </SwiperSlide>
+              </div>
+            );
+          })}
+        </Swiper>
       </div>
       <div className="moshaverin_content col-10">
         {consultant.map((item, index) => {
@@ -104,7 +179,9 @@ export default function Consultants() {
                     />
                   </div>
                 </div>
-                <button className="moshaverin_btn col-10">نمایش پروفایل </button>
+                <button className="moshaverin_btn col-10">
+                  نمایش پروفایل{" "}
+                </button>
               </div>
             </div>
           );
