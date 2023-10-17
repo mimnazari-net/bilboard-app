@@ -1,5 +1,5 @@
 // import css
-import "../styles/userPageHeader.css";
+import "../../styles/userPageHeader.css";
 // import icons
 import { LuSearch } from "react-icons/lu";
 import { RiHome5Line } from "react-icons/ri";

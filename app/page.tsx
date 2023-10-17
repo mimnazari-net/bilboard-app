@@ -1,22 +1,25 @@
 import "./globals.css";
-import Footer from "@/components/footer";
+import Footer from "@/app/components/footer";
 import HomePage from "@/pages/homePage";
 import HousesPage from "@/pages/housesPage";
-import Navbar from "@/components/navbar";
-import GroupingHouse from "../components/HomeGroups";
-import UserPageBox from "../components/userPageBox";
-import UserPage from "@/pages/userPage";
-import Userpagefirstpage from "@/components/userpagefirstpage";
-import SearchSection from "@/components/searchsection";
-import Consultants from "@/components/consultants";
-import Advertising from "@/components/advertising";
-import Advertisementregistration from "@/components/Advertisementregistration";
+import Navbar from "@/app/components/navbar";
+import GroupingHouse from "./components/HomeGroups";
+import Consultants from "@/app/components/consultants";
+import Link from "next/link";
+import SearchPage from "@/pages/search";
+import CategoryNavbar from "./components/categoryNavbar"
+import SellPage from "../pages/sellPage"
+import SearchSection from "./components/searchsection";
 
 export default function Home() {
+
   return (
     <div>
-      <UserPage />
-      
-   </div>
+      <Navbar />
+      <CategoryNavbar />
+      <SellPage />
+      <SearchSection />
+      <Footer />
+    </div>
   );
 }

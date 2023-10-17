@@ -1,4 +1,4 @@
-import "../styles/Advertisementregistration.css";
+import "../../styles/Advertisementregistration.css";
 import Image from "next/image";
 export default function Advertisementregistration() {
   return (

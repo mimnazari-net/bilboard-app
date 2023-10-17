@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 
 // import css
-import "../styles/consultants.css";
+import "../../styles/consultants.css";
 
 // import image
 import Image from "next/image";

@@ -1,5 +1,5 @@
 //import css
-import "../styles/homeCard.css";
+import "../../styles/homeCard.css";
 //import image
 import Image from "next/image";
 //import icons

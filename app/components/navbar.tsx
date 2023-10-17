@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import "../styles/navbar.css";
+import "../../styles/navbar.css";
 import { FaChevronDown } from "react-icons/fa";
 import { RiSearch2Line } from "react-icons/ri";
 import { AiOutlinePlusCircle } from "react-icons/ai";
@@ -8,7 +8,7 @@ import { PiUserCircle } from "react-icons/pi";
 
 export default function Navbar() {
   return (
-    <nav className="navbar_container clo-12">
+    <div className="navbar_container clo-12">
       <div className="navbar_contant col-10">
         <div className="navbar_right_side col-5">
           <div className="navbar_right_side_logo">
@@ -44,6 +44,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

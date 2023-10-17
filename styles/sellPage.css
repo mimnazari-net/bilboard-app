@@ -1,37 +1,42 @@
 .forush_container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  margin-right: 200px;
-}
-.forush_box {
-  width: 350px;
-  height: 390px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: #faf4f4;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
 }
 .forush_kol {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 100px;
+}
+.forush_box {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #faf4f4;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.forush_texts_content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .forush_texts p {
+  margin-bottom: 0;
   color: #292d32;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 400;
-  line-height: normal;
-  margin-right: 20px;
 }
 .forush_loc {
   display: flex;
   align-items: center;
-  margin-right: 20px;
-  gap: 10px;
 }
 .forush_loc p {
   color: #636363;
@@ -40,6 +45,11 @@
   font-weight: 300;
   line-height: normal;
 }
+.forush_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .forush_price p {
   color: #292d32;
   text-align: right;
@@ -47,21 +57,17 @@
   font-style: normal;
   font-weight: 300;
 }
-
-.forush_price {
-  display: flex;
-  align-items: center;
-}
 .forush_price_kol {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .forush_icons {
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 25px;
+  font-size: small;
   border: 0.25px solid rgb(159, 155, 155);
   border-radius: 20px;
   justify-content: space-around;
@@ -69,7 +75,8 @@
 }
 .forush_price_down {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 .forush_mahal {
   display: flex;
@@ -110,4 +117,26 @@
   padding-bottom: 0px;
   flex-direction: column;
   align-items: center;
+}
+.forush_pagination {
+  margin-top: 20px;
+  direction: ltr;
+}
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: white;
+  color: var(--bi-navy);
+  border: solid 1px var(--bi-navy);
+}
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: var(--bi-navy);
+  color: white;
+}
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root:hover {
+  background-color: white;
+}
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
+  background-color: white;
+  color: var(--bi-navy);
 }

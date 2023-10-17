@@ -2,10 +2,7 @@
 import Image from "next/image";
 
 // import css
-import "<div styleName="" />
-<styles />
-<sellPage></sellPage>.css";
-
+import "../styles/sellPage.css";
 // import icons
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaBath } from "react-icons/fa";
@@ -239,46 +236,51 @@ export default function Sell() {
     },
   ];
   return (
-    <div className="forush_container">
-      <div className="forush_kol">
+    <div className="forush_container col-12">
+      <div className="forush_kol col-10">
         {sells.map((item, index) => {
           return (
-            <div key={index} className="forush_box">
-              <Image alt="" width={350} height={190} src={item.image}></Image>
-              <div className="forush_texts">
-                <p>{item.text}</p>
-              </div>
-              <div className="forush_loc">
-                <HiOutlineLocationMarker size={"16px"} color={"#292D32"} />
-                <p>{item.loc}</p>
-              </div>
-              <div className="forush_price_kol">
-                <div className="forush_price">
-                  <p>قیمت : </p>
-                  {item.price}
+            <div key={index} className="forush_box col-25">
+              <Image alt="" width={270} height={150} src={item.image}></Image>
+              <div className="forush_texts_content col-11">
+                <div className="forush_texts">
+                  <p>{item.text}</p>
                 </div>
-                <div className="forush_icons">
-                  <div className="forush_rooms">
-                    <IoBed size={"8px"} /> {item.bed}
+                <div className="forush_loc col-6">
+                  <HiOutlineLocationMarker size={"16px"} color={"#292D32"} />
+                  <p>{item.loc}</p>
+                </div>
+                <div className="forush_price_kol col-12">
+                  <div className="forush_price">
+                    <p>قیمت : </p>
+                    {item.price}
                   </div>
-                  <div className="forush_bath">
-                    <FaBath size={"8px"} /> {item.bath}
+                  <div className="forush_icons col-3">
+                    <div className="forush_rooms">
+                      <IoBed size={"9px"} /> {item.bed}
+                    </div>
+                    <div className="forush_bath">
+                      <FaBath size={"9px"} /> {item.bath}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="forush_price_down">
-                <div className="forush_price">
-                  <p>{item.eachm} </p>
-                </div>
-                <div className="forush_mahal">
-                  <div className="forush_city">{item.city}</div>
-                  <div className="forush_street">{item.street} </div>
+                <div className="forush_price_down col-12">
+                  <div className="forush_price col-8">
+                    <p>{item.eachm} </p>
+                  </div>
+                  <div className="forush_mahal col-5">
+                    <div className="forush_city">{item.city}</div>
+                    <div className="forush_street">{item.street} </div>
+                  </div>
                 </div>
               </div>
             </div>
           );
         })}
-        <Pagination count={10} shape="rounded" />
+        
+      </div>
+      <div className="forush_pagination">
+      <Pagination count={4} shape="rounded" />
       </div>
     </div>
   );

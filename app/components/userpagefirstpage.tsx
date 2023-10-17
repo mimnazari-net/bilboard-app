@@ -1,6 +1,6 @@
-import UserPageHeader from "../components/userPageHeader";
+import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
-import "../styles/userpagefirtpage.css";
+import "../../styles/userpagefirtpage.css";
 export default function Userpagefirstpage(){
     return(
    

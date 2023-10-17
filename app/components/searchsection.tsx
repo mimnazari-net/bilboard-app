@@ -1,9 +1,9 @@
-import "../styles/searchsection.css";
+import "../../styles/searchsection.css";
 import Image from "next/image";
 export default function SearchSection() {
   return (
     <div className="searchsection_container">
-        <hr className="searchsection_hr"/>
+        <hr className="searchsection_hr col-12"/>
       <Image
         className="searchsection_img"
         alt=""
@@ -16,7 +16,7 @@ export default function SearchSection() {
         با جستجو در نزدیک ترین آژانس املاک منطقه مورد نظر خود، بهترین گزینه ها
         را برای انتخاب پیدا کنید.
       </p>
-      <button>جستجوی آژانس املاک</button>
+      <button >جستجوی آژانس املاک</button>
     </div>
   );
 }

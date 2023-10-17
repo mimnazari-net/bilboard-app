@@ -1,4 +1,4 @@
-import "../styles/recentvisit.css";
+import "../../styles/recentvisit.css";
 import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
 export default function Recentvisits() {

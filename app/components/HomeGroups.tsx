@@ -1,5 +1,5 @@
 // import css
-import "../styles/homeGroups.css";
+import "../../styles/homeGroups.css";
 //import image
 import Image from "next/image";
 

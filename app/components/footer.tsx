@@ -1,6 +1,6 @@
 //import css
 import Image from "next/image";
-import "../styles/footer.css";
+import "../../styles/footer.css";
 //import Link
 import Link from "next/link";
 //import icons

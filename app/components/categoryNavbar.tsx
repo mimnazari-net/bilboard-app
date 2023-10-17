@@ -1,5 +1,5 @@
 //import css
-import "../styles/categoryNavbar.css";
+import "../../styles/categoryNavbar.css";
 //import image
 import Image from "next/image";
 
@@ -11,15 +11,15 @@ export default function Category() {
     { image: "/image/homeGroupNav/shop-icon.png", text: "مغازه" },
     { image: "/image/homeGroupNav/tejari-icon.png", text: "ملک تجاری" },
     { image: "/image/homeGroupNav/edari-icon.png", text: "ملک اداری" },
-    { image: "/iamge/homeGroupNav/vila-icon.png", text: "ویلایی" },
+    { image: "/image/homeGroupNav/vilai-icon.png", text: "ویلایی" },
     { image: "/image/homeGroupNav/kolangi-icon.png", text: "کلنگی" },
     { image: "/image/homeGroupNav/apartman-icon.png", text: "آپارتمان" },
     { image: "/image/homeGroupNav/zamin-icon.png", text: "زمین" },
   ];
 
   return (
-    <div className="category_container">
-      <div className="category_img">
+    <div className="category_container col-12">
+      <div className="category_img col-10">
         {homes.map((item, index) => {
           return (
             <div key={index} className="category_map">

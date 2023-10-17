@@ -1,5 +1,5 @@
 import { Style } from "@mui/icons-material";
-import "../styles/userPageBox.css";
+import "../../styles/userPageBox.css";
 import Image from "next/image";
 import Link from "next/link";
 import { RiUser6Line } from "react-icons/ri";

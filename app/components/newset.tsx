@@ -1,5 +1,5 @@
 // import css
-import "../styles/newest.css";
+import "../../styles/newest.css";
 // import image
 import Image from "next/image";
 
