@@ -10,15 +10,14 @@ import SearchPage from "@/pages/search";
 import CategoryNavbar from "./components/categoryNavbar"
 import SellPage from "../pages/sellPage"
 import SearchSection from "./components/searchsection";
+import Advertising from "./components/advertising";
 
 export default function Home() {
 
   return (
     <div>
       <Navbar />
-      <CategoryNavbar />
-      <SellPage />
-      <SearchSection />
+      <Advertising />
       <Footer />
     </div>
   );

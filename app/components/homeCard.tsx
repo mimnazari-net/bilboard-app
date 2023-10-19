@@ -11,7 +11,6 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 export default function HomeCrad() {
   //data
-
   const houseCardData = [
     {
       Image: "/image/house1.png",
