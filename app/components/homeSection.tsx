@@ -3,12 +3,12 @@
 import { FaChevronDown } from "react-icons/fa";
 
 // import css
-import "../styles/homePage.css";
+import "../../styles/homeSection.css";
 
 //import components
 import React, { useEffect, useRef, useState } from "react";
 
-export default function HomePage() {
+export default function HomeSection() {
   // data
   const [type, setType] = useState<"خرید" | "رهن" | "اجاره">("خرید");
   const [city, setCity] = useState<string>("تهران");

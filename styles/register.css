@@ -77,9 +77,9 @@
   word-wrap: break-word;
 }
 
-.register_right_side_container button {
+.register_btn {
   height: 40px;
-  background: var(--bi-Navy);
+  background: var(--bi-navy);
   border: none;
   border-radius: 5px;
   color: white;

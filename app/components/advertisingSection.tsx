@@ -1,8 +1,9 @@
-// import css
+// import image
 import Image from "next/image";
 
 // import css
-import "../styles/sellPage.css";
+import "../../styles/advertisingSection.css";
+
 // import icons
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaBath } from "react-icons/fa";
@@ -11,7 +12,7 @@ import { IoBed } from "react-icons/io5";
 // import Pagination
 import Pagination from "@mui/material/Pagination";
 
-export default function Sell() {
+export default function AdvertisingSection() {
   //data
   const sells = [
     {
@@ -277,10 +278,9 @@ export default function Sell() {
             </div>
           );
         })}
-        
       </div>
       <div className="forush_pagination">
-      <Pagination count={4} shape="rounded" />
+        <Pagination count={4} shape="rounded" />
       </div>
     </div>
   );

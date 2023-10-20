@@ -41,6 +41,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+}
+
+.navbar_link{
+  color: white;
+  text-decoration: none ;
 }
 
 .navbar_left_side hr{
