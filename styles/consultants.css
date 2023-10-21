@@ -133,6 +133,7 @@
 
 .moshaverin_swiper {
   display: flex;
+  height: 50px;
 }
 
 .moshaverin_swiper_first_item {
