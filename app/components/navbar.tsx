@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import "../../styles/navbar.css";
@@ -6,7 +7,20 @@ import { RiSearch2Line } from "react-icons/ri";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { PiUserCircle } from "react-icons/pi";
 
+import { categoryNavbar } from "../components/categoryNavbar";
+import { useState } from "react";
+
 export default function Navbar() {
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+
   return (
     <div className="navbar_container clo-12">
       <div className="navbar_contant col-10">
@@ -22,7 +36,14 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="navbar_right_side_group col-3 ">
-            <p className="navbar_label">دسته بندی ها</p>
+            <button
+              className="navbar_btn"
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+            >
+              دسته بندی ها
+            </button>
+            {/* <p className="navbar_label">دسته بندی ها</p> */}
             <FaChevronDown style={{ marginTop: "5px" }} />
           </div>
           <p>خرید زمین</p>
@@ -43,7 +64,6 @@ export default function Navbar() {
           </div>
           <hr />
           <div className="navbar_left_user col-4">
-           
             <PiUserCircle style={{ fontSize: "25px" }} />
             <span>ورود</span>
             <p>|</p>
@@ -53,6 +73,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      {isHovering && ( <categoryNavbar/>)}
     </div>
   );
 }

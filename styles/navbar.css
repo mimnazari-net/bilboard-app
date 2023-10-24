@@ -22,6 +22,12 @@
   justify-content: space-between;
 }
 
+.navbar_btn{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
 .navbar_right_side_group{
   display: flex;
   align-items: center;

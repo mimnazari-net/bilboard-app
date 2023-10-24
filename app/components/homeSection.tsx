@@ -13,10 +13,10 @@ export default function HomeSection() {
   const [type, setType] = useState<"خرید" | "رهن" | "اجاره">("خرید");
   const [city, setCity] = useState<string>("تهران");
   const [district, setDistrict] = useState<string>("الهیه");
-  const [metrage, setMetrage] = useState<string>("100 meter");
-  const [price, setPrice] = useState<string>("200 میلیون");
-  const [deposit, setDeposit] = useState<string>("200 میلیون");
-  const [rent, setRent] = useState<string>("5 میلیون");
+  const [metrage, setMetrage] = useState<string>("100 متر");
+  const [price, setPrice] = useState<string>("200,000,000");
+  const [deposit, setDeposit] = useState<string>("200,000,000");
+  const [rent, setRent] = useState<string>("5,000,000");
 
   return (
     <div className="home_container col-12">
@@ -123,36 +123,72 @@ const DetailsBox: React.FC<{
 }) => {
   return (
     <div className="homeBox_down_side_container col-12">
-      <div>
+      <div className="homeBox_detailItem_item">
         <DetailItem
           title="شهر"
-          items={["تهران", "اصفهان", "شیراز"]}
+          items={[
+            "تهران",
+            "کیش",
+            "اصفهان",
+            "مشهد",
+            "شیراز",
+            "مازندران",
+            "گیلان",
+          ]}
           state={city}
           setState={setCity}
         />
+        <hr className="homeBox_down_hr" />
       </div>
-      <div>
+
+      <div className="homeBox_detailItem_item">
         <DetailItem
           title="منطقه"
-          items={["الهیه", "ولنجک", "شهران"]}
+          items={[
+            "الهیه",
+            "نارمک",
+            "تهرانپارس",
+            "صادقیه",
+            "میرداماد",
+            "ونک",
+            "سعادت آباد",
+          ]}
           state={district}
           setState={setDistrict}
         />
+        <hr className="homeBox_down_hr" />
       </div>
-      <div>
+
+      <div className="homeBox_detailItem_item">
         <DetailItem
           title="متراژ"
-          items={["100 meter", "200 meter", "300 meter"]}
+          items={[
+            "50-40 متر",
+            "70-50 متر",
+            "100-70 متر",
+            "150-100 متر",
+            "200-150 متر",
+            "300-200 متر",
+            "+300 متر",
+          ]}
           state={metrage}
           setState={setMetrage}
         />
+        <hr className="homeBox_down_hr" />
       </div>
 
       {type === "خرید" ? (
         <>
           <DetailItem
             title="قیمت"
-            items={["100 میلیون", "200 میلیون", "300 میلیون"]}
+            items={[
+              "500,000,000 تا ",
+              "1,00,000,000 تا ",
+              "2,500,000,000 تا",
+              "3,000,000,000 تا",
+              "5,000,000,000 تا",
+              "10,000,000,000 تا",
+            ]}
             state={price}
             setState={setPrice}
           />
@@ -161,22 +197,48 @@ const DetailsBox: React.FC<{
         <>
           <DetailItem
             title="ودیعه"
-            items={["100 میلیون", "200 میلیون", "300 میلیون"]}
+            items={[
+              "100,000,000 تا ",
+              "200,000,000 تا ",
+              "300,000,000 تا",
+              "400,000,000 تا",
+              "500,000,000 تا",
+              "600,000,000 تا",
+            ]}
             state={deposit}
             setState={setDeposit}
           />
         </>
       ) : (
         <>
+        <div className="homeBox_detailItem_item">
           <DetailItem
             title="ودیعه"
-            items={["100 میلیون", "200 میلیون", "300 میلیون"]}
+            items={[
+              "100,000,000 تا ",
+              "200,000,000 تا ",
+              "300,000,000 تا",
+              "400,000,000 تا",
+              "500,000,000 تا",
+              "600,000,000 تا",
+            ]}
             state={deposit}
             setState={setDeposit}
           />
+          
+        <hr className="homeBox_down_hr" />
+          </div>
           <DetailItem
             title="اجاره"
-            items={["5 میلیون", "10 میلیون", "15 میلیون"]}
+            items={[
+              "5,000,000",
+              "10,000,000",
+              "15,000,000",
+              "25,000,000",
+              "35,000,000",
+              "45,000,000",
+              "55,000,000",
+            ]}
             state={rent}
             setState={setRent}
           />
@@ -220,7 +282,13 @@ const DetailItem: React.FC<{
         }}
       >
         <p>{title}</p>
-        <FaChevronDown style={{rotate : isActive ? "180deg" : "0deg",transition : "0.2s ease-in-out"}} className="homeBox_detail_icon"  />
+        <FaChevronDown
+          style={{
+            rotate: isActive ? "180deg" : "0deg",
+            transition: "0.2s ease-in-out",
+          }}
+          className="homeBox_detail_icon"
+        />
         {isActive && (
           <div className="homeBox_dropdown_container">
             {items.map((item, index) => (
