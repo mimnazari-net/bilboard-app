@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function UserPageHeader() {
   return (
-    <div className="userPage_header">
-      <div className="userPage_header_rightside">
+    <div className="userPage_header col-12">
+      <div className="userPage_header_rightside col-3">
         <Image
           alt=""
           width={72}
@@ -19,7 +19,7 @@ export default function UserPageHeader() {
         زهرا آقایی <br />
         09201108238
       </div>
-      <div className="userPage_header_leftside">
+      <div className="userPage_header_leftside col-3">
         <p>جستجو</p>
         <LuSearch size={24}  />
         <hr className="userpage_header_hr"/>

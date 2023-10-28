@@ -1,0 +1,106 @@
+.submitinfo_container {
+  padding: 40px 75px 33px 76px;
+  display: flex;
+  width: 880px;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.submitinfo_upside {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.submitinfo_upside input {
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  width: 800px;
+  height: 48px;
+  padding: 10px;
+}
+.submitinfo_mid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.submitinfo_mid input {
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  width: 203px;
+  height: 48px;
+  padding: 10px;
+}
+.submitinfo_bottom input {
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  width: 800px;
+  height: 90px;
+  padding: 10 0 10 10px;
+}
+.submitinfo_btn {
+  color: #fff;
+  border-radius: 8px;
+  background: #023047;
+  display: flex;
+  padding: 8px 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.submitinfo_map {
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.submitinfo_map_texts {
+  display: flex;
+  justify-content: space-between;
+}
+.submitinfo_map_texts p {
+  color: #000;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+.submitinfo_map_pics {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.submitinfo_map_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+}
+.submitinfo_map_pics input {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px dashed black;
+  border-radius: 20px;
+  position: absolute;
+  right: 1%;
+  bottom: 20%;
+}
+input[type="file"]::file-selector-button {
+  visibility: hidden;
+
+
+}
+.submitinfo_map_pics div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.submitinfo_imgbg{background-color: white;}

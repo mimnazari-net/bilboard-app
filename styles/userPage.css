@@ -1,10 +1,8 @@
 .userpage_container {
   background: #023047;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
 .userpage_kol{display: flex;
-  gap:30px;
-}
+justify-content: space-evenly;}

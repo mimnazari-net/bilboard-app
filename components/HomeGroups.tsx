@@ -52,7 +52,7 @@ export default function HomeGroups() {
             >
               <Image
                 src={item.image}
-                alt="asicj"
+                alt=""
                 height={index === 0 ? 250 : 300}
                 width={220}
               />

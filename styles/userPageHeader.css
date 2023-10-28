@@ -1,7 +1,7 @@
 
 .userPage_header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 .userPage_header_leftside {
@@ -9,8 +9,6 @@
   align-items: center;
   direction: ltr;
   justify-content: space-between;
-  width: 200px;
-  margin-right: 500px;
   
 
 }
@@ -31,7 +29,6 @@
 .userPage_header_rightside {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: space-around;
 
 }
