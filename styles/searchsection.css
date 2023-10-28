@@ -1,53 +1,58 @@
-.searchsection_container{
-    display: flex;
-padding: 173px 379px 24px 378px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 8px;
-
+.searchsection_container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.searchsection_hr{
-width: 100vw;
-margin: 0px;
-height: 7px;
-border: none;
-background: rgb(250,249,251);
-background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(2,48,71,1) 50%, rgba(250,249,247,1) 100%);
-
+.searchsection_hr {
+  margin: 0px;
+  height: 7px;
+  border: none;
+  background: rgb(250, 249, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 249, 251, 1) 0%,
+    rgba(2, 48, 71, 1) 50%,
+    rgba(250, 249, 247, 1) 100%
+  );
 }
-.searchsection_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.searchsection_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.searchsection_container h1{
-    color: #1E1E1E;
-text-align: center;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.searchsection_container h1 {
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.searchsection_container p{
-    color: #1E1E1E;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.searchsection_container p {
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
 }
-.searchsection_container button{
-    display: inline-flex;
-padding: 16px;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-background: #023047;
-color: #FFF;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.searchsection_container button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #023047;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
 }

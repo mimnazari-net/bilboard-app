@@ -4,5 +4,7 @@
   display: flex;
   justify-content: center;
 }
-.userpage_kol{display: flex;
-justify-content: space-evenly;}
+.userpage_kol {
+  display: flex;
+  gap: 30px;
+}
