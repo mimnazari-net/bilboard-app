@@ -10,6 +10,58 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.forush_kol_filter {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.forush_kol_filter_item {
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid #219ebc 1px;
+  border-radius: 8px;
+  color: #292d32;
+  padding: 10px;
+}
+.forush_kol_filter_item_search_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forush_kol_filter_item_search {
+  position: absolute;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid #219ebc 1px;
+  border-radius: 8px;
+  color: #292d32;
+  padding: 10px;
+  padding-right: 40px;
+}
+
+.forush_kol_filter_item_search_icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bi-orange);
+  color: white;
+  border-radius: 5px;
+  right: 5px;
+}
+
 .forush_box {
   height: 330px;
   display: flex;
@@ -28,6 +80,7 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .forush_texts p {
   margin-bottom: 0;
   color: #292d32;
@@ -139,4 +192,10 @@
 .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
   background-color: white;
   color: var(--bi-navy);
+}
+
+.forush_detail_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,6 +1,7 @@
 "use client";
 // import icon
 import { FaChevronDown } from "react-icons/fa";
+import { RiSearch2Line } from "react-icons/ri";
 
 // import css
 import "../../styles/homeSection.css";
@@ -182,12 +183,14 @@ const DetailsBox: React.FC<{
           <DetailItem
             title="قیمت"
             items={[
-              "500,000,000 تا ",
-              "1,00,000,000 تا ",
-              "2,500,000,000 تا",
-              "3,000,000,000 تا",
-              "5,000,000,000 تا",
-              "10,000,000,000 تا",
+              "تا 1,000,000,000  ",
+              "تا 2,000,000,000  ",
+              "تا 5,000,000,000  ",
+              "تا 7,000,000,000  ",
+              "تا 10,000,000,000  ",
+              "تا 15,000,000,000  ",
+              "تا 20,000,000,000  ",
+              "تا 30,000,000,000  ",
             ]}
             state={price}
             setState={setPrice}
