@@ -20,7 +20,6 @@ export default function Home() {
       <HousesSection/>
       <Newest />
       <Consultants />
-      {/* <Advertising/> */}
       <Footer />
     </div>
   );
