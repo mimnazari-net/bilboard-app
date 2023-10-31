@@ -7,8 +7,7 @@ import HomeGroups from "./components/HomeGroups";
 import HousesSection from "./components/housesSection";
 import Consultants from "./components/consultants";
 import Newest from "./components/newset";
-import Advertising from "./components/advertising";
-
+import categortNavbar from "./components/categoryNavbar"
 
 export default function Home() {
 

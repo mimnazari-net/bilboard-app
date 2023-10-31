@@ -8,7 +8,6 @@ export default function SearchPage() {
   return (
     <div>
       <Navbar />
-      <CategoryNavbar />
       <AdvertisingSection />
       <SearchSection />
       <Footer />
