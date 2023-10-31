@@ -29,268 +29,372 @@ export default function AdvertisingSection() {
   const sells = [
     {
       image: "/image/forushx1.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 447250000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 15000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 315,
+      age: 5,
     },
     {
       image: "/image/forushx2.png",
-      text: "آپارتمان 400 متری فرمانیه",
+      type: "آپارتمان",
       loc: "فرمانیه",
-      price: " 47,250,000,000",
+      price: 447250000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 100000000,
       city: "تهران",
       street: "فرمانیه",
-      metrage: "400",
+      metrage: 800,
+      age: 5,
     },
     {
       image: "/image/forushx3.png",
-      text: "آپارتمان 600 متری شهرک غرب",
-      loc: "میدان کاج",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "شهرک غرب",
+      price: 247250000000,
       bed: "6",
       bath: "4",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 12000000,
       city: "تهران",
       street: "کاج",
-      metrage: "600",
+      metrage: 600,
+      age: 5,
     },
     {
       image: "/image/forushx4.png",
-      text: "آپارتمان 250 متری جنت آباد",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 127250000000,
       bed: "3",
       bath: "2",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 130000000,
       city: "تهران",
       street: "جنت آباد شمالی",
-      metrage: "250",
+      metrage: 360,
+      age: 4,
     },
     {
       image: "/image/forush.png",
-      text: "آپارتمان 150 متری تهرانپارس",
-      loc: "شمال کاخ نیاوران",
-      price: " 4,000,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 4000000000,
+      bed: "1",
       bath: "3",
-      eachm: "قیمت هر متر : 15,000,000",
+      eachm: 21000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "150",
+      metrage: 620,
+      age: 2,
     },
     {
       image: "/image/forush2.png",
-      text: "ویلایی 700 متری شهرک غرب",
-      loc: "شمال کاخ نیاوران",
-      price: " 50,000,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 50000000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 50000000,
       city: "تهران",
       street: "خورودین",
-      metrage: "700",
+      metrage: 700,
+      age: 10,
     },
     {
       image: "/image/forush3.png",
-      text: "آپارتمان 100 متری میردادماد",
+      type: "آپارتمان",
       loc: "میردادماد",
-      price: " 47,250,000,000",
-      bed: "2",
+      price: 47250000000,
+      bed: "1",
       bath: "1",
-      eachm: "قیمت هر متر : 19,000,000",
+      eachm: 19000000,
       city: "تهران",
       street: "میردادماد",
-      metrage: "100",
+      metrage: 100,
+      age: 15,
     },
     {
       image: "/image/forush4.png",
-      text: "آپارتمان 260 متری ونک",
+      type: "آپارتمان",
       loc: "ونک",
-      price: "90,250,000,000",
+      price: 90250000000,
       bed: "2",
       bath: "2",
-      eachm: "قیمت هر متر : 20,000,000",
+      eachm: 30000000,
       city: "تهران",
       street: "ونک",
-      metrage: "260",
+      metrage: 260,
+      age: 9,
     },
     {
       image: "/image/forush.png",
-      text: "آپارتمان 240 متری صادقیه",
+      type: "آپارتمان",
       loc: "صادقیه",
-      price: "30,250,000,000",
+      price: 30250000000,
       bed: "2",
       bath: "1",
-      eachm: "قیمت هر متر : 130,000,000",
+      eachm: 17000000,
       city: "تهران",
       street: "صادقیه",
-      metrage: "240",
+      metrage: 530,
+      age: 0,
     },
     {
       image: "/image/forush2.png",
-      text: "آپارتمان 180 متری نارمک",
+      type: "آپارتمان",
       loc: "نارمک",
-      price: " 47,250,000,000",
+      price: 97250000000,
       bed: "2",
       bath: "1",
-      eachm: "قیمت هر متر : 15,000,000",
+      eachm: 16000000,
       city: "تهران",
       street: "نارمک",
-      metrage: "180",
+      metrage: 180,
+      age: 0,
     },
     {
       image: "/image/forush3.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 87250000000,
+      bed: "3",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 53000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 560,
+      age: 14,
     },
     {
       image: "/image/forush4.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 257250000000,
+      bed: "3",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 18000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 430,
+      age: 7,
     },
     {
       image: "/image/forush.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 100250000000,
+      bed: "4",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 41000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 230,
+      age: 16,
     },
     {
       image: "/image/forush2.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 467250000000,
+      bed: "4",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 250000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 360,
+      age: 25,
     },
     {
       image: "/image/forush3.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 537250000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 35000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 300,
+      age: 0,
     },
     {
       image: "/image/forush4.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 427250000000,
+      bed: "3",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 190000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 170,
+      age: 1,
     },
     {
       image: "/image/forush.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 477250000000,
+      bed: "3",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 25000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 65,
+      age: 8,
     },
     {
       image: "/image/forush2.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 479250000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 34000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 450,
+      age: 12,
     },
     {
       image: "/image/forush3.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
-      bed: "5",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 476250000000,
+      bed: "4",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 360000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 250,
+      age: 19,
     },
     {
       image: "/image/forush4.png",
-      text: "آپارتمان 315 متری نیاوران",
-      loc: "شمال کاخ نیاوران",
-      price: " 47,250,000,000",
+      type: "آپارتمان",
+      loc: "نیاوران",
+      price: 457250000000,
       bed: "5",
       bath: "3",
-      eachm: "قیمت هر متر : 150,000,000",
+      eachm: 290000000,
       city: "تهران",
       street: "نیاوران",
-      metrage: "315",
+      metrage: 200,
+      age: 30,
     },
   ];
 
-  const [filteredSells, setFilteredSells] = useState(sells);
   const [searchItem, setSearchItem] = useState("");
+
   const [sortMetrage, setSortMetrage] = useState("");
   const [sortPrice, setSortPrice] = useState("");
   const [filterBed, setFilterBed] = useState("");
   const [filterAge, setFilterAge] = useState("");
+
+  const [tmp, setTmp] = useState(sells);
 
   type InputEvent = React.ChangeEvent<HTMLInputElement>;
 
   const handleChangeSearch = (e: InputEvent) => {
     const searchTerm = e.target.value;
     setSearchItem(searchTerm);
-
-    const filteredItems = sells.filter((item) =>
-      item.text.includes(searchItem)
-    );
-    setFilteredSells(filteredItems);
   };
 
-  
+  useEffect(() => {
+    // search
+    if (searchItem !== "") {
+      const filteredItems = sells.filter((item) =>
+        item.loc.includes(searchItem)
+      );
+      setTmp(filteredItems);
+    } else setTmp(sells);
 
-  let arrayMap = searchItem === "" ? sells : filteredSells;
+    let a = [...tmp];
+
+    // sort by price
+    if (sortPrice === "ارزانترین") {
+      a.sort((a, b) => (a.price > b.price ? 1 : -1));
+      setTmp(a);
+    } else if (sortPrice === "گرانترین") {
+      a.sort((a, b) => (a.price > b.price ? -1 : 1));
+      setTmp(a);
+    }
+
+    // sort by metrage
+    if (sortMetrage === "کوچکترین") {
+      a.sort((a, b) => (a.metrage > b.metrage ? 1 : -1));
+      setTmp(a);
+    } else if (sortMetrage === "بزرگترین") {
+      a.sort((a, b) => (a.metrage > b.metrage ? -1 : 1));
+      setTmp(a);
+    }
+    // filter bedRoom
+    if (filterBed !== "") {
+      a = [...sells];
+      let c = a.filter((items) => items.bed === filterBed);
+      setTmp(c);
+    }
+
+    // filter age
+    switch (filterAge) {
+      case "نوساز": {
+        a = [...sells];
+        let c = a.filter((items) => items.age <= 3);
+        setTmp(c);
+        break;
+      }
+
+      case "نوساز": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 3 && items.age <= 6);
+        setTmp(c);
+        break;
+      }
+
+      case "+3": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 6 && items.age <= 9);
+        setTmp(c);
+        break;
+      }
+
+      case "+9": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 9 && items.age <= 12);
+        setTmp(c);
+        break;
+      }
+
+      case "+12": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 12 && items.age <= 15);
+        setTmp(c);
+        break;
+      }
+
+      case "15": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 15 && items.age <= 20);
+        setTmp(c);
+        break;
+      }
+
+      case "+20": {
+        a = [...sells];
+        let c = a.filter((items) => items.age > 20);
+        setTmp(c);
+        break;
+      }
+
+      default:
+        break;
+    }
+  }, [sortMetrage, searchItem, sortPrice, filterBed, filterAge]);
   return (
     <div className="forush_container col-12">
       <div className="forush_kol col-10">
@@ -312,7 +416,7 @@ export default function AdvertisingSection() {
             />
           </div>
           <div className="forush_kol_filter_item col-1 ">
-             <DropDown
+            <DropDown
               title="اتاق"
               items={["1", "2", "3", "4", "5", "6"]}
               state={filterBed}
@@ -320,11 +424,11 @@ export default function AdvertisingSection() {
             />
           </div>
           <div className="forush_kol_filter_item ">
-          <DropDown
+            <DropDown
               title="سال ساخت"
-              items={["نوساز","+3", "+6", "+9", "+12", "+15", "+20"]}
+              items={["نوساز", "+3", "+6", "+9", "+12", "+15", "+20"]}
               state={filterAge}
-              setState={setFilterAge }
+              setState={setFilterAge}
             />
           </div>
           <div className="forush_kol_filter_item_search_content col-6">
@@ -340,49 +444,55 @@ export default function AdvertisingSection() {
             </div>
           </div>
         </div>
-        {arrayMap
-          .map((item, index) => {
-            return (
-              <div key={index} className="forush_box col-25">
-                <Image alt="" width={270} height={150} src={item.image}></Image>
-                <div className="forush_texts_content col-11">
-                  <div className="forush_texts">
-                    <p>{item.text}</p>
+        {tmp.map((item, index) => {
+          return (
+            <div key={index} className="forush_box col-25">
+              <Image alt="" width={270} height={150} src={item.image}></Image>
+              <div className="forush_texts_content col-11">
+                <div className="forush_texts">
+                  <p>{item.type}</p>
+                  <p> {item.metrage}متری </p>
+                  <p>{item.loc} </p>
+                </div>
+                <div className="forush_loc col-6">
+                  <HiOutlineLocationMarker
+                    style={{ marginLeft: "5px" }}
+                    size={"16px"}
+                    color={"#292D32"}
+                  />
+                  <p>{item.street}</p>
+                </div>
+                <div className="forush_price_kol col-12">
+                  <div className="forush_price">
+                    <p>قیمت : </p>
+                    {item.eachm * item.metrage}
                   </div>
-                  <div className="forush_loc col-6">
-                    <HiOutlineLocationMarker size={"16px"} color={"#292D32"} />
-                    <p>{item.loc}</p>
-                  </div>
-                  <div className="forush_price_kol col-12">
-                    <div className="forush_price">
-                      <p>قیمت : </p>
-                      {item.price}
+                  <div className="forush_icons col-3">
+                    <div className="forush_rooms">
+                      <IoBed size={"9px"} /> {item.bed}
                     </div>
-                    <div className="forush_icons col-3">
-                      <div className="forush_rooms">
-                        <IoBed size={"9px"} /> {item.bed}
-                      </div>
-                      <div className="forush_bath">
-                        <FaBath size={"9px"} /> {item.bath}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="forush_price_down col-12">
-                    <div className="forush_price col-8">
-                      <p>{item.eachm} </p>
-                    </div>
-                    <div className="forush_mahal col-5">
-                      <div className="forush_city">{item.city}</div>
-                      <div className="forush_street">{item.street} </div>
+                    <div className="forush_bath">
+                      <FaBath size={"9px"} /> {item.bath}
                     </div>
                   </div>
                 </div>
+                <div className="forush_price_down col-12">
+                  <div className="forush_price_each col-8">
+                    <p> {item.eachm} </p>
+                    <p> قیمت هر متر: </p>
+                  </div>
+                  <div className="forush_mahal col-5">
+                    <div className="forush_city">{item.city}</div>
+                    <div className="forush_street">{item.loc} </div>
+                  </div>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          );
+        })}
       </div>
       <div className="forush_pagination">
-        <Pagination count={sells.length / 16} shape="rounded" />
+        <Pagination count={sells.length / 12} shape="rounded" />
       </div>
     </div>
   );

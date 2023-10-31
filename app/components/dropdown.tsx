@@ -48,7 +48,7 @@ export default function DropDown({ title, items, state, setState }: dropdown) {
         />
         {isActive && (
           <div className="dropdown_dropdown_container">
-            {items.map((item, index) => (
+            {items.map((item , index) => (
               <div
                 key={index}
                 className="dropdown_dropdown_items"

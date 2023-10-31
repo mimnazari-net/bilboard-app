@@ -144,7 +144,7 @@ export default function Advertising() {
       street: "نیاوران",
     },
   ];
-
+ 
   const [swiperRef, setSwiperRef] = useState<any>(null);
 
   return (
@@ -295,8 +295,6 @@ export default function Advertising() {
               </SwiperSlide>);
                 })
               }
-              
-              
             </Swiper>
           </div>
         </div>
