@@ -94,13 +94,22 @@
 }
 input[type="file"]::file-selector-button {
   visibility: hidden;
-
-
 }
-.submitinfo_map_pics div{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.submitinfo_map_pics div {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.submitinfo_imgbg{background-color: white;}
+.submitinfo_imgbg {
+  background-color: white;
+}
+.submitinfo_dropdowns {
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  width: 203px;
+  height: 48px;
+  padding: 10px;
+  color: #585858;
+  font-size: 14px;
+}

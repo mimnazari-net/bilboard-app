@@ -8,19 +8,15 @@ import HousesSection from "./components/housesSection";
 import Consultants from "./components/consultants";
 import Newest from "./components/newset";
 import Advertising from "./components/advertising";
+import SubmitInfo from "./components/submitInfo";
+import UserPage from "./pages/dashboard/page";
 
 
 export default function Home() {
 
   return (
     <div>
-      <Navbar />
-      <HomeSection/>
-      <HomeGroups/>
-      <HousesSection/>
-      <Newest />
-      <Consultants />
-      <Footer />
+     <UserPage/>
     </div>
   );
 }

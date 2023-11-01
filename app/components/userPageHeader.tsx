@@ -10,12 +10,13 @@ export default function UserPageHeader() {
   return (
     <div className="userPage_header col-12">
       <div className="userPage_header_rightside col-3">
-        <Image
+        <div className="col-8"> <Image
           alt=""
           width={72}
           height={72}
           src={"/image/Frame162.png"}
-        ></Image>
+        ></Image></div>
+       
         زهرا آقایی <br />
         09201108238
       </div>

@@ -1,18 +1,12 @@
 "use client";
 import { useState, ChangeEvent } from "react";
-import "../styles/submitInfo.css";
+import "../../styles/submitInfo.css";
 import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import FormHelperText from '@mui/material/FormHelperText';
-import { Theme, useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
+import DropDown from "./dropdown";
 
 
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 export default function SubmitInfo() {
   const [file, setFile] = useState<any>("");
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -21,46 +15,13 @@ export default function SubmitInfo() {
     }
   };
   const [input, setInput] = useState<string>("");
+  const [dastebandi,setDastebandi] = useState("");
+  const[noemelk,setNoemelk]=useState("")
+const[city , setCity]=useState("")
+const[monaseb,setMonaseb]=useState("")
 
 
-  const theme = useTheme();
-  const [personName, setPersonName] = useState<string[]>([]);
-
-  const handleChange = (event: SelectChangeEvent<typeof personName>) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === 'string' 
-      ? value.split(',') : value,
-    
-    );
-  };
-  const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-  const MenuProps = {
-    PaperProps: {
-      style: {
-        maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-        width: 100,
-      },
-    },
-  };
-  const names = [
-  'خرید',
-  'فروش',
-  'اجاره',
   
-];
-function getStyles(name: string, personName: readonly string[], theme: Theme) {
-  return {
-    fontWeight:
-      personName.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
   return (
     <div className="submitinfo_container col-10">
       <div className="col-11">
@@ -68,7 +29,7 @@ function getStyles(name: string, personName: readonly string[], theme: Theme) {
       </div>
       <div className="submitinfo_upside col-12">
         <p>عنوان آگهی</p>
-    
+
         <input
           type="text"
           placeholder="عنوان آگهی خود را بنویسید."
@@ -80,20 +41,23 @@ function getStyles(name: string, personName: readonly string[], theme: Theme) {
       <div className="submitinfo_mid col-12">
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب دسته بندی </p>
-          
-          
-
-          <input
+          <div className="submitinfo_dropdowns">  <DropDown
+              title="خرید، فروش، اجاره"
+              items={["خرید", "فروش","اجاره"]}
+              state={dastebandi}
+              setState={setDastebandi}
+            /></div>
+          {/* <input
             type="text"
             placeholder="خرید، فروش، اجاره"
             onChange={(e) => {
               setInput(e.target.value);
             }}
-          ></input>
+          ></input> */}
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>متراژ</p>
- 
+
           <input
             type="text"
             placeholder="0 - 3000 متر"
@@ -115,13 +79,19 @@ function getStyles(name: string, personName: readonly string[], theme: Theme) {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب نوع ملک</p>
-          <input
+          <div className="submitinfo_dropdowns">  <DropDown
+              title="آپارتمان، ویلا، اداری و..."
+              items={["اداری", "ویلا","آپارتمان","زمین","کلنگی","ملک تجاری","مغازه","مجتمع مسکونی","باغ"]}
+              state={noemelk}
+              setState={setNoemelk}
+            /></div>
+          {/* <input
             type="text"
             placeholder="آپارتمان، ویلا، اداری و..."
             onChange={(e) => {
               setInput(e.target.value);
             }}
-          ></input>
+          ></input> */}
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>سال ساخت</p>
@@ -145,14 +115,19 @@ function getStyles(name: string, personName: readonly string[], theme: Theme) {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>شهر</p>
-
-          <input
+          <div className="submitinfo_dropdowns">  <DropDown
+              title="شهر خود را انتخاب کنید."
+              items={["تهران", "همدان","کرج","اصفهان","شیراز","اهواز","مشهد","یزد","ساری"]}
+              state={city}
+              setState={setCity}
+            /></div>
+          {/* <input
             type="text"
             placeholder="شهر خود را انتخاب کنید."
             onChange={(e) => {
               setInput(e.target.value);
             }}
-          ></input>
+          ></input> */}
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>ودیعه</p>
@@ -166,13 +141,19 @@ function getStyles(name: string, personName: readonly string[], theme: Theme) {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>مناسب برای</p>
-          <input
+          <div className="submitinfo_dropdowns">  <DropDown
+              title="خانواده - مجرد"
+              items={["خانواده", "مجرد"]}
+              state={monaseb}
+              setState={setMonaseb}
+            /></div>
+          {/* <input
             type="text"
             placeholder="خانواده - مجرد"
             onChange={(e) => {
               setInput(e.target.value);
             }}
-          ></input>
+          ></input> */}
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>محدوده آگهی</p>
