@@ -17,13 +17,13 @@
   justify-content: space-between;
 }
 
-.ertificationCode_right_inputs {
+.vertificationCode_right_inputs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.ertificationCode_right_inputs input{
+.vertificationCode_right_inputs input{
     text-align: center;
     width: 50px;
     height: 40px;
@@ -40,7 +40,7 @@
   display: flex;
 }
 
-.vertificationCode_right_side button {
+.vertificationCode_btn {
   height: 40px;
   background: var(--bi-navy);
   border: none;
@@ -57,4 +57,8 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 619px;
+}
+
+.css-1hdyuqk-MuiPaper-root-MuiAlert-root{
+  direction: ltr;
 }
