@@ -1,0 +1,70 @@
+.UserAccount_container {
+  height: 503px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+}
+.UserAccount_content{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.UserAccount_inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.UserAccount_profile {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.UserAccount_rightside_inputs {
+  display: flex;
+  flex-direction: column;
+}
+.UserAccount_rightside_inputs input {
+  width: 90%;
+  height: 48px;
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  padding-right: 10px;
+}
+.UserAccount_rightside_inputs p {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.UserAccount_leftside_inputs {
+  display: flex;
+  flex-direction: column;
+}
+.UserAccount_leftside_inputs input {
+  width: 90%;
+  height: 48px;
+  border-radius: 8px;
+  border: 0.5px solid #585858;
+  color: #929292;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-right: 10px;
+}
+.UserAccount_leftside_inputs p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

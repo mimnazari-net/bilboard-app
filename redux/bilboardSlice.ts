@@ -14,8 +14,8 @@ interface initialState_type {
 const initialState: initialState_type = {
   arrUsers: [],
   user: {
-    userName: "",
-    phoneNumber: "",
+    userName: "amin nazari",
+    phoneNumber: "09123223233",
   },
 };
 

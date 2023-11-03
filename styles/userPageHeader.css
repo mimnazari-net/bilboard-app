@@ -1,34 +1,47 @@
-
 .userPage_header {
   display: flex;
   justify-content: space-between;
-
 }
 .userPage_header_leftside {
   display: flex;
   align-items: center;
   direction: ltr;
   justify-content: space-between;
-  
-
 }
+
+.userpage_header_link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .userPage_header_leftside p {
   color: #292d32;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   position: relative;
-  right: 5%;
 }
 .userpage_header_hr {
   height: 42px;
-  width: 0px;
+  width: 2px;
   background: rgba(30, 77, 101, 0.2);
+  border: none;
 }
 .userPage_header_rightside {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: space-between;
+}
+.userPage_header_rightside_text {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userPage_header_rightside_text p {
+  margin: 0;
 }
