@@ -5,12 +5,16 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Alert from "@mui/material/Alert";
+import { addUser, fillUserAccount, userType } from "../../../redux/bilboardSlice";
+import { useDispatch  } from "react-redux";
 
 export default function Register() {
   const router = useRouter();
+
+  const dispatch = useDispatch();
+
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [username, setUsername] = useState<string>("");
-  // const [agree, setAgree] = useState<boolean>(false);
   let agre: boolean = false;
   // alerts
   const [showUserAlert, setShowUserAlert] = useState(false);
@@ -45,9 +49,14 @@ export default function Register() {
     }
   };
 
+  let userObj: userType = {
+    userName: username,
+    phoneNumber: phoneNumber,
+  };
+
   return (
     <div className="register_container col-12">
-      <div className="register_right_side col-5">
+      <div className="register_right_side col-6">
         {showUserAlert && (
           <Alert
             severity="error"
@@ -129,6 +138,8 @@ export default function Register() {
               }
 
               if (username !== "" && result && agre) {
+                dispatch(fillUserAccount(userObj));
+                dispatch(addUser(userObj));
                 router.replace("/pages/vertifycode");
               }
             }}
@@ -137,7 +148,7 @@ export default function Register() {
           </button>
         </div>
       </div>
-      <div className="register_left_side col-7"></div>
+      <div className="register_left_side col-6"></div>
     </div>
   );
 }
