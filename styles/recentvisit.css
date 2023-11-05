@@ -1,5 +1,5 @@
 .recentvisit_container {
-  /* height: 503px; */
+  height: 550px;
   border-radius: 8px;
   background: #fff;
   display: flex;
@@ -16,6 +16,10 @@
 }
 .recentvisit_map {
   height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   overflow-y: visible;
   overflow-x: hidden;
 }
@@ -28,8 +32,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
 }
 .recentvisit_item h1 {
   color: #000;
@@ -52,4 +55,23 @@
   font-size: 10px;
   height: 40px;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bi-orange) ;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bi-orange) ;
 }

@@ -69,7 +69,7 @@ export default function Recentvisits() {
                 <Image alt="" width={50} height={40} src={item.image}></Image>
                 <h1>{item.text}</h1>
                 <p> {item.price}</p>
-                <button>{item.btn} </button>
+                <button className="col-2">{item.btn} </button>
               </div>
             );
           })}
