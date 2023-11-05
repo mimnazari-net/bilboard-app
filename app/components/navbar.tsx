@@ -9,17 +9,21 @@ import { PiUserCircle } from "react-icons/pi";
 
 import CategoryNavbar from "./categoryNavbar";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 export default function Navbar() {
+  const isLoginUser: boolean = useSelector(
+    (state: RootState) => state.bilboardSlice.user.isLogin
+  );
+
+  const userInfo = useSelector((state: RootState) => state.bilboardSlice.user);
+
   const [isHovering, setIsHovering] = useState(false);
+  const [isLogin, setIsLogin] = useState(isLoginUser);
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
 
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+  console.log(isLoginUser);
 
   return (
     <div className="navbar_container clo-12">
@@ -66,13 +70,23 @@ export default function Navbar() {
             <p>افزودن ملک</p>
           </div>
           <hr />
+
           <div className="navbar_left_user col-4">
             <PiUserCircle style={{ fontSize: "25px" }} />
-            <span>ورود</span>
-            <p>|</p>
-            <Link className="navbar_link" href={"/pages/register"}>
-              <span>عضویت</span>
+
+            {isLoginUser ? (
+              <Link className="navbar_link" href={"/pages/dashboard"}>
+              <span> {userInfo.userName} </span>
             </Link>
+            ) : (
+              <div  className="navbar_left_user col-12" >
+                <span>ورود</span>
+                <p>|</p>
+                <Link className="navbar_link" href={"/pages/register"}>
+                  <span>عضویت </span>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -5,12 +5,17 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Alert from "@mui/material/Alert";
-import { addUser, fillUserAccount, userType } from "../../../redux/bilboardSlice";
-import { useDispatch  } from "react-redux";
+import {
+  addUser,
+  fillUserAccount,
+  userType,
+} from "../../../redux/bilboardSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 
 export default function Register() {
   const router = useRouter();
-
+ 
   const dispatch = useDispatch();
 
   const [phoneNumber, setPhoneNumber] = useState<string>("");
@@ -52,6 +57,7 @@ export default function Register() {
   let userObj: userType = {
     userName: username,
     phoneNumber: phoneNumber,
+    isLogin: false,
   };
 
   return (

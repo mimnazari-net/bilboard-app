@@ -1,15 +1,9 @@
 "use client";
 import { useState, ChangeEvent } from "react";
-import "../styles/submitInfo.css";
+import "../../styles/submitInfo.css";
 import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import FormHelperText from '@mui/material/FormHelperText';
 import { Theme, useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
 
 
 import Select, { SelectChangeEvent } from '@mui/material/Select';

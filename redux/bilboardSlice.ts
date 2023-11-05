@@ -1,22 +1,26 @@
-"use client"
+"use client";
 import { createSlice } from "@reduxjs/toolkit";
 
 export interface userType {
   userName: string;
   phoneNumber: string;
+  isLogin: boolean;
 }
 
 interface initialState_type {
   arrUsers: userType[];
   user: userType;
+  selectedComp: string;
 }
 
 const initialState: initialState_type = {
   arrUsers: [],
   user: {
-    userName: "amin nazari",
-    phoneNumber: "09123223233",
+    userName: "",
+    phoneNumber: "",
+    isLogin: false,
   },
+  selectedComp: "",
 };
 
 const bilboardSlice = createSlice({
@@ -40,9 +44,13 @@ const bilboardSlice = createSlice({
       }
     },
     fillUserAccount: (state, { payload }: { payload: userType }) => {
-        state.user.userName = payload.userName;
-        state.user.phoneNumber = payload.phoneNumber;
+      state.user.userName = payload.userName;
+      state.user.phoneNumber = payload.phoneNumber;
+      state.user.isLogin = true;
     },
+    showComponents :(state , { payload }: { payload: string })=>{
+      state.selectedComp = payload;
+    }
     //   addTrasaction: (state, { payload }: { payload: tarakoneshType }) => {
     //     let tmp = [...state.arrTrasaction];
     //     tmp.push(payload);
@@ -72,5 +80,5 @@ const bilboardSlice = createSlice({
   },
 });
 
-export const { addUser , fillUserAccount } = bilboardSlice.actions;
+export const { addUser, fillUserAccount ,showComponents } = bilboardSlice.actions;
 export default bilboardSlice.reducer;
