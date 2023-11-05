@@ -10,27 +10,29 @@
   border-radius: 8px;
   background: #fff;
 }
-.userpagebox_link_col {
+.userpagebox_button_col {
   display: flex;
   align-items: center;
   width: 200px;
   cursor: pointer;
 }
-.userpagebox_link {
+.userpagebox_button {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   position: relative;
   right: 5%;
+  background-color: white;
+  border: none;
 }
 hr {
   width: 245px;
   height: 0px;
 }
-.userpagebox_link_col:hover {
+.userpagebox_button_col:hover {
   color: #fb8500;
 }
-.userpagebox_link_col:hover .userpagebox_link {
+.userpagebox_button_col:hover .userpagebox_button {
   color: #fb8500;
 }

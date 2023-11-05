@@ -10,12 +10,14 @@ import Newest from "./components/newset";
 import Advertising from "./components/advertising";
 import SubmitInfo from "./components/submitInfo";
 import UserPage from "./pages/dashboard/page";
+import SearchPage from "./pages/advertisments/page";
 
 
 export default function Home() {
 
   return (
     <div>
+{/* <SearchPage/> */}
      <UserPage/>
     </div>
   );
