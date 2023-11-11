@@ -1,6 +1,7 @@
 "use client";
 import { useState, ChangeEvent } from "react";
 import "../../styles/submitInfo.css";
+import "../../styles/submitInfo.css";
 import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
 import DropDown from "./dropdown";

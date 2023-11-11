@@ -1,51 +1,77 @@
 .recentvisit_container {
-  display: inline-flex;
-  padding: 40px 75px 31px 76px;
+  height: 550px;
   border-radius: 8px;
   background: #fff;
- overflow: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.recentvisit_content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.recentvisit_map {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
-.recentvisit_map {
-  display: flex;
-  width: 800;
-  height: 75px;
+.recentvisit_item {
+  height: 50px;
   border-radius: 8px;
   border: 1px solid #585858;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 115px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
-.recentvisit_map h1 {
-  color: #000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.recentvisit_map p {
+.recentvisit_item h1 {
   color: #000;
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
 }
-.recentvisit_map button{
-    display: flex;
-padding: 12px 16px;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-background: #023047;
-color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 120px;
-height: 60px;
+.recentvisit_item p {
+  color: #000;
+  font-size: 12px;
+}
+.recentvisit_item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #023047;
+  color: #fff;
+  font-size: 10px;
+  height: 40px;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bi-orange) ;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bi-orange) ;
 }

@@ -1,9 +1,10 @@
 //import css
+import Link from "next/link";
 import "../../styles/categoryNavbar.css";
 //import image
 import Image from "next/image";
 
-export default function Category() {
+export default function CategoryNavbar() {
   //data
   const homes = [
     { image: "/image/homeGroupNav/garden-icon.png", text: "باغ" },
@@ -22,14 +23,18 @@ export default function Category() {
       <div className="category_img col-10">
         {homes.map((item, index) => {
           return (
-            <div key={index} className="category_map">
-              <Image
-                alt="homes"
-                width={32}
-                height={32}
-                src={item.image}
-              ></Image>
-              <p>{item.text}</p>
+            <div key={index}>
+              <Link 
+              className="category_map_link"
+              href={"/pages/advertisments"}>
+                <Image
+                  alt="homes"
+                  width={32}
+                  height={32}
+                  src={item.image}
+                ></Image>
+                <p>{item.text}</p>
+              </Link>
             </div>
           );
         })}

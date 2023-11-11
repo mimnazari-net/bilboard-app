@@ -2,16 +2,42 @@
 import "../../../styles/register.css";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlinePhone } from "react-icons/ai";
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Alert from "@mui/material/Alert";
+import {
+  addUser,
+  fillUserAccount,
+  userType,
+} from "../../../redux/bilboardSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 
 export default function Register() {
+  const router = useRouter();
+ 
+  const dispatch = useDispatch();
+
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [username, setUsername] = useState<string>("");
-  const [agree, setAgree] = useState<boolean>(false);
+  let agre: boolean = false;
+  // alerts
+  const [showUserAlert, setShowUserAlert] = useState(false);
+  const [showPhoneAlert, setShowPhoneAlert] = useState(false);
+  const [showNullPhoneAlert, setShowNullPhoneAlert] = useState(false);
 
-  const router = useRouter();
+  const handleCloseUserAlert = () => {
+    setShowUserAlert(false);
+  };
+
+  const handleClosePhoneAlert = () => {
+    setShowPhoneAlert(false);
+  };
+
+  const handleCloseNullPhoneAlert = () => {
+    setShowNullPhoneAlert(false);
+  };
+
   type InputEvent = React.ChangeEvent<HTMLInputElement>;
 
   const handleChangePhoneNumber = (e: InputEvent) => {
@@ -28,13 +54,39 @@ export default function Register() {
     }
   };
 
-  const handleChangeAgreeRules = (e: InputEvent) => {
-    const checked = e.target.checked;
+  let userObj: userType = {
+    userName: username,
+    phoneNumber: phoneNumber,
+    isLogin: false,
   };
 
   return (
     <div className="register_container col-12">
-      <div className="register_right_side col-5">
+      <div className="register_right_side col-6">
+        {showUserAlert && (
+          <Alert
+            severity="error"
+            onClose={handleCloseUserAlert}
+            style={{ marginBottom: "10px" }}
+          >
+            لطفا نام کاربری خود را وارد نمایید
+          </Alert>
+        )}
+        {showNullPhoneAlert && (
+          <Alert
+            severity="error"
+            onClose={handleCloseNullPhoneAlert}
+            style={{ marginBottom: "10px" }}
+          >
+            لطفا شماره تماس خود را وارد نمایید
+          </Alert>
+        )}
+        {showPhoneAlert && (
+          <Alert severity="warning" onClose={handleClosePhoneAlert}>
+            لطفا شماره تماس خود را صحیح وارد نمایید
+          </Alert>
+        )}
+
         <div className="register_right_side_container col-6">
           <p className="register_right_side_title">خوش آمدید!</p>
 
@@ -68,25 +120,41 @@ export default function Register() {
             <input
               type="checkbox"
               name="agreement"
-              onChange={handleChangeAgreeRules}
+              onChange={(e) => {
+                agre = e.target.checked;
+              }}
             />
             <p>تمامی ضوابط و قوانین را می پذیرم.</p>
           </div>
 
           <button
-            disabled={agree}
             className="register_btn col-12"
             onClick={() => {
-              // if (username !== "" && phoneNumber !== "" && agree === false) {
+              var regex = new RegExp("^(0)?9\\d{9}$");
+              var result = regex.test(phoneNumber);
+              if (phoneNumber === "") {
+                setShowNullPhoneAlert(true);
+              } else {
+                if (!result) {
+                  setShowPhoneAlert(true);
+                }
+              }
+              if (username === "") {
+                setShowUserAlert(true);
+              }
+
+              if (username !== "" && result && agre) {
+                dispatch(fillUserAccount(userObj));
+                dispatch(addUser(userObj));
                 router.replace("/pages/vertifycode");
-              // }
+              }
             }}
           >
             دریافت کد تایید
           </button>
         </div>
       </div>
-      <div className="register_left_side col-7"></div>
+      <div className="register_left_side col-6"></div>
     </div>
   );
 }

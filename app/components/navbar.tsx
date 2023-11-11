@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import "../../styles/navbar.css";
@@ -7,19 +7,23 @@ import { RiSearch2Line } from "react-icons/ri";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { PiUserCircle } from "react-icons/pi";
 
-import { categoryNavbar } from "../components/categoryNavbar";
+import CategoryNavbar from "./categoryNavbar";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 export default function Navbar() {
+  const isLoginUser: boolean = useSelector(
+    (state: RootState) => state.bilboardSlice.user.isLogin
+  );
+
+  const userInfo = useSelector((state: RootState) => state.bilboardSlice.user);
+
   const [isHovering, setIsHovering] = useState(false);
+  const [isLogin, setIsLogin] = useState(isLoginUser);
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
 
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+  console.log(isLoginUser);
 
   return (
     <div className="navbar_container clo-12">
@@ -38,13 +42,16 @@ export default function Navbar() {
           <div className="navbar_right_side_group col-3 ">
             <button
               className="navbar_btn"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
+              onClick={() => setIsHovering(!isHovering)}
             >
               دسته بندی ها
             </button>
-            {/* <p className="navbar_label">دسته بندی ها</p> */}
-            <FaChevronDown style={{ marginTop: "5px" }} />
+            <FaChevronDown
+              style={{
+                rotate: isHovering ? "180deg" : "0deg",
+                marginTop: "5px",
+              }}
+            />
           </div>
           <p>خرید زمین</p>
           <p>درخواست مشاور </p>
@@ -63,17 +70,29 @@ export default function Navbar() {
             <p>افزودن ملک</p>
           </div>
           <hr />
+
           <div className="navbar_left_user col-4">
             <PiUserCircle style={{ fontSize: "25px" }} />
-            <span>ورود</span>
-            <p>|</p>
-            <Link className="navbar_link" href={"/pages/register"}>
-              <span>عضویت</span>
+
+            {isLoginUser ? (
+              <Link className="navbar_link" href={"/pages/dashboard"}>
+              <span> {userInfo.userName} </span>
             </Link>
+            ) : (
+              <div  className="navbar_left_user col-12" >
+                <span>ورود</span>
+                <p>|</p>
+                <Link className="navbar_link" href={"/pages/register"}>
+                  <span>عضویت </span>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
-      {isHovering && ( <categoryNavbar/>)}
+      <div className="navbar_category col-12">
+        {isHovering && <CategoryNavbar />}
+      </div>
     </div>
   );
 }
