@@ -6,7 +6,6 @@ import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
 import DropDown from "./dropdown";
 
-import Select, { SelectChangeEvent } from "@mui/material/Select";
 export default function SubmitInfo() {
   const [file, setFile] = useState<any>("");
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -91,8 +90,8 @@ export default function SubmitInfo() {
   }
  
   return (
-    <div className="submitinfo_container col-10">
-      <div className="col-11">
+    <div className="submitinfo_container col-12">
+      <div className="submitinfo_content col-11">
         <div className="col-12">
         <UserPageHeader />
         </div>

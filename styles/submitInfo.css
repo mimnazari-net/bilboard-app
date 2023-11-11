@@ -1,13 +1,18 @@
 .submitinfo_container {
-  padding: 40px 75px 33px 76px;
-  display: flex;
-  width: 880px;
+  height: 500px;
+  overflow-y: scroll;
+  /* padding: 40px 75px 33px 76px; */
   border-radius: 8px;
   background: #fff;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  /* margin-top: 100px; */
+  /* margin-bottom: 30px; */
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.submitinfo_content{
+  height: 90%;
 }
 .submitinfo_upside {
   color: #000;
@@ -111,7 +116,7 @@ input[type="file"]::file-selector-button {
   color: #585858;
   font-size: 14px;
 }
-.submitinfo_map_pics_div{
+.submitinfo_map_pics_div {
   display: flex;
   justify-content: space-between;
 }

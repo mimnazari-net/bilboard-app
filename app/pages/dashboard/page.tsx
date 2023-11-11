@@ -11,8 +11,10 @@ import { RootState } from "@/redux/store";
 import SubmitInfo from "@/app/components/submitInfo";
 import Recentvisits from "@/app/components/recentvisits";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function UserPage() {
+  const router = useRouter();
   const dispatch = useDispatch();
   const selectedComponent = useSelector(
     (state: RootState) => state.bilboardSlice.selectedComp
@@ -61,14 +63,16 @@ export default function UserPage() {
             <hr />
             <div className="userpagebox_link_col">
               <IoExitOutline size={24} />
-              <Link href={"/"}>
-                <button
-                  onClick={() => dispatch(logOut(false))}
-                  className="userpagebox_button"
-                >
-                  خروج
-                </button>
-              </Link>
+
+              <button
+                onClick={() => {
+                  router.replace("/");
+                  dispatch(logOut(false));
+                }}
+                className="userpagebox_button"
+              >
+                خروج
+              </button>
             </div>
           </div>
         </div>
