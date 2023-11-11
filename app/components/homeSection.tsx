@@ -8,16 +8,19 @@ import "../../styles/homeSection.css";
 
 //import components
 import React, { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
+import { fillSearchItem, searchItemType } from "@/redux/bilboardSlice";
+import { useRouter } from "next/navigation";
 
 export default function HomeSection() {
   // data
   const [type, setType] = useState<"خرید" | "رهن" | "اجاره">("خرید");
-  const [city, setCity] = useState<string>("تهران");
-  const [district, setDistrict] = useState<string>("الهیه");
-  const [metrage, setMetrage] = useState<string>("100 متر");
-  const [price, setPrice] = useState<string>("200,000,000");
-  const [deposit, setDeposit] = useState<string>("200,000,000");
-  const [rent, setRent] = useState<string>("5,000,000");
+  const [city, setCity] = useState<string>("");
+  const [district, setDistrict] = useState<string>("");
+  const [metrage, setMetrage] = useState<string>("");
+  const [price, setPrice] = useState<string>("");
+  const [deposit, setDeposit] = useState<string>("");
+  const [rent, setRent] = useState<string>("");
 
   return (
     <div className="home_container col-12">
@@ -122,6 +125,8 @@ const DetailsBox: React.FC<{
   rent,
   setRent,
 }) => {
+  const dispatch = useDispatch();
+  const router = useRouter();
   return (
     <div className="homeBox_down_side_container col-12">
       <div className="homeBox_detailItem_item">
@@ -214,22 +219,22 @@ const DetailsBox: React.FC<{
         </>
       ) : (
         <>
-        <div className="homeBox_detailItem_item">
-          <DetailItem
-            title="ودیعه"
-            items={[
-              "100,000,000 تا ",
-              "200,000,000 تا ",
-              "300,000,000 تا",
-              "400,000,000 تا",
-              "500,000,000 تا",
-              "600,000,000 تا",
-            ]}
-            state={deposit}
-            setState={setDeposit}
-          />
-          
-        <hr className="homeBox_down_hr" />
+          <div className="homeBox_detailItem_item">
+            <DetailItem
+              title="ودیعه"
+              items={[
+                "100,000,000 تا ",
+                "200,000,000 تا ",
+                "300,000,000 تا",
+                "400,000,000 تا",
+                "500,000,000 تا",
+                "600,000,000 تا",
+              ]}
+              state={deposit}
+              setState={setDeposit}
+            />
+
+            <hr className="homeBox_down_hr" />
           </div>
           <DetailItem
             title="اجاره"
@@ -247,7 +252,21 @@ const DetailsBox: React.FC<{
           />
         </>
       )}
-      <button className="homeBox_btn"> جستجو </button>
+      <button
+        onClick={() => {
+          let searchItem: searchItemType = {
+            type: type,
+            city: city,
+            district: district,
+            metrage: metrage,
+          };
+          dispatch(fillSearchItem(searchItem));
+          router.replace("/pages/advertisments");
+        }}
+        className="homeBox_btn"
+      >
+        جستجو
+      </button>
     </div>
   );
 };

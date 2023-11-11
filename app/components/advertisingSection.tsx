@@ -23,6 +23,8 @@ import Pagination from "@mui/material/Pagination";
 
 // import components
 import DropDown from "./dropdown";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 export default function AdvertisingSection() {
   //data
@@ -35,10 +37,11 @@ export default function AdvertisingSection() {
       bed: "5",
       bath: "3",
       eachm: 15000000,
-      city: "تهران",
+      city: "مازندران",
       street: "نیاوران",
       metrage: 315,
       age: 5,
+      tag: "خرید",
     },
     {
       image: "/image/forushx2.png",
@@ -51,6 +54,7 @@ export default function AdvertisingSection() {
       city: "تهران",
       street: "فرمانیه",
       metrage: 800,
+      tag: "خرید",
       age: 5,
     },
     {
@@ -64,6 +68,7 @@ export default function AdvertisingSection() {
       city: "تهران",
       street: "کاج",
       metrage: 600,
+      tag: "خرید",
       age: 5,
     },
     {
@@ -74,9 +79,10 @@ export default function AdvertisingSection() {
       bed: "3",
       bath: "2",
       eachm: 130000000,
-      city: "تهران",
+      city: "اصفهان",
       street: "جنت آباد شمالی",
       metrage: 360,
+      tag: "خرید",
       age: 4,
     },
     {
@@ -90,6 +96,7 @@ export default function AdvertisingSection() {
       city: "تهران",
       street: "نیاوران",
       metrage: 620,
+      tag: "رهن",
       age: 2,
     },
     {
@@ -100,9 +107,10 @@ export default function AdvertisingSection() {
       bed: "5",
       bath: "3",
       eachm: 50000000,
-      city: "تهران",
+      city: "گیلان",
       street: "خورودین",
       metrage: 700,
+      tag: "رهن",
       age: 10,
     },
     {
@@ -113,9 +121,10 @@ export default function AdvertisingSection() {
       bed: "1",
       bath: "1",
       eachm: 19000000,
-      city: "تهران",
+      city: "مشهد",
       street: "میردادماد",
       metrage: 100,
+      tag: "رهن",
       age: 15,
     },
     {
@@ -126,9 +135,10 @@ export default function AdvertisingSection() {
       bed: "2",
       bath: "2",
       eachm: 30000000,
-      city: "تهران",
+      city: "گیلان",
       street: "ونک",
       metrage: 260,
+      tag: "رهن",
       age: 9,
     },
     {
@@ -139,9 +149,10 @@ export default function AdvertisingSection() {
       bed: "2",
       bath: "1",
       eachm: 17000000,
-      city: "تهران",
+      city: "شیراز",
       street: "صادقیه",
       metrage: 530,
+      tag: "رهن",
       age: 0,
     },
     {
@@ -152,9 +163,10 @@ export default function AdvertisingSection() {
       bed: "2",
       bath: "1",
       eachm: 16000000,
-      city: "تهران",
+      city: "اصفهان",
       street: "نارمک",
       metrage: 180,
+      tag: "رهن",
       age: 0,
     },
     {
@@ -165,9 +177,10 @@ export default function AdvertisingSection() {
       bed: "3",
       bath: "3",
       eachm: 53000000,
-      city: "تهران",
+      city: "اصفهان",
       street: "نیاوران",
       metrage: 560,
+      tag: "اجاره",
       age: 14,
     },
     {
@@ -178,9 +191,10 @@ export default function AdvertisingSection() {
       bed: "3",
       bath: "3",
       eachm: 18000000,
-      city: "تهران",
+      city: "مازندران",
       street: "نیاوران",
       metrage: 430,
+      tag: "اجاره",
       age: 7,
     },
     {
@@ -191,9 +205,10 @@ export default function AdvertisingSection() {
       bed: "4",
       bath: "3",
       eachm: 41000000,
-      city: "تهران",
+      city: "گیلان",
       street: "نیاوران",
       metrage: 230,
+      tag: "اجاره",
       age: 16,
     },
     {
@@ -204,9 +219,10 @@ export default function AdvertisingSection() {
       bed: "4",
       bath: "3",
       eachm: 250000000,
-      city: "تهران",
+      city: "کیش",
       street: "نیاوران",
       metrage: 360,
+      tag: "اجاره",
       age: 25,
     },
     {
@@ -217,9 +233,10 @@ export default function AdvertisingSection() {
       bed: "5",
       bath: "3",
       eachm: 35000000,
-      city: "تهران",
+      city: "شیراز",
       street: "نیاوران",
       metrage: 300,
+      tag: "اجاره",
       age: 0,
     },
     {
@@ -230,9 +247,10 @@ export default function AdvertisingSection() {
       bed: "3",
       bath: "3",
       eachm: 190000000,
-      city: "تهران",
+      city: "مشهد",
       street: "نیاوران",
       metrage: 170,
+      tag: "اجاره",
       age: 1,
     },
     {
@@ -243,9 +261,10 @@ export default function AdvertisingSection() {
       bed: "3",
       bath: "3",
       eachm: 25000000,
-      city: "تهران",
+      city: "کیش",
       street: "نیاوران",
       metrage: 65,
+      tag: "خرید",
       age: 8,
     },
     {
@@ -256,9 +275,10 @@ export default function AdvertisingSection() {
       bed: "5",
       bath: "3",
       eachm: 34000000,
-      city: "تهران",
+      city: "کیش",
       street: "نیاوران",
       metrage: 450,
+      tag: "خرید",
       age: 12,
     },
     {
@@ -272,6 +292,7 @@ export default function AdvertisingSection() {
       city: "تهران",
       street: "نیاوران",
       metrage: 250,
+      tag: "رهن",
       age: 19,
     },
     {
@@ -285,12 +306,16 @@ export default function AdvertisingSection() {
       city: "تهران",
       street: "نیاوران",
       metrage: 200,
+      tag: "رهن",
       age: 30,
     },
   ];
 
-  const [searchItem, setSearchItem] = useState("");
+  const searchDetails = useSelector(
+    (state: RootState) => state.bilboardSlice.searchItem
+  );
 
+  const [searchItem, setSearchItem] = useState("");
   const [sortMetrage, setSortMetrage] = useState("");
   const [sortPrice, setSortPrice] = useState("");
   const [filterBed, setFilterBed] = useState("");
@@ -306,6 +331,8 @@ export default function AdvertisingSection() {
   };
 
   useEffect(() => {
+    let a = [...tmp];
+
     // search
     if (searchItem !== "") {
       const filteredItems = sells.filter((item) =>
@@ -313,8 +340,6 @@ export default function AdvertisingSection() {
       );
       setTmp(filteredItems);
     } else setTmp(sells);
-
-    let a = [...tmp];
 
     // sort by price
     if (sortPrice === "ارزانترین") {
@@ -394,9 +419,15 @@ export default function AdvertisingSection() {
       default:
         break;
     }
-  }, [sortMetrage, searchItem, sortPrice, filterBed, filterAge]);
+    if (searchDetails.city !== "") {
+      const searchedAdds = a.filter((item) => item.city === searchDetails.city);
+      setTmp(searchedAdds);
+      console.log(searchedAdds);
+    }
+  }, [sortMetrage, searchItem, sortPrice, filterBed, filterAge, searchDetails]);
+
   return (
-    <div className="forush_container col-12">
+    <div className="forush_container col-12 ">
       <div className="forush_kol col-10">
         <div className="forush_kol_filter col-12">
           <div className="forush_kol_filter_item col-1 ">

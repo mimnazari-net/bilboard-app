@@ -94,8 +94,8 @@ export default function Newest() {
                             fontSize: "large",
                           }}
                         />
-                        <div> {item.metrage} متری ، </div>
-                        <div>{item.location} </div>
+                        <div> { item.metrage } متری  </div>
+                        <div>{item.location }  </div>
                       </div>
                     </div>
                   </div>

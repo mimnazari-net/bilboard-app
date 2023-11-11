@@ -4,13 +4,19 @@ import { createSlice } from "@reduxjs/toolkit";
 export interface userType {
   userName: string;
   phoneNumber: string;
-  isLogin: boolean;
 }
-
+export interface searchItemType {
+  type: string;
+  city: string;
+  district: string;
+  metrage: string;
+}
 interface initialState_type {
   arrUsers: userType[];
   user: userType;
   selectedComp: string;
+  isLogin: boolean;
+  searchItem: searchItemType;
 }
 
 const initialState: initialState_type = {
@@ -18,9 +24,15 @@ const initialState: initialState_type = {
   user: {
     userName: "",
     phoneNumber: "",
-    isLogin: false,
   },
   selectedComp: "",
+  isLogin: false,
+  searchItem: {
+    type: "",
+    city: "",
+    district: "",
+    metrage: "",
+  },
 };
 
 const bilboardSlice = createSlice({
@@ -46,39 +58,28 @@ const bilboardSlice = createSlice({
     fillUserAccount: (state, { payload }: { payload: userType }) => {
       state.user.userName = payload.userName;
       state.user.phoneNumber = payload.phoneNumber;
-      state.user.isLogin = true;
+      state.isLogin = true;
     },
-    showComponents :(state , { payload }: { payload: string })=>{
+    showComponents: (state, { payload }: { payload: string }) => {
       state.selectedComp = payload;
-    }
-    //   addTrasaction: (state, { payload }: { payload: tarakoneshType }) => {
-    //     let tmp = [...state.arrTrasaction];
-    //     tmp.push(payload);
-    //     state.arrTrasaction = tmp;
-    //   },
-    //   clickOnCard: (state, { payload }: { payload: string }) => {
-    //     state.witchCards = payload;
-    //   },
-    //   findFillTransfer: (state, { payload }: { payload: infoCartType }) => {
-    //     state.selectedCard.adressImg = payload.adressImg;
-    //     state.selectedCard.cvv2 = payload.cvv2;
-    //     state.selectedCard.month = payload.month;
-    //     state.selectedCard.year = payload.year;
-    //     state.selectedCard.shomareCart = payload.shomareCart;
-    //     state.selectedCard.mojodi = payload.mojodi;
-    //   },
-    //   reduceValue: (state, { payload }: { payload: number }) => {
-    //     let s = state.arrCards.find(
-    //       (elm) => elm.shomareCart === state.selectedCard.shomareCart
-    //     );
-    //     if (s !== undefined) {
-    //       s.mojodi -= payload;
-    //     }
-    //   },
-    //   showTrasactionCard: (state, { payload }: { payload: string }) => {},
-    // },
+    },
+    logOut: (state, { payload }: { payload: boolean }) => {
+      state.isLogin = payload;
+    },
+    fillSearchItem: (state, { payload }: { payload: searchItemType }) => {
+      state.searchItem.type = payload.type;
+      state.searchItem.city = payload.city;
+      state.searchItem.district = payload.district;
+      state.searchItem.metrage = payload.metrage;
+    },
   },
 });
 
-export const { addUser, fillUserAccount ,showComponents } = bilboardSlice.actions;
+export const {
+  addUser,
+  fillUserAccount,
+  showComponents,
+  logOut,
+  fillSearchItem,
+} = bilboardSlice.actions;
 export default bilboardSlice.reducer;

@@ -5,12 +5,12 @@ import Image from "next/image";
 import { RiUser6Line } from "react-icons/ri";
 import { IoExitOutline, IoRefresh } from "react-icons/io5";
 import { MdOutlineArticle } from "react-icons/md";
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { showComponents } from "@/redux/bilboardSlice";
+import { logOut, showComponents } from "@/redux/bilboardSlice";
 import { RootState } from "@/redux/store";
 import SubmitInfo from "@/app/components/submitInfo";
 import Recentvisits from "@/app/components/recentvisits";
+import Link from "next/link";
 
 export default function UserPage() {
   const dispatch = useDispatch();
@@ -61,24 +61,27 @@ export default function UserPage() {
             <hr />
             <div className="userpagebox_link_col">
               <IoExitOutline size={24} />
-
-              <button
-                onClick={() => dispatch(showComponents("3"))}
-                className="userpagebox_button"
-              >
-                خروج
-              </button>
+              <Link href={"/"}>
+                <button
+                  onClick={() => dispatch(logOut(false))}
+                  className="userpagebox_button"
+                >
+                  خروج
+                </button>
+              </Link>
             </div>
           </div>
         </div>
         <div className="col-8">
-          {
-            selectedComponent === "0" ? <UserAccount /> :
-            selectedComponent === "1" ? <SubmitInfo /> :
-            selectedComponent === "2" ? <Recentvisits /> :
-            selectedComponent === "3" ?  "" :<UserAccount />
-          }
-          
+          {selectedComponent === "0" ? (
+            <UserAccount />
+          ) : selectedComponent === "1" ? (
+            <SubmitInfo />
+          ) : selectedComponent === "2" ? (
+            <Recentvisits />
+          ) : (
+            <UserAccount />
+          )}
         </div>
       </div>
     </div>

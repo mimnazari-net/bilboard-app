@@ -14,16 +14,14 @@ import { RootState } from "@/redux/store";
 
 export default function Navbar() {
   const isLoginUser: boolean = useSelector(
-    (state: RootState) => state.bilboardSlice.user.isLogin
+    (state: RootState) => state.bilboardSlice.isLogin
   );
 
   const userInfo = useSelector((state: RootState) => state.bilboardSlice.user);
 
   const [isHovering, setIsHovering] = useState(false);
-  const [isLogin, setIsLogin] = useState(isLoginUser);
 
 
-  console.log(isLoginUser);
 
   return (
     <div className="navbar_container clo-12">

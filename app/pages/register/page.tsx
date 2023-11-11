@@ -57,7 +57,6 @@ export default function Register() {
   let userObj: userType = {
     userName: username,
     phoneNumber: phoneNumber,
-    isLogin: false,
   };
 
   return (
