@@ -7,6 +7,7 @@
   margin-top: 100px;
   margin-bottom: 30px;
   flex-direction: column;
+  align-items: center;
 }
 .submitinfo_upside {
   color: #000;
@@ -18,7 +19,6 @@
 .submitinfo_upside input {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  width: 800px;
   height: 48px;
   padding: 10px;
 }
@@ -30,14 +30,12 @@
 .submitinfo_mid input {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  width: 203px;
   height: 48px;
   padding: 10px;
 }
 .submitinfo_bottom input {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  width: 800px;
   height: 90px;
   padding: 10 0 10 10px;
 }
@@ -82,14 +80,14 @@
 }
 .submitinfo_map_pics input {
   height: 70px;
-  width: 70px;
+  /* width: 70px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px dashed black;
   border-radius: 20px;
   position: absolute;
-  right: 1%;
+  right: 25%;
   bottom: 20%;
 }
 input[type="file"]::file-selector-button {
@@ -107,9 +105,13 @@ input[type="file"]::file-selector-button {
 .submitinfo_dropdowns {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  width: 203px;
+  /* width: 203px; */
   height: 48px;
   padding: 10px;
   color: #585858;
   font-size: 14px;
+}
+.submitinfo_map_pics_div{
+  display: flex;
+  justify-content: space-between;
 }

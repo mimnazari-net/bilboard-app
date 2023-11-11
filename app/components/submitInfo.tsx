@@ -92,12 +92,13 @@ export default function SubmitInfo() {
   return (
     <div className="submitinfo_container col-10">
       <div className="col-11">
+        <div className="col-12">
         <UserPageHeader />
-      </div>
+        </div>
       <div className="submitinfo_upside col-12">
         <p>عنوان آگهی</p>
 
-        <input
+        <input className="col-12"
           value={title}
           type="text"
           placeholder="عنوان آگهی خود را بنویسید."
@@ -109,7 +110,7 @@ export default function SubmitInfo() {
       <div className="submitinfo_mid col-12">
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب دسته بندی </p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-10 ">
             {" "}
             <DropDown
               title="خرید، فروش، اجاره"
@@ -122,7 +123,7 @@ export default function SubmitInfo() {
         <div className="submitinfo_mid_things col-4">
           <p>متراژ</p>
 
-          <input
+          <input className="col-10"
             type="text"
             placeholder="0 - 3000 متر"
             style={{ direction: "ltr" }}
@@ -132,7 +133,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>قیمت کل</p>
-          <input
+          <input className="col-12"
             type="text"
             placeholder="قیمت کل خانه خود را وارد نمایید."
             onChange={adPrice}
@@ -141,7 +142,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب نوع ملک</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-10">
             {" "}
             <DropDown
               title="آپارتمان، ویلا، اداری و..."
@@ -163,7 +164,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>سال ساخت</p>
-          <input
+          <input className="col-10"
             type="text"
             placeholder="سال ساخت را وارد کنید."
             onChange={adYear}
@@ -172,7 +173,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>قیمت هر متر مربع</p>
-          <input
+          <input className="col-12"
             type="text"
             placeholder="قیمت هر متر ملک خود را وارد کنید."
             onChange={adEachprice}
@@ -181,7 +182,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>شهر</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-10">
             {" "}
             <DropDown
               title="شهر خود را انتخاب کنید."
@@ -203,7 +204,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>ودیعه</p>
-          <input
+          <input className="col-10"
             type="text"
             placeholder="0 - 30,000,000,000 تومان"
             onChange={adDiposit}
@@ -212,7 +213,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>مناسب برای</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-12">
             {" "}
             <DropDown
               title="خانواده - مجرد"
@@ -224,7 +225,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>محدوده آگهی</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-10">
             {" "}
             <DropDown
               title="محدوده آگهی را انتخاب کنید."
@@ -237,7 +238,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>اجاره</p>
-          <input
+          <input className="col-10"
             type="text"
             placeholder="0 - 150,000,000 تومان"
             onChange={adRent}
@@ -246,7 +247,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_mid_things col-4">
           <p>تعداد اتاق</p>
-          <input
+          <input className="col-12"
             type="text"
             placeholder="1،2،3،..."
             style={{ direction: "ltr" }}
@@ -271,9 +272,9 @@ export default function SubmitInfo() {
             <p>عکس‌هایی از فضای داخل و بیرون ملک اضافه کنید.</p>
           </div>
           <div className="submitinfo_map_pics col-10">
-            <div>
+            <div className="submitinfo_map_pics_div col-122">
               {" "}
-              <input
+              <input className="col-12"
                 type="file"
                 name="file"
                 id="picfile"
@@ -288,8 +289,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div>
-              <input type="file" name="file"></input>
+            <div className="submitinfo_map_pics_div col-122">
+              <input type="file" name="file" className="col-12" ></input>
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""
@@ -299,8 +300,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div>
-              <input type="file" name="file"></input>
+            <div className="submitinfo_map_pics_div col-122">
+              <input type="file" name="file" className="col-12" ></input>
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""
@@ -310,8 +311,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div>
-              <input type="file" name="file"></input>{" "}
+            <div  className="submitinfo_map_pics_div col-122">
+              <input type="file" name="file" className="col-12"></input>{" "}
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""
@@ -321,8 +322,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div>
-              <input type="file" name="file"></input>{" "}
+            <div className="submitinfo_map_pics_div col-122">
+              <input type="file" name="file" className="col-12"></input>{" "}
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""
@@ -337,10 +338,11 @@ export default function SubmitInfo() {
         <div className="submitinfo_mid_things col-4">
           <p>طبقه</p>
           <input type="text" placeholder="طبقه اول، دوم، سوم،...."
+          className="col-12"
           onChange={adFloor}
           value={floor}></input>
           <p>آسانسور</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-12">
             {" "}
             <DropDown
               title="در صورت داشتن آسانسور، وارد کنید."
@@ -351,14 +353,14 @@ export default function SubmitInfo() {
           </div>
         
           <p>پارکینگ</p>
-          <input
+          <input className="col-12"
             type="text"
             placeholder="تعداد پارکینگ های ملک خود را وارد کنید."
             onChange={adParking}
             value={parking}
           ></input>
           <p>انباری</p>
-          <div className="submitinfo_dropdowns">
+          <div className="submitinfo_dropdowns col-12">
             {" "}
             <DropDown
               title="در صورت داشتن انباری، وارد کنید."
@@ -371,7 +373,7 @@ export default function SubmitInfo() {
         </div>
         <div className="submitinfo_bottom col-12">
           <p>توضیحاتی درباره آگهی</p>
-          <input type="text" placeholder="توضیحات را بنویسید."
+          <input className="col-12" type="text" placeholder="توضیحات را بنویسید."
            onChange={(e) => {
             setDescription(e.target.value);
           }}
@@ -380,6 +382,7 @@ export default function SubmitInfo() {
         </div>
         <button className="submitinfo_btn col-3">ثبت اطلاعات</button>
       </div>
+    </div>
     </div>
   );
 }
