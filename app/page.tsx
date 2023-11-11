@@ -12,13 +12,8 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
-      <HomeSection/>
-      <HomeGroups/>
-      <HousesSection/>
-      <Newest />
-      <Consultants />
-      <Footer />
+{/* <SearchPage/> */}
+     <UserPage/>
     </div>
   );
 }
