@@ -12,13 +12,13 @@ export default function Home() {
 
   return (
     <div>
-    <Navbar/>
-    <HomeSection />
-    <HomeGroups/>
-    <HousesSection/>
-    <Newest/>
-    <Consultants/>
-    <Footer/>
+      <Navbar/>
+      <HomeSection/>
+      <HomeGroups/>
+      <HousesSection/>
+      <Newest/>
+      <Consultants/>
+      <Footer/>
     </div>
   );
 }
