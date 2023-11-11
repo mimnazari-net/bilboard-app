@@ -12,8 +12,13 @@ export default function Home() {
 
   return (
     <div>
-{/* <SearchPage/> */}
-     <UserPage/>
+      <Navbar/>
+      <HomeSection/>
+      <HomeGroups/>
+      <HousesSection/>
+      <Newest/>
+      <Consultants/>
+      <Footer/>
     </div>
   );
 }
