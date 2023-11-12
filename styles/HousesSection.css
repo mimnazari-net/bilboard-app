@@ -1,12 +1,14 @@
 .HousesPage_container {
-  height: 100vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 20px;
 }
 
 .HousesPage_navbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,10 +52,13 @@
 }
 
 .HousesPage_cards {
+  width: 1189px;
+  height: 565px;
   margin-bottom: 15px;
 }
 
 .houseCrad_container {
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,6 +67,8 @@
 }
 
 .houseCrad_container_item {
+  width: 272px;
+  height: 446px;
   padding-bottom: 16px;
   background: white;
   box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
@@ -82,10 +89,11 @@
   align-items: center;
 }
 .houseCrad_down_side {
-  width: 272px;
+  width: 260px;
+  height: 211px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-start;
 }
 .houseCrad_title {
@@ -185,11 +193,11 @@
 }
 
 .houseCrad_down_side button {
-  height: 40px;
+  width: 240px;
+  height: 45px;
   background-color: var(--bi-navy);
   border: none;
   color: white;
   border-radius: 8px;
-  margin-right: 20px;
-  margin-left: 20px;
+ margin: 0 auto;
 }

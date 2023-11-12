@@ -7,22 +7,38 @@
 
 * {
   font-family: "IRANYekan";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-
   overflow-x: hidden;
-  height: 100vh;
+  overflow-y: scroll;
+  max-width: 100vw;
   width: 100vw;
   direction: rtl;
 }
 
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 button:hover {
   cursor: pointer;
 }
-
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -34,15 +50,14 @@ button:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--bi-orange) ;
+  background: var(--bi-orange);
   border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--bi-orange) ;
+  background: var(--bi-orange);
 }
-
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -50,12 +65,12 @@ button:hover {
 }
 
 /* dsktop size*/
-@media only screen and (min-width: 600px) {
+
 .col-1 {
   width: 8.33%;
 }
-.col-122{
-  width:13% ;
+.col-122 {
+  width: 13%;
 }
 .col-2 {
   width: 16.66%;
@@ -93,7 +108,7 @@ button:hover {
 .col-12 {
   width: 100%;
 }
-}
+
 @font-face {
   font-family: "IRANYekan";
   src: url("../public/fonts/iranyekanwebregularfanum.woff") format("woff");

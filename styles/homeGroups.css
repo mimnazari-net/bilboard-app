@@ -1,4 +1,7 @@
 .homeGroup_container{
+  width: 1440px;
+  height: 600px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,6 +9,8 @@
 }
 
 .homeGroup_up_side {
+  width: 1183px;
+  height: 445px;
   margin-top: 20px;
   height: 100px;
   display: flex;

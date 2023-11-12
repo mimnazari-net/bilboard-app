@@ -24,7 +24,7 @@ export default function Navbar() {
 
 
   return (
-    <div className="navbar_container clo-12">
+    <div className="navbar_container">
       <div className="navbar_contant col-10">
         <div className="navbar_right_side col-5">
           <div className="navbar_right_side_logo">

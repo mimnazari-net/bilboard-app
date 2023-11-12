@@ -51,8 +51,8 @@ export default function HousesSection() {
   ];
 
   return (
-    <div className="HousesPage_container col-12">
-      <div className="HousesPage_navbar col-10">
+    <div className="HousesPage_container ">
+      <div className="HousesPage_navbar ">
         <div className="HousesPage_navbar_right_side col-3">
           <p>پربازدید ترین های املاک</p>
         </div>

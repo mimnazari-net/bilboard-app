@@ -1,7 +1,6 @@
 "use client";
 // import icon
 import { FaChevronDown } from "react-icons/fa";
-import { RiSearch2Line } from "react-icons/ri";
 
 // import css
 import "../../styles/homeSection.css";
@@ -11,6 +10,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { fillSearchItem, searchItemType } from "@/redux/bilboardSlice";
 import { useRouter } from "next/navigation";
+import Navbar from "./navbar";
+import Image from "next/image";
 
 export default function HomeSection() {
   // data
@@ -23,72 +24,87 @@ export default function HomeSection() {
   const [rent, setRent] = useState<string>("");
 
   return (
-    <div className="home_container col-12">
-      <div className="home_container_right_side col-10">
-        <div className="home_container_text">
-          <h1>خانه دلخواه خود را پیدا کنید!</h1>
-          <p>در کمترین زمان و با کمک متخصصین مشاور مجموعه بیلبورد.</p>
+    <div className="home_container">
+      <Navbar />
+      <div className="home_content">
+        <div className="home_content_images">
+          <div className="home_right_wall_patern"></div>
+          <div className="home_container_left_side">
+            <Image
+              alt=""
+              width={518}
+              height={580}
+              src={"/image/home-pic-left.png"}
+            />
+          </div>
         </div>
-        <div className="home_container_box">
-          <div className="homeBox_container col-9">
-            <div className="homeBox_up_side col-3">
-              <div
-                className="homeBox_buy col-4"
-                style={{
-                  backgroundColor: type === "خرید" ? "#023047" : "white",
-                  color: type === "خرید" ? "white" : "#023047",
-                }}
-                onClick={() => {
-                  setType("خرید");
-                }}
-              >
-                خرید
-              </div>
-              <div
-                className="homeBox_mortage col-4"
-                style={{
-                  backgroundColor: type === "رهن" ? "#023047" : "white",
-                  color: type === "رهن" ? "white" : "#023047",
-                }}
-                onClick={() => {
-                  setType("رهن");
-                }}
-              >
-                رهن
-              </div>
-              <div
-                className="homeBox_rent col-4"
-                style={{
-                  backgroundColor: type === "اجاره" ? "#023047" : "white",
-                  color: type === "اجاره" ? "white" : "#023047",
-                }}
-                onClick={() => {
-                  setType("اجاره");
-                }}
-              >
-                اجاره
-              </div>
+        <div className="home_content_text_container">
+            <div className="home_content_text">
+              <h1>خانه دلخواه خود را پیدا کنید!</h1>
+              <p>در کمترین زمان و با کمک متخصصین مشاور مجموعه بیلبورد.</p>
             </div>
+            <div className="home_container_box ">
+              <div className="homeBox_container ">
+                <div className="homeBox_up_side ">
+                  <div
+                    className="homeBox_buy "
+                    style={{
+                      backgroundColor: type === "خرید" ? "#023047" : "white",
+                      color: type === "خرید" ? "white" : "#023047",
+                    }}
+                    onClick={() => {
+                      setType("خرید");
+                    }}
+                  >
+                    خرید
+                  </div>
+                  <div
+                    className="homeBox_mortage"
+                    style={{
+                      backgroundColor: type === "رهن" ? "#023047" : "white",
+                      color: type === "رهن" ? "white" : "#023047",
+                    }}
+                    onClick={() => {
+                      setType("رهن");
+                    }}
+                  >
+                    رهن
+                  </div>
+                  <div
+                    className="homeBox_rent "
+                    style={{
+                      backgroundColor: type === "اجاره" ? "#023047" : "white",
+                      color: type === "اجاره" ? "white" : "#023047",
+                    }}
+                    onClick={() => {
+                      setType("اجاره");
+                    }}
+                  >
+                    اجاره
+                  </div>
+                </div>
 
-            <div className="homeBox_down_side">
-              <div className="homeBox_DetailsBox col-12">
-                <DetailsBox
-                  type={type}
-                  city={city}
-                  setCity={setCity}
-                  district={district}
-                  setDistrict={setDistrict}
-                  metrage={metrage}
-                  setMetrage={setMetrage}
-                  price={price}
-                  setPrice={setPrice}
-                  deposit={deposit}
-                  setDeposit={setDeposit}
-                  rent={rent}
-                  setRent={setRent}
-                />
+                <div className="homeBox_down_side">
+                  <div className="homeBox_DetailsBox col-12">
+                    <DetailsBox
+                      type={type}
+                      city={city}
+                      setCity={setCity}
+                      district={district}
+                      setDistrict={setDistrict}
+                      metrage={metrage}
+                      setMetrage={setMetrage}
+                      price={price}
+                      setPrice={setPrice}
+                      deposit={deposit}
+                      setDeposit={setDeposit}
+                      rent={rent}
+                      setRent={setRent}
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
+
           </div>
         </div>
       </div>

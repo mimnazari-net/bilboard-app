@@ -1,4 +1,6 @@
 .navbar_container {
+  width: 1440px;
+  height: 72px;
   background-color: #023047;
   color: white;
   display: flex;
@@ -6,8 +8,7 @@
   justify-content: center;
   align-items: center;
 }
-.navbar_contant{
-  height: 72px;
+.navbar_contant {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,54 +24,52 @@
   justify-content: space-between;
 }
 
-.navbar_btn{
+.navbar_btn {
   background-color: transparent;
   color: white;
   border: none;
 }
 
-.navbar_right_side_group{
+.navbar_right_side_group {
   display: flex;
   align-items: center;
 }
 
-.navbar_right_side_group p{
+.navbar_right_side_group p {
   margin-left: 10px;
 }
 
-.navbar_left_side{
+.navbar_left_side {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.navbar_left_search{
+.navbar_left_search {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
-.navbar_link{
+.navbar_link {
   color: white;
-  text-decoration: none ;
+  text-decoration: none;
 }
 
-.navbar_left_side hr{
+.navbar_left_side hr {
   width: 2px;
   height: 42px;
   background-color: #1e4d65;
   border: none;
 }
 
-.navbar_left_add{
- 
+.navbar_left_add {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.navbar_left_user{
+.navbar_left_user {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -87,6 +86,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar_category p{
-color: var(--bi-navy);
+.navbar_category p {
+  color: var(--bi-navy);
 }

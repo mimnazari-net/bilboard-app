@@ -111,7 +111,6 @@ export default function SubmitInfo() {
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب دسته بندی </p>
           <div className="submitinfo_dropdowns col-10 ">
-            {" "}
             <DropDown
               title="خرید، فروش، اجاره"
               items={["خرید", "فروش", "اجاره"]}

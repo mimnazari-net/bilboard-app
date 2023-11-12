@@ -10,8 +10,7 @@ import { logOut, showComponents } from "@/redux/bilboardSlice";
 import { RootState } from "@/redux/store";
 import SubmitInfo from "@/app/components/submitInfo";
 import Recentvisits from "@/app/components/recentvisits";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function UserPage() {
   const router = useRouter();
@@ -22,7 +21,7 @@ export default function UserPage() {
 
   return (
     <div className="userpage_container col-12 ">
-      <div className="userpage_content col-10">
+      <div className="userpage_content col-11">
         <div className="col-3">
           <div className="userpagebox_box col-12">
             <Image
