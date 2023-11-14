@@ -19,8 +19,8 @@ export default function CategoryNavbar() {
   ];
 
   return (
-    <div className="category_container col-12">
-      <div className="category_img col-10">
+    <div className="category_container ">
+      <div className="category_img">
         {homes.map((item, index) => {
           return (
             <div key={index}>

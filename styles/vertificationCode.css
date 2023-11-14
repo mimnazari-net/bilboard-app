@@ -1,9 +1,15 @@
 .vertificationCode_container {
+  width: 1440px;
+  height: 804px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .vertificationCode_right_side {
+  width: 640px;
+  height: 804px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +17,8 @@
 }
 
 .vertificationCode_right_content {
-  height: 50%;
+  width: 353px;
+  height: 335px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,13 +30,12 @@
   justify-content: space-around;
 }
 
-.vertificationCode_right_inputs input{
-    text-align: center;
-    width: 50px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px #CBCBCB solid;
-    
+.vertificationCode_right_inputs input {
+  text-align: center;
+  width: 82px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px #cbcbcb solid;
 }
 
 .vertificationCode_right_side p {
@@ -41,10 +47,10 @@
 }
 
 .vertificationCode_btn {
-  height: 40px;
+  height: 56px;
   background: var(--bi-navy);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -52,13 +58,14 @@
 }
 
 .vertificationCode_left_side {
+  width: 800px;
+  height: 804px;
   background-image: url("../public/image/vertified-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 619px;
 }
 
-.css-1hdyuqk-MuiPaper-root-MuiAlert-root{
+.css-1hdyuqk-MuiPaper-root-MuiAlert-root {
   direction: ltr;
 }

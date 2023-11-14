@@ -60,8 +60,8 @@ export default function Register() {
   };
 
   return (
-    <div className="register_container col-12">
-      <div className="register_right_side col-6">
+    <div className="register_container">
+      <div className="register_right_side">
         {showUserAlert && (
           <Alert
             severity="error"
@@ -86,7 +86,7 @@ export default function Register() {
           </Alert>
         )}
 
-        <div className="register_right_side_container col-6">
+        <div className="register_right_side_container">
           <p className="register_right_side_title">خوش آمدید!</p>
 
           <div className="register_right_side_inputs">
@@ -127,7 +127,7 @@ export default function Register() {
           </div>
 
           <button
-            className="register_btn col-12"
+            className="register_btn "
             onClick={() => {
               var regex = new RegExp("^(0)?9\\d{9}$");
               var result = regex.test(phoneNumber);
@@ -153,7 +153,7 @@ export default function Register() {
           </button>
         </div>
       </div>
-      <div className="register_left_side col-6"></div>
+      <div className="register_left_side "></div>
     </div>
   );
 }

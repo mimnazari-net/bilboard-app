@@ -5,7 +5,7 @@ import Footer from "../../components/footer";
 import AdvertisingSection from "../../components/advertisingSection";
 export default function SearchPage() {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <AdvertisingSection />
       <SearchSection />

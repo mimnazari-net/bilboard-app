@@ -21,12 +21,11 @@ export default function Navbar() {
 
   const [isHovering, setIsHovering] = useState(false);
 
-
-
   return (
     <div className="navbar_container">
-      <div className="navbar_contant col-10">
-        <div className="navbar_right_side col-5">
+    <div className="navbar_container_content">
+      <div className="navbar_contant ">
+        <div className="navbar_right_side ">
           <div className="navbar_right_side_logo">
             <Link href={"/"}>
               <Image
@@ -37,47 +36,49 @@ export default function Navbar() {
               ></Image>
             </Link>
           </div>
-          <div className="navbar_right_side_group col-3 ">
+          <div className="navbar_right_side_group  ">
             <button
               className="navbar_btn"
               onClick={() => setIsHovering(!isHovering)}
             >
-              دسته بندی ها
+              دسته بندی ها{" "}
+              <FaChevronDown
+                style={{
+                  rotate: isHovering ? "180deg" : "0deg",
+                  marginTop: "2px",
+                  marginRight: "5px",
+                }}
+              />
             </button>
-            <FaChevronDown
-              style={{
-                rotate: isHovering ? "180deg" : "0deg",
-                marginTop: "5px",
-              }}
-            />
           </div>
           <p>خرید زمین</p>
           <p>درخواست مشاور </p>
           <p>وبلاگ</p>
         </div>
-        <div className="navbar_left_side col-5 ">
-          <div className="navbar_left_search col-2">
-            <RiSearch2Line style={{ fontSize: "23px" }} />
+        <div className="navbar_left_side">
+          <div className="navbar_left_search ">
+            <RiSearch2Line style={{ fontSize: "23px", marginLeft: "16px" }} />
             <Link className="navbar_link" href={"/pages/advertisments"}>
               جستجو
             </Link>
           </div>
           <hr />
-          <div className="navbar_left_add col-3">
-            <AiOutlinePlusCircle style={{ fontSize: "23px" }} />
+          <div className="navbar_left_add ">
+            <AiOutlinePlusCircle
+              style={{ fontSize: "23px", marginLeft: "16px" }}
+            />
             <p>افزودن ملک</p>
           </div>
           <hr />
-
-          <div className="navbar_left_user col-4">
-            <PiUserCircle style={{ fontSize: "25px" }} />
+          <div className="navbar_left_user">
+            <PiUserCircle style={{ fontSize: "25px", marginLeft: "16px" }} />
 
             {isLoginUser ? (
-              <Link className="navbar_link" href={"/pages/dashboard"}>
-              <span> {userInfo.userName} </span>
-            </Link>
+              <Link className="navbar_left_user_text" href={"/pages/dashboard"}>
+                <span> {userInfo.userName} </span>
+              </Link>
             ) : (
-              <div  className="navbar_left_user col-12" >
+              <div className="navbar_left_user_text ">
                 <span>ورود</span>
                 <p>|</p>
                 <Link className="navbar_link" href={"/pages/register"}>
@@ -87,10 +88,10 @@ export default function Navbar() {
             )}
           </div>
         </div>
+      </div> 
       </div>
-      <div className="navbar_category col-12">
-        {isHovering && <CategoryNavbar />}
+      <div className="navbar_category ">{isHovering && <CategoryNavbar />}
       </div>
-    </div>
+   </div>
   );
 }
