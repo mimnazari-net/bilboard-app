@@ -1,26 +1,28 @@
 .forush_container {
+  width: 1180px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.forush_kol_filter {
+  width: 1180px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 ;
+}
 .forush_kol {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.forush_kol_filter {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
 .forush_kol_filter_item {
-  height: 20px;
+  height: 56px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,6 +32,7 @@
   padding: 10px;
 }
 .forush_kol_filter_item_search_content {
+  width: 594px;
   position: relative;
   display: flex;
   align-items: center;
@@ -37,8 +40,9 @@
 }
 
 .forush_kol_filter_item_search {
+  width: 594px;
   position: absolute;
-  height: 40px;
+  height: 56px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,26 +50,27 @@
   border-radius: 8px;
   color: #292d32;
   padding: 10px;
-  padding-right: 40px;
+  padding-right: 60px;
 }
 
 .forush_kol_filter_item_search_icon {
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--bi-orange);
   color: white;
-  border-radius: 5px;
-  right: 5px;
+  border-radius: 8px;
+  right: 8px;
 }
 
 .forush_box {
-  height: 330px;
+  height: 318px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 8px;
   background: #faf4f4;
@@ -73,16 +78,17 @@
   margin-bottom: 20px;
 }
 
-.forush_texts{
+.forush_texts {
   display: flex;
 }
 
 .forush_texts_content {
-  height: 50%;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 20px 0px;
 }
 
 .forush_texts p {
@@ -116,12 +122,14 @@
   font-weight: 300;
 }
 .forush_price_kol {
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .forush_icons {
-  height: 60%;
+  width: 64px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,11 +140,12 @@
   color: black;
 }
 .forush_price_down {
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forush_price_each{
+.forush_price_each {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -156,30 +165,30 @@
   justify-content: space-around;
 }
 .forush_city {
-  display: flex;
   width: 50px;
   height: 25px;
   background-color: #eee;
   border-radius: 20px;
-  justify-content: space-around;
   color: #585858;
   font-size: 12px;
   margin-left: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 .forush_street {
-  display: flex;
   min-width: 50px;
-  width: fit-content;
+  max-width: fit-content;
   height: 25px;
   background-color: #eee;
   border-radius: 20px;
-  justify-content: space-around;
   color: #585858;
   font-size: 12px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .forush_map {
   width: 330px;

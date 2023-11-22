@@ -49,8 +49,8 @@ export default function VertificationCode() {
   };
 
   return (
-    <div className="vertificationCode_container col-12">
-      <div className="vertificationCode_right_side col-6">
+    <div className="vertificationCode_container ">
+      <div className="vertificationCode_right_side ">
         {showCodeAlert && (
           <Alert
             severity="error"
@@ -60,7 +60,7 @@ export default function VertificationCode() {
             کد 4 رقمی ارسال شده را وارد نمایید
           </Alert>
         )}
-        <div className="vertificationCode_right_content col-5">
+        <div className="vertificationCode_right_content ">
           <p>کد تایید را وارد نمایید.</p>
           <div className="vertificationCode_right_inputs ">
             <input

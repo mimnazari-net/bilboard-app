@@ -1,20 +1,22 @@
 .submitinfo_container {
-  height: 500px;
+  height: 449px;
   overflow-y: scroll;
-  /* padding: 40px 75px 33px 76px; */
   border-radius: 8px;
   background: #fff;
-  /* margin-top: 100px; */
-  /* margin-bottom: 30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitinfo_content {
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.submitinfo_content{
-  height: 90%;
-}
 .submitinfo_upside {
+  padding: 15px 0;
   color: #000;
   font-size: 14px;
   font-style: normal;
@@ -22,11 +24,17 @@
   line-height: normal;
 }
 .submitinfo_upside input {
+  margin-top: 15px;
   border-radius: 8px;
   border: 0.5px solid #585858;
   height: 48px;
   padding: 10px;
 }
+
+.submitinfo_mid_things p {
+  margin: 15px 0;
+}
+
 .submitinfo_mid {
   display: flex;
   flex-wrap: wrap;
@@ -41,20 +49,21 @@
 .submitinfo_bottom input {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  height: 90px;
-  padding: 10 0 10 10px;
+  height: 116px;
+  margin-top: 15px;
 }
 .submitinfo_btn {
+  height: 44px;
   color: #fff;
   border-radius: 8px;
   background: #023047;
   display: flex;
-  padding: 8px 40px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 30px;
+  margin: 30px 0px;
+  border: none;
 }
 .submitinfo_map {
   margin-top: 40px;
@@ -72,8 +81,9 @@
   line-height: normal;
 }
 .submitinfo_map_pics {
-  display: flex;
+  width: 440px;
   height: 150px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -84,8 +94,8 @@
   height: 550px;
 }
 .submitinfo_map_pics input {
-  height: 70px;
-  /* width: 70px; */
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,11 +120,13 @@ input[type="file"]::file-selector-button {
 .submitinfo_dropdowns {
   border-radius: 8px;
   border: 0.5px solid #585858;
-  /* width: 203px; */
   height: 48px;
   padding: 10px;
   color: #585858;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .submitinfo_map_pics_div {
   display: flex;

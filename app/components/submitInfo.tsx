@@ -1,7 +1,6 @@
 "use client";
 import { useState, ChangeEvent } from "react";
 import "../../styles/submitInfo.css";
-import "../../styles/submitInfo.css";
 import UserPageHeader from "./userPageHeader";
 import Image from "next/image";
 import DropDown from "./dropdown";
@@ -111,7 +110,6 @@ export default function SubmitInfo() {
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب دسته بندی </p>
           <div className="submitinfo_dropdowns col-10 ">
-            {" "}
             <DropDown
               title="خرید، فروش، اجاره"
               items={["خرید", "فروش", "اجاره"]}
@@ -143,7 +141,7 @@ export default function SubmitInfo() {
         <div className="submitinfo_mid_things col-4">
           <p>انتخاب نوع ملک</p>
           <div className="submitinfo_dropdowns col-10">
-            {" "}
+            {" "} 
             <DropDown
               title="آپارتمان، ویلا، اداری و..."
               items={[
@@ -271,9 +269,8 @@ export default function SubmitInfo() {
             </p>
             <p>عکس‌هایی از فضای داخل و بیرون ملک اضافه کنید.</p>
           </div>
-          <div className="submitinfo_map_pics col-10">
-            <div className="submitinfo_map_pics_div col-122">
-              {" "}
+          <div className="submitinfo_map_pics">
+            <div className="submitinfo_map_pics_div">
               <input className="col-12"
                 type="file"
                 name="file"
@@ -289,7 +286,7 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div className="submitinfo_map_pics_div col-122">
+            <div className="submitinfo_map_pics_div ">
               <input type="file" name="file" className="col-12" ></input>
               <div className="submitinfo_imgbg">
                 <Image
@@ -300,7 +297,7 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div className="submitinfo_map_pics_div col-122">
+            <div className="submitinfo_map_pics_div ">
               <input type="file" name="file" className="col-12" ></input>
               <div className="submitinfo_imgbg">
                 <Image
@@ -311,8 +308,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div  className="submitinfo_map_pics_div col-122">
-              <input type="file" name="file" className="col-12"></input>{" "}
+            <div  className="submitinfo_map_pics_div ">
+              <input type="file" name="file" className="col-12"></input>
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""
@@ -322,8 +319,8 @@ export default function SubmitInfo() {
                 ></Image>
               </div>
             </div>
-            <div className="submitinfo_map_pics_div col-122">
-              <input type="file" name="file" className="col-12"></input>{" "}
+            <div className="submitinfo_map_pics_div">
+              <input type="file" name="file" className="col-12"></input>
               <div className="submitinfo_imgbg">
                 <Image
                   alt=""

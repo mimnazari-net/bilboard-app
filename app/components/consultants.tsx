@@ -102,10 +102,10 @@ export default function Consultants() {
   ];
 
   return (
-    <div className="consultant_container col-12">
-      <div className="consultant_title col-10">
+    <div className="moshaverin_container ">
+      <div className="moshaverin_title ">
         <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
-        <div className=" consultant_arow_btn col-1">
+        <div className=" moshaverin_arow_btn ">
           <button className="swiper-button-next">
             <AiOutlineArrowRight style={{ fontSize: "18px" }} />
           </button>
@@ -114,7 +114,7 @@ export default function Consultants() {
           </button>
         </div>
       </div>
-      <div className="consultant_swiper col-10">
+      <div className="moshaverin_swiper ">
         <Swiper
           slidesPerView={15}
           spaceBetween={30}
@@ -142,19 +142,19 @@ export default function Consultants() {
           })}
         </Swiper>
       </div>
-      <div className="consultant_content col-10">
+      <div className="moshaverin_content ">
         {consultant.map((item, index) => {
           return (
-            <div className="consultant_item col-25" key={index}>
+            <div className="moshaverin_item " key={index}>
               <Image
-                className="consultant_pic col-12"
+                className="moshaverin_pic "
                 alt="مشاورین املاک"
-                width={250}
+                width={278}
                 height={183}
                 src={item.image}
               ></Image>
 
-              <div className="consultant_down col-12">
+              <div className="moshaverin_down ">
                 <div className="moshverin_down_title col-10">
                   <VerifiedSharpIcon color="primary" />
                   <p>{item.text}</p>

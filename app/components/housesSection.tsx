@@ -51,13 +51,13 @@ export default function HousesSection() {
   ];
 
   return (
-    <div className="HousesPage_container col-12">
-      <div className="HousesPage_navbar col-10">
-        <div className="HousesPage_navbar_right_side col-3">
+    <div className="HousesPage_container ">
+      <div className="HousesPage_navbar ">
+        <div className="HousesPage_navbar_right_side ">
           <p>پربازدید ترین های املاک</p>
         </div>
-        <div className="HousesPage_navbar_left_side col-9">
-          <div className="HousesPage_navbar_left_side_text col-12">
+        <div className="HousesPage_navbar_left_side ">
+          <div className="HousesPage_navbar_left_side_text  ">
             <p>آپارتمان</p>
             <p>ویلا</p>
             <p>تجاری</p>
@@ -65,12 +65,12 @@ export default function HousesSection() {
             <p>کلنگی</p>
             <p>زمین</p>
           </div>
-          <div className="HousesPage_navbar_left_side_Line col-12">
+          <div className="HousesPage_navbar_left_side_Line ">
           </div>
         </div>
       </div>
-      <div className="HousesPage_cards col-10">
-        <div className="houseCrad_container col-12">
+      <div className="HousesPage_cards ">
+        <div className="houseCrad_container ">
           {houseCardData.map((item, index) => {
             return (
               <div className="houseCrad_container_item">
@@ -84,18 +84,18 @@ export default function HousesSection() {
                   />
                 </div>
                 <div className="houseCrad_down_side">
-                  <div className="houseCrad_title col-11 ">
+                  <div className="houseCrad_title ">
                     <div className="houseCrad_title_text ">
                       <BiSolidCircle className="houseCrad_title_text_i" />
                       <p>{item.titleImg}</p>
                     </div>
-                    <div className="houseCrad_title_icons col-3">
+                    <div className="houseCrad_title_icons ">
                       <AiOutlineHeart />
                       <AiOutlineShareAlt />
                     </div>
                   </div>
                   <p className="houseCrad_subtitle"> {item.subtitleImg} </p>
-                  <div className="houseCrad_options col-10">
+                  <div className="houseCrad_options ">
                     <div className="houseCrad_rooms">
                       <IoBed />
                       {item.bedRooms} خوابه
@@ -119,7 +119,7 @@ export default function HousesSection() {
                     />
                     <p> {item.location} </p>
                   </div>
-                  <button className="col-10">تماس با مشاور</button>
+                  <button>تماس با مشاور</button>
                 </div>
               </div>
             );

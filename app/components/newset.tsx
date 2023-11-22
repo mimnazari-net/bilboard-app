@@ -12,6 +12,9 @@ import { Navigation } from "swiper/modules";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Newest() {
+
+  const windowInnerWidth  = window.innerWidth;
+
   // data
   const images = [
     {
@@ -51,12 +54,12 @@ export default function Newest() {
     },
   ];
   return (
-    <div className="newest_container col-12">
-      <div className="newest_content col-10">
-        <div className="newest_title col-12">
+    <div className="newest_container ">
+      <div className="newest_content ">
+        <div className="newest_title ">
           <h1>تازه ترین آپارتمان های مسکونی</h1>
           
-            <div className="newest_arow_btn col-1">
+            <div className="newest_arow_btn ">
               <button className="newest-button-next">
                 <AiOutlineArrowRight style={{ fontSize: "18px" }} />
               </button>
@@ -67,9 +70,9 @@ export default function Newest() {
           
         </div>
 
-        <div className="newest_slider col-12">
+        <div className="newest_slider ">
           <Swiper
-            slidesPerView={5}
+            slidesPerView={ windowInnerWidth >= 1040 ? 5 : 2}
             spaceBetween={10}
             loop={true}
             navigation={true}
@@ -82,12 +85,12 @@ export default function Newest() {
                   <div className="newest_item">
                     <Image
                       className="newest_item_img"
-                      width={220}
-                      height={200}
+                      width={226}
+                      height={238}
                       alt=""
                       src={item.image}
                     />
-                    <div className="newest_item_cover col-12 ">
+                    <div className="newest_item_cover  ">
                       <div className="newest_item_text  ">
                         <HiOutlineLocationMarker
                           style={{

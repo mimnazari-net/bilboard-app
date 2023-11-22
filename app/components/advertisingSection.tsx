@@ -427,65 +427,74 @@ export default function AdvertisingSection() {
   }, [sortMetrage, searchItem, sortPrice, filterBed, filterAge, searchDetails]);
 
   return (
-    <div className="forush_container col-12 ">
-      <div className="forush_kol col-10">
-        <div className="forush_kol_filter col-12">
-          <div className="forush_kol_filter_item col-1 ">
-            <DropDown
-              title="قیمت"
-              items={["گرانترین", "ارزانترین"]}
-              state={sortPrice}
-              setState={setSortPrice}
-            />
-          </div>
-          <div className="forush_kol_filter_item col-1 ">
-            <DropDown
-              title="متراژ"
-              items={["کوچکترین", "بزرگترین"]}
-              state={sortMetrage}
-              setState={setSortMetrage}
-            />
-          </div>
-          <div className="forush_kol_filter_item col-1 ">
-            <DropDown
-              title="اتاق"
-              items={["1", "2", "3", "4", "5", "6"]}
-              state={filterBed}
-              setState={setFilterBed}
-            />
-          </div>
-          <div className="forush_kol_filter_item ">
-            <DropDown
-              title="سال ساخت"
-              items={["نوساز", "+3", "+6", "+9", "+12", "+15", "+20"]}
-              state={filterAge}
-              setState={setFilterAge}
-            />
-          </div>
-          <div className="forush_kol_filter_item_search_content col-6">
-            <input
-              type="search"
-              placeholder="جستجوی شهر، منطقه، محله و..."
-              className="forush_kol_filter_item_search col-12"
-              onChange={handleChangeSearch}
-              value={searchItem}
-            />
-            <div className="forush_kol_filter_item_search_icon">
-              <RiSearch2Line />
-            </div>
+    <div className="forush_container ">
+      <div className="forush_kol_filter">
+        <div className="forush_kol_filter_item "
+        style={{width:"131px"}}
+        >
+          
+          <DropDown
+            title="قیمت"
+            items={["گرانترین", "ارزانترین"]}
+            state={sortPrice}
+            setState={setSortPrice}
+          />
+        </div>
+        <div className="forush_kol_filter_item  "
+        style={{width:"97px"}}
+        >
+          <DropDown
+            title="متراژ"
+            items={["کوچکترین", "بزرگترین"]}
+            state={sortMetrage}
+            setState={setSortMetrage}
+          />
+        </div>
+        <div className="forush_kol_filter_item "
+        style={{width:"128px"}}
+        >
+          <DropDown
+            title="اتاق"
+            items={["1", "2", "3", "4", "5", "6"]}
+            state={filterBed}
+            setState={setFilterBed}
+          />
+        </div>
+        <div className="forush_kol_filter_item "
+        style={{width:"170px"}}
+        >
+          <DropDown
+            title="سال ساخت"
+            items={["نوساز", "+3", "+6", "+9", "+12", "+15", "+20"]}
+            state={filterAge}
+            setState={setFilterAge}
+          />
+        </div>
+        <div className="forush_kol_filter_item_search_content ">
+          <input
+            type="search"
+            placeholder="جستجوی شهر، منطقه، محله و..."
+            className="forush_kol_filter_item_search "
+            onChange={handleChangeSearch}
+            value={searchItem}
+          />
+          <div className="forush_kol_filter_item_search_icon">
+            <RiSearch2Line style={{fontSize:"30px"}} />
           </div>
         </div>
+      </div>
+      <div className="forush_kol">
         {tmp.map((item, index) => {
           return (
-            <div key={index} className="forush_box col-25">
-              <Image alt="" width={270} height={150} src={item.image}></Image>
-              <div className="forush_texts_content col-11">
+            <div key={index} className="forush_box ">
+              <Image alt="" width={284} height={155} src={item.image}></Image>
+              <div className="forush_texts_content ">
                 <div className="forush_texts">
                   <p>{item.type}</p>
                   <p> {item.metrage}متری </p>
                   <p>{item.loc} </p>
                 </div>
-                <div className="forush_loc col-6">
+                <div className="forush_loc ">
                   <HiOutlineLocationMarker
                     style={{ marginLeft: "5px" }}
                     size={"16px"}
@@ -493,12 +502,12 @@ export default function AdvertisingSection() {
                   />
                   <p>{item.street}</p>
                 </div>
-                <div className="forush_price_kol col-12">
+                <div className="forush_price_kol ">
                   <div className="forush_price">
                     <p>قیمت : </p>
                     {item.eachm * item.metrage}
                   </div>
-                  <div className="forush_icons col-3">
+                  <div className="forush_icons ">
                     <div className="forush_rooms">
                       <IoBed size={"9px"} /> {item.bed}
                     </div>
@@ -507,12 +516,12 @@ export default function AdvertisingSection() {
                     </div>
                   </div>
                 </div>
-                <div className="forush_price_down col-12">
-                  <div className="forush_price_each col-8">
+                <div className="forush_price_down ">
+                  <div className="forush_price_each ">
                     <p> {item.eachm} </p>
                     <p> قیمت هر متر: </p>
                   </div>
-                  <div className="forush_mahal col-5">
+                  <div className="forush_mahal ">
                     <div className="forush_city">{item.city}</div>
                     <div className="forush_street">{item.loc} </div>
                   </div>

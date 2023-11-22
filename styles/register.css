@@ -1,18 +1,24 @@
 .register_container {
+  width: 1440px;
+  height: 804px;
   display: flex;
   flex-direction: row;
-  
+  justify-content: space-between;
+  align-items: center;
 }
 
-.register_left_side{
-    background-image: url("../public/image/register-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 619px;
+.register_left_side {
+  width: 800px;
+  height: 804px;
+  background-image: url("../public/image/register-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .register_right_side {
+  width: 640px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +26,8 @@
 }
 
 .register_right_side_container {
-  height: 50%;
+  width: 350px;
+  height: 331px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -68,17 +75,18 @@
 }
 .register_ruls input {
   margin-left: 10px;
+  width: 24px;
 }
 .register_ruls p {
   color: #1e1e1e;
   font-size: 14px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 33px;
   word-wrap: break-word;
 }
 
 .register_btn {
-  height: 40px;
+  height: 56px;
   background: var(--bi-navy);
   border: none;
   border-radius: 5px;
@@ -88,6 +96,7 @@
   word-wrap: break-word;
 }
 
-.css-1hdyuqk-MuiPaper-root-MuiAlert-root , .css-to2f46-MuiPaper-root-MuiAlert-root {
+.css-1hdyuqk-MuiPaper-root-MuiAlert-root,
+.css-to2f46-MuiPaper-root-MuiAlert-root {
   direction: ltr;
 }
