@@ -102,10 +102,10 @@ export default function Consultants() {
   ];
 
   return (
-    <div className="moshaverin_container col-12">
-      <div className="moshaverin_title col-10">
+    <div className="consultant_container col-12">
+      <div className="consultant_title col-10">
         <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
-        <div className=" moshaverin_arow_btn col-1">
+        <div className=" consultant_arow_btn col-1">
           <button className="swiper-button-next">
             <AiOutlineArrowRight style={{ fontSize: "18px" }} />
           </button>
@@ -114,7 +114,7 @@ export default function Consultants() {
           </button>
         </div>
       </div>
-      <div className="moshaverin_swiper col-10">
+      <div className="consultant_swiper col-10">
         <Swiper
           slidesPerView={15}
           spaceBetween={30}
@@ -125,13 +125,13 @@ export default function Consultants() {
         >
           {cities.map((item, index) => {
             return (
-              <div className="moshaverin_swiper_item" key={index}>
+              <div className="consultant_swiper_item " key={index}>
                 <SwiperSlide>
                   <button
                     className={
                       index === 0
-                        ? "moshaverin_swiper_first_item"
-                        : "moshaverin_swiper_btn"
+                        ? "consultant_swiper_first_item"
+                        : "consultant_swiper_btn"
                     }
                   >
                     {item}
@@ -142,26 +142,26 @@ export default function Consultants() {
           })}
         </Swiper>
       </div>
-      <div className="moshaverin_content col-10">
+      <div className="consultant_content col-10">
         {consultant.map((item, index) => {
           return (
-            <div className="moshaverin_item col-2.5" key={index}>
+            <div className="consultant_item col-25" key={index}>
               <Image
-                className="moshaverin_pic col-12"
+                className="consultant_pic col-12"
                 alt="مشاورین املاک"
                 width={250}
                 height={183}
                 src={item.image}
               ></Image>
 
-              <div className="moshaverin_down col-12">
+              <div className="consultant_down col-12">
                 <div className="moshverin_down_title col-10">
                   <VerifiedSharpIcon color="primary" />
                   <p>{item.text}</p>
                   <BookmarksOutlinedIcon />
                 </div>
-                <div className="moshaverin_loc col-10">
-                  <div className="moshaverin_loc_right col-4">
+                <div className="consultant_loc col-10">
+                  <div className="consultant_loc_right col-4">
                     <HiOutlineLocationMarker
                       style={{
                         color: "#292D32",
@@ -170,7 +170,7 @@ export default function Consultants() {
                     />
                     <p>{item.loc}</p>
                   </div>
-                  <div className="moshaverin_loc_left">
+                  <div className="consultant_loc_left">
                     <Rating
                       style={{ direction: "ltr" }}
                       defaultValue={parseInt(item.star)}
@@ -179,7 +179,7 @@ export default function Consultants() {
                     />
                   </div>
                 </div>
-                <button className="moshaverin_btn col-10">
+                <button className="consultant_btn col-10">
                   نمایش پروفایل{" "}
                 </button>
               </div>

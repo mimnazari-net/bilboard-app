@@ -11,7 +11,7 @@ import { RootState } from "@/redux/store";
 import SubmitInfo from "@/app/components/submitInfo";
 import Recentvisits from "@/app/components/recentvisits";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function UserPage() {
   const router = useRouter();
