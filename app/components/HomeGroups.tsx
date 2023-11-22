@@ -4,7 +4,6 @@ import "../../styles/homeGroups.css";
 import Image from "next/image";
 
 export default function HomeGroups() {
-
   //data
   const backgrounds = [
     {
@@ -34,15 +33,17 @@ export default function HomeGroups() {
     },
   ];
   return (
-    <div className="homeGroup_container col-12">
-      <div className="homeGroup_up_side col-10">
-        <h1>با جستجو و ذخیره خانه مورد نظر خود،</h1>
-        <p>
+    <div className="homeGroup_container">
+      <div className="homeGroup_up_side">
+        <p className="homeGroup_up_side_titr">
+          با جستجو و ذخیره خانه مورد نظر خود،
+        </p>
+        <p className="homeGroup_up_side_desc">
           ما چندین پیشنهاد ویژه که مناسب سلیقه تان می باشد را برایتان نمایش می
           دهیم.
         </p>
       </div>
-      <div className="homeGroup_pics col-10">
+      <div className="homeGroup_pics ">
         {backgrounds.map((item, index) => (
           <div className="homeGroup_item">
             <div
@@ -51,8 +52,9 @@ export default function HomeGroups() {
               key={index}
             >
               <Image
+              className="homeGroup_pic_container_item"
                 src={item.image}
-                alt="asicj"
+                alt=""
                 height={index === 0 ? 200 : 250}
                 width={180}
               />

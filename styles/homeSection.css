@@ -7,15 +7,15 @@
   align-items: center;
 }
 
-.home_content{
+.home_content {
   width: 1440px;
   height: 618px;
-  background-color: #EEEFEA;
+  background-color: #eeefea;
   display: flex;
-    align-items: center;
-    position: relative;
+  align-items: center;
+  position: relative;
 }
-.home_content_images{
+.home_content_images {
   width: 1440px;
   height: 618px;
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
   position: absolute;
 }
-.home_right_wall_patern{
+.home_right_wall_patern {
   width: 750px;
   height: 618px;
   background-image: url("../public/image/wall-patern.png");
@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-.home_container_left_side{
+.home_container_left_side {
   width: 490px;
   height: 618px;
   display: flex;
@@ -44,9 +44,7 @@
   align-items: flex-end;
 }
 
-
-
-.home_content_text_container{
+.home_content_text_container {
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -55,13 +53,12 @@
   margin-right: 5%;
   position: absolute;
 }
-.home_content_right_side{
+.home_content_right_side {
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .home_content_text {
@@ -88,7 +85,6 @@
   height: 199px;
   display: flex;
   flex-direction: column;
-
 }
 
 .homeBox_up_side {
@@ -132,20 +128,20 @@
   align-items: center;
 }
 
-.homeBox_DetailsBox{
+.homeBox_DetailsBox {
   height: 133px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homeBox_detailItem_item{
+.homeBox_detailItem_item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homeBox_down_hr{
+.homeBox_down_hr {
   border: none;
   height: 70px;
   width: 1px;
@@ -209,3 +205,47 @@
   background-color: #dddddd;
 }
 
+@media screen and (max-device-width: 600px) {
+  .home_container {
+    width: 100%;
+    height: 600px;
+  }
+  .home_content {
+    width: 100%;
+    height: 100%;
+  }
+  .home_content_images {
+    width: 100%;
+    height: 100%;
+  }
+  .home_container_left_side {
+    display: none;
+  }
+  .home_right_wall_patern {
+    width: 100%;
+    height: 100%;
+  }
+  .home_container_box {
+    display: none;
+  }
+  .home_content_text_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .home_content_text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .home_content_text h1 {
+    font-size: 30px;
+  }
+  .home_content_text p {
+    letter-spacing: -0.77px;
+  }
+}

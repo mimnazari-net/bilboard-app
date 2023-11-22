@@ -1,30 +1,37 @@
 .HousesPage_container {
-  
+  width: 1180px;
+  height: 565px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .HousesPage_navbar {
+  height: 56px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .HousesPage_navbar_right_side p {
+  width: 250px;
+  height: 50px;
   font-size: 24px;
   font-weight: 500;
 }
 
 .HousesPage_navbar_left_side {
+  width: 900px;
   height: 50px;
   display: flex;
   flex-direction: column;
 }
 .HousesPage_navbar_left_side_text {
+  width: 900px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -62,13 +69,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .houseCrad_container_item {
   width: 272px;
-  height: 446px;
+  height: 430px;
   padding-bottom: 16px;
   background: white;
   box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
@@ -89,7 +96,7 @@
   align-items: center;
 }
 .houseCrad_down_side {
-  width: 260px;
+  width: 240px;
   height: 211px;
   display: flex;
   flex-direction: column;
@@ -97,12 +104,14 @@
   align-items: flex-start;
 }
 .houseCrad_title {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .houseCrad_title_text {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -112,33 +121,31 @@
 .houseCrad_title_text_i {
   color: var(--bi-orange);
   font-size: x-small;
-  margin-right: 20px;
   margin-left: 10px;
 }
 
 .houseCrad_title_icons {
+  width: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: large;
   color: var(--bi-darkGray);
 }
 
 .houseCrad_subtitle {
   font-size: large;
-  margin-right: 20px;
   margin-left: 20px;
   color: var(--bi-darkGray);
 }
 
 .houseCrad_options {
+  width: 100%;
   height: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 .houseCrad_rooms {
   width: 72px;
@@ -183,8 +190,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 .houseCrad_location p {
   font-size: 14px;
@@ -193,11 +198,204 @@
 }
 
 .houseCrad_down_side button {
-  width: 240px;
-  height: 45px;
+  width: 100%;
+  height: 48px;
   background-color: var(--bi-navy);
   border: none;
   color: white;
   border-radius: 8px;
- margin: 0 auto;
+  margin: 0 auto;
+}
+
+/* responsive */
+@media screen and (max-device-width: 600px) {
+  .HousesPage_container {
+    width: 100%;
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .HousesPage_navbar {
+    justify-content: center;
+  }
+
+  .HousesPage_navbar_right_side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .HousesPage_navbar_right_side p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .HousesPage_navbar_left_side {
+    display: none;
+  }
+  .HousesPage_navbar_left_side_text {
+    display: none;
+  }
+
+  .HousesPage_navbar_left_side p {
+    display: none;
+  }
+  .HousesPage_cards {
+    width: 80%;
+    min-height: 565px;
+    margin-bottom: 15px;
+  }
+
+  .houseCrad_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .houseCrad_container_item {
+    width: 272px;
+    height: 446px;
+    padding-bottom: 16px;
+    background: white;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+  .houseCrad_up_side {
+    width: 272px;
+    height: 211px;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .houseCrad_down_side {
+    width: 260px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .houseCrad_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .houseCrad_title_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: small;
+    color: var(--bi-darkGray);
+  }
+  .houseCrad_title_text_i {
+    color: var(--bi-orange);
+    font-size: x-small;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .houseCrad_title_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: large;
+    color: var(--bi-darkGray);
+  }
+
+  .houseCrad_subtitle {
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: var(--bi-darkGray);
+  }
+
+  .houseCrad_options {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .houseCrad_rooms {
+    width: 72px;
+    background-color: #cdabeb99;
+    border-radius: 8px;
+    font-size: small;
+    color: #3a0c64;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .houseCrad_bath {
+    width: 72px;
+    background-color: #f09ea766;
+    border-radius: 8px;
+    font-size: small;
+    color: #b81b2c;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .houseCrad_metr {
+    width: 72px;
+    background-color: #c7caff;
+    border-radius: 8px;
+    font-size: small;
+    color: #151965;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .houseCrad_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .houseCrad_location p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bi-lightGray);
+  }
+
+  .houseCrad_down_side button {
+    width: 240px;
+    height: 45px;
+    background-color: var(--bi-navy);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
 }

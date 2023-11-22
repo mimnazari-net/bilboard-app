@@ -12,6 +12,9 @@ import { Navigation } from "swiper/modules";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Newest() {
+
+  const windowInnerWidth  = window.innerWidth;
+
   // data
   const images = [
     {
@@ -69,7 +72,7 @@ export default function Newest() {
 
         <div className="newest_slider ">
           <Swiper
-            slidesPerView={5}
+            slidesPerView={ windowInnerWidth >= 1040 ? 5 : 2}
             spaceBetween={10}
             loop={true}
             navigation={true}
