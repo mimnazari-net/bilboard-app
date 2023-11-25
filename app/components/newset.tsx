@@ -12,8 +12,7 @@ import { Navigation } from "swiper/modules";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Newest() {
-
-  const windowInnerWidth  = window.innerWidth;
+  const windowInnerWidth = window.innerWidth;
 
   // data
   const images = [
@@ -58,21 +57,26 @@ export default function Newest() {
       <div className="newest_content ">
         <div className="newest_title ">
           <h1>تازه ترین آپارتمان های مسکونی</h1>
-          
-            <div className="newest_arow_btn ">
-              <button className="newest-button-next">
-                <AiOutlineArrowRight style={{ fontSize: "18px" }} />
-              </button>
-              <button className="newest-button-prev">
-                <AiOutlineArrowLeft style={{ fontSize: "18px" }} />
-              </button>
-            </div>
-          
+
+          <div className="newest_arow_btn ">
+            <button className="newest-button-next">
+              <AiOutlineArrowRight style={{ fontSize: "18px" }} />
+            </button>
+            <button className="newest-button-prev">
+              <AiOutlineArrowLeft style={{ fontSize: "18px" }} />
+            </button>
+          </div>
         </div>
 
         <div className="newest_slider ">
           <Swiper
-            slidesPerView={ windowInnerWidth >= 1040 ? 5 : 2}
+            slidesPerView={
+              windowInnerWidth <= 415
+                ? 2
+                : windowInnerWidth >= 415 && windowInnerWidth <= 600
+                ? 3
+                : 5
+            }
             spaceBetween={10}
             loop={true}
             navigation={true}
@@ -85,20 +89,20 @@ export default function Newest() {
                   <div className="newest_item">
                     <Image
                       className="newest_item_img"
-                      width={226}
-                      height={238}
+                      width={windowInnerWidth >= 600 ? 226 : 130}
+                      height={windowInnerWidth >= 600 ? 226 : 130}
                       alt=""
                       src={item.image}
                     />
-                    <div className="newest_item_cover  ">
-                      <div className="newest_item_text  ">
+                    <div className="newest_item_cover">
+                      <div className="newest_item_text">
                         <HiOutlineLocationMarker
                           style={{
-                            fontSize: "large",
+                            marginLeft: "3px",
                           }}
                         />
-                        <div> { item.metrage } متری  </div>
-                        <div>{item.location }  </div>
+                        <div> {item.metrage} متری </div>
+                        <div>{item.location} </div>
                       </div>
                     </div>
                   </div>

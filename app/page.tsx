@@ -15,8 +15,8 @@ export default function Home() {
         <HomeGroups />
         <HousesSection />
         <Newest />
-        <Consultants />
-        <Footer />
+        {/* <Consultants /> */}
+        {/* <Footer /> */}
       </div>
     </main>
   );
