@@ -14,8 +14,6 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Rating } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
 
-
-
 export default function Moshaverin() {
   // data
   const consultant = [
@@ -68,202 +66,221 @@ export default function Moshaverin() {
       star: "5",
     },
     {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
-      {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
-      {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
-      {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
-      {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
-      {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      }, {
-        image: "/image/atiyee.png",
-        loc: "یاسر",
-        text: "مشاورین املاک آتیه ",
-        star: "5",
-      },
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
+    {
+      image: "/image/atiyee.png",
+      loc: "یاسر",
+      text: "مشاورین املاک آتیه ",
+      star: "5",
+    },
   ];
 
- 
-
   return (
-    <div className="moshaverin_container col-12">
-      <div className="moshaverin_title col-10">
-        <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
-        
-      </div>
-     
-      <div className="moshaverin_content col-10">
+    <div className="moshaverin_container ">
+      <div className="moshaverin_content ">
         {consultant.map((item, index) => {
           return (
-            <div className="moshaverin_item col-2.5" key={index}>
+            <div className="moshaverin_item " key={index}>
               <Image
-                className="moshaverin_pic col-12"
+                className="moshaverin_pic "
                 alt="مشاورین املاک"
-                width={250}
+                width={278}
                 height={183}
                 src={item.image}
               ></Image>
 
-              <div className="moshaverin_down col-12">
-                <div className="moshverin_down_title col-10">
+              <div className="moshaverin_down ">
+                <div className="moshverin_down_title">
                   <VerifiedSharpIcon color="primary" />
                   <p>{item.text}</p>
                   <BookmarksOutlinedIcon />
                 </div>
-                <div className="moshaverin_loc col-10">
-                  <div className="moshaverin_loc_right col-4">
+                <div className="moshaverin_loc ">
+                  <div className="moshaverin_loc_right ">
                     <HiOutlineLocationMarker
                       style={{
                         color: "#292D32",
@@ -281,7 +298,7 @@ export default function Moshaverin() {
                     />
                   </div>
                 </div>
-                <button className="moshaverin_btn col-10">
+                <button className="moshaverin_btn ">
                   نمایش پروفایل{" "}
                 </button>
               </div>
@@ -290,9 +307,8 @@ export default function Moshaverin() {
         })}
       </div>
       <div className="forush_pagination">
-        <Pagination count={consultant.length / 16} shape="rounded" />
+        <Pagination count={consultant.length / 8} shape="rounded" />
       </div>
     </div>
-    
   );
 }

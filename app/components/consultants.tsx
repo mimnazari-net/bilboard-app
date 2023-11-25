@@ -21,8 +21,12 @@ import { Navigation } from "swiper/modules";
 
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Consultants() {
+  const router = useRouter();
+
   // data
   const consultant = [
     {
@@ -104,7 +108,7 @@ export default function Consultants() {
   return (
     <div className="consultant_container ">
       <div className="consultant_title ">
-        <h1 >مشاورین املاک منتخب در سطح کشور</h1>
+        <h1>مشاورین املاک منتخب در سطح کشور</h1>
         <div className=" consultant_arow_btn ">
           <button className="swiper-button-next">
             <AiOutlineArrowRight style={{ fontSize: "18px" }} />
@@ -119,7 +123,7 @@ export default function Consultants() {
           slidesPerView={15}
           spaceBetween={30}
           loop={true}
-          navigation={true}
+          navigation={false}
           modules={[Navigation]}
           className="mySwiper"
         >
@@ -179,13 +183,16 @@ export default function Consultants() {
                     />
                   </div>
                 </div>
-                <button className="consultant_btn ">
-                  نمایش پروفایل{" "}
-                </button>
+                <button className="consultant_btn ">نمایش پروفایل </button>
               </div>
             </div>
           );
         })}
+      </div>
+      <div className="consultant_show_more">
+        <Link href={"/pages/moshaverin"}>
+          مشاهده بیشتر...
+        </Link>
       </div>
     </div>
   );

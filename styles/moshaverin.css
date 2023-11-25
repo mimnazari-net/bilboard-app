@@ -1,184 +1,149 @@
 .moshaverin_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .moshaverin_title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .moshaverin_title h1 {
-    color: #292d32;
-    text-align: right;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-  }
-  
-  .moshaverin_arow_btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .swiper-button-next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: var(--bi-navy);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .swiper-button-prev {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bi-navy);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .moshaverin_content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .swiper {
-    height: 50px;
-  }
-  
-  .moshaverin_item {
-    height: 330px;
-    border-radius: 16px;
-    background: #fff;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .moshaverin_pic {
-    border-radius: 16px 16px 0px 0px;
-  }
-  
-  .moshaverin_down {
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .moshverin_down_title {
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .moshverin_down_title p {
-    color: #292d32;
-    text-align: right;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-  }
-  
-  .moshaverin_loc {
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .moshaverin_loc_right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .moshaverin_loc_right p {
-    font-size: 12px;
-  }
-  
-  .moshaverin_loc_left {
-    direction: ltr;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .moshaverin_btn {
-    height: 30%;
-    border-radius: 8px;
-    background: #023047;
-    border: none;
-    color: #faf4f4;
-    font-size: 14px;
-  }
-  
-  .moshaverin_swiper {
-    display: flex;
-    height: 50px;
-  }
-  
-  .moshaverin_swiper_first_item {
-    width: 70px;
-    height: 40px;
-    border: none;
-    background-color: var(--bi-orange);
-    border-radius: 8px;
-    color: white;
-  }
-  
-  .moshaverin_swiper_btn {
-    width: 70px;
-    height: 40px;
-    border: none;
-    background-color: white;
-    border: 1px solid var(--bi-orange);
-    border-radius: 8px;
-    color: var(--bi-navy);
-  }
-  
-  .moshaverin_swiper_item {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  .forush_pagination {
-    margin-top: 20px;
-    direction: ltr;
-  }
-  
-  .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
-    background-color: white;
-    color: var(--bi-navy);
-    border: solid 1px var(--bi-navy);
-  }
-  
-  .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-    background-color: var(--bi-navy);
-    color: white;
-  }
-  .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root:hover {
-    background-color: white;
-  }
-  .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
-    background-color: white;
-    color: var(--bi-navy);
-  }  
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.moshaverin_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.moshaverin_item {
+  width: 278px;
+  height: 349px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.moshaverin_pic {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.moshaverin_down {
+  height: 142px;
+  width: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8px;
+
+}
+
+.moshverin_down_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moshverin_down_title p {
+  color: #292d32;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.moshaverin_loc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moshaverin_loc_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.moshaverin_loc_right p {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #515b67;
+}
+
+.moshaverin_loc_left {
+  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.moshaverin_btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: #023047;
+  border: none;
+  color: #faf4f4;
+  font-size: 14px;
+}
+
+.moshaverin_swiper {
+  display: flex;
+  height: 50px;
+}
+
+.moshaverin_swiper_first_item {
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: var(--bi-orange);
+  border-radius: 8px;
+  color: white;
+}
+
+.moshaverin_swiper_btn {
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  border: 1px solid var(--bi-orange);
+  border-radius: 8px;
+  color: var(--bi-navy);
+}
+
+.moshaverin_swiper_item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.forush_pagination {
+  margin: 20px 0px;
+  direction: ltr;
+}
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: white;
+  color: var(--bi-navy);
+  border: solid 1px var(--bi-navy);
+}
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: var(--bi-navy);
+  color: white;
+}
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root:hover {
+  background-color: white;
+}
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
+  background-color: white;
+  color: var(--bi-navy);
+}
