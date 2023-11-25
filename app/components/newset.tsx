@@ -72,7 +72,7 @@ export default function Newest() {
 
         <div className="newest_slider ">
           <Swiper
-            slidesPerView={ windowInnerWidth >= 1040 ? 5 : 2}
+            slidesPerView={ windowInnerWidth >= 1440 ? 5 : 2}
             spaceBetween={10}
             loop={true}
             navigation={true}

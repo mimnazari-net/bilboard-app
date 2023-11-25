@@ -102,10 +102,10 @@ export default function Consultants() {
   ];
 
   return (
-    <div className="moshaverin_container ">
-      <div className="moshaverin_title ">
-        <h1 className="col-5">مشاورین املاک منتخب در سطح کشور</h1>
-        <div className=" moshaverin_arow_btn ">
+    <div className="consultant_container ">
+      <div className="consultant_title ">
+        <h1 >مشاورین املاک منتخب در سطح کشور</h1>
+        <div className=" consultant_arow_btn ">
           <button className="swiper-button-next">
             <AiOutlineArrowRight style={{ fontSize: "18px" }} />
           </button>
@@ -114,7 +114,7 @@ export default function Consultants() {
           </button>
         </div>
       </div>
-      <div className="moshaverin_swiper ">
+      <div className="consultant_swiper ">
         <Swiper
           slidesPerView={15}
           spaceBetween={30}
@@ -142,26 +142,26 @@ export default function Consultants() {
           })}
         </Swiper>
       </div>
-      <div className="moshaverin_content ">
+      <div className="consultant_content ">
         {consultant.map((item, index) => {
           return (
-            <div className="moshaverin_item " key={index}>
+            <div className="consultant_item " key={index}>
               <Image
-                className="moshaverin_pic "
+                className="consultant_pic "
                 alt="مشاورین املاک"
                 width={278}
                 height={183}
                 src={item.image}
               ></Image>
 
-              <div className="moshaverin_down ">
-                <div className="moshverin_down_title col-10">
+              <div className="consultant_down ">
+                <div className="consultant_down_title ">
                   <VerifiedSharpIcon color="primary" />
                   <p>{item.text}</p>
                   <BookmarksOutlinedIcon />
                 </div>
-                <div className="consultant_loc col-10">
-                  <div className="consultant_loc_right col-4">
+                <div className="consultant_loc ">
+                  <div className="consultant_loc_right ">
                     <HiOutlineLocationMarker
                       style={{
                         color: "#292D32",
@@ -179,7 +179,7 @@ export default function Consultants() {
                     />
                   </div>
                 </div>
-                <button className="consultant_btn col-10">
+                <button className="consultant_btn ">
                   نمایش پروفایل{" "}
                 </button>
               </div>
