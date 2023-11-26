@@ -15,6 +15,8 @@ import { Rating } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
 
 export default function Moshaverin() {
+  const windowInnerWidth = window.innerWidth;
+
   // data
   const consultant = [
     {
@@ -298,16 +300,17 @@ export default function Moshaverin() {
                     />
                   </div>
                 </div>
-                <button className="moshaverin_btn ">
-                  نمایش پروفایل{" "}
-                </button>
+                <button className="moshaverin_btn ">نمایش پروفایل</button>
               </div>
             </div>
           );
         })}
       </div>
       <div className="forush_pagination">
-        <Pagination count={consultant.length / 8} shape="rounded" />
+        <Pagination
+          count={Math.floor(consultant.length / 15)}
+          shape="rounded"
+        />
       </div>
     </div>
   );

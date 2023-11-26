@@ -13,14 +13,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0 ;
+  margin: 30px 0;
 }
 .forush_kol {
+  width: 1180px;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
+.forush_kol_link {
+  text-decoration: none;
+  color: black;
+}
+
 .forush_kol_filter_item {
   height: 56px;
   display: flex;
@@ -29,7 +36,6 @@
   border: solid #219ebc 1px;
   border-radius: 8px;
   color: #292d32;
-  padding: 10px;
 }
 .forush_kol_filter_item_search_content {
   width: 594px;
@@ -228,4 +234,28 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .forush_container {
+    width: 100%;
+  }
+  .forush_kol_filter {
+    width: 90%;
+  }
+  .forush_kol_filter_item {
+    display: none;
+  }
+  .forush_kol_filter_item_search_content {
+    width: 100%;
+  }
+  .forush_kol_filter_item_search{
+    width: 100%;
+  }
+  .forush_kol{
+    width: 100%;
+    justify-content: center;
+  }
+
 }

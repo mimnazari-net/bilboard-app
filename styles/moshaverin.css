@@ -1,5 +1,5 @@
 .moshaverin_container {
-  width: 1440px;
+  width: 1180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,15 +7,14 @@
   margin-top: 30px;
 }
 
-
 .moshaverin_content {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
 
 .moshaverin_item {
   width: 278px;
@@ -41,7 +40,6 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 8px;
-
 }
 
 .moshverin_down_title {
@@ -96,37 +94,8 @@
   font-size: 14px;
 }
 
-.moshaverin_swiper {
-  display: flex;
-  height: 50px;
-}
-
-.moshaverin_swiper_first_item {
-  width: 70px;
-  height: 40px;
-  border: none;
-  background-color: var(--bi-orange);
-  border-radius: 8px;
-  color: white;
-}
-
-.moshaverin_swiper_btn {
-  width: 70px;
-  height: 40px;
-  border: none;
-  background-color: white;
-  border: 1px solid var(--bi-orange);
-  border-radius: 8px;
-  color: var(--bi-navy);
-}
-
-.moshaverin_swiper_item {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
 .forush_pagination {
-  margin: 20px 0px;
+  margin: 40px 0px;
   direction: ltr;
 }
 
@@ -146,4 +115,14 @@
 .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
   background-color: white;
   color: var(--bi-navy);
+}
+
+@media screen and (max-width: 600px) {
+  .moshaverin_container {
+    width: 100%;
+  }
+  .moshaverin_content {
+    width: 90%;
+    justify-content: center;
+  }
 }

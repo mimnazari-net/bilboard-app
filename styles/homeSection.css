@@ -238,12 +238,14 @@
     margin-right: 0;
   }
   .home_content_text {
-    width: 100%;
+    width: 80%;
     text-align: center;
     align-items: center;
   }
   .home_content_text h1 {
-    font-size: 30px;
+    font-size: 20px;
+    letter-spacing: -1px;
+
   }
   .home_content_text p {
     letter-spacing: -0.77px;

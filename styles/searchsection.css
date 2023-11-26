@@ -1,13 +1,15 @@
 .searchsection_container {
-  height: 70vh;
+  width: 1180px;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .searchsection_hr {
+  width: 100%;
   margin: 0px;
   height: 7px;
   border: none;
@@ -55,4 +57,29 @@
   font-weight: 400;
   line-height: normal;
   border: none;
+}
+
+@media screen and (max-width:600px){
+  .searchsection_container {
+    width: 90%;
+  }
+  .searchsection_img{
+    width: 100px;
+    height: 100px;
+  }
+  .searchsection_container h1{
+    word-spacing: -3px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .searchsection_container p{
+    width: 100%;
+    word-spacing: -3px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .searchsection_container button{
+    height: 40px;
+    font-size: 12px;
+  }
 }

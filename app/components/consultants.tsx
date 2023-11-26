@@ -190,7 +190,7 @@ export default function Consultants() {
         })}
       </div>
       <div className="consultant_show_more">
-        <Link href={"/pages/moshaverin"}>
+        <Link href={"/pages/consultant"}>
           مشاهده بیشتر...
         </Link>
       </div>

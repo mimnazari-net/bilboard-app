@@ -1,0 +1,14 @@
+.MoshaverinPage_container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .MoshaverinPage_container {
+    width: 100%;
+  }
+}
