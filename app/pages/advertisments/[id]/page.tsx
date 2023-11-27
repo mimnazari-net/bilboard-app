@@ -49,10 +49,10 @@ export default function SingleAdvertising({
       text: "فرعی دنج و دیپلمات نشین",
     },
     {
-      text: "لابی مجلل هشت متری با لابی من سه شیفت",
+      text: "لابی مجلل هشت متری با لابی من ",
     },
     {
-      text: "لابی مجلل هشت متری با لابی من سه شیفت",
+      text: "لابی مجلل هشت متری با لابی من ",
     },
     {
       text: "پلان مهندسی با جانمایی جادویی",
@@ -73,7 +73,7 @@ export default function SingleAdvertising({
       text: "فرعی دنج و دیپلمات نشین",
     },
     {
-      text: "لابی مجلل هشت متری با لابی من سه شیفت",
+      text: "لابی مجلل هشت متری با لابی من",
     },
     {
       text: "فرعی دنج و دیپلمات نشین",
@@ -164,7 +164,7 @@ export default function SingleAdvertising({
   // console.log(params)
   return (
     data && (
-      <div>
+      <div className="SingleAdvertising_content">
         <Navbar />
         <div className="advertising_container">
           <div className="advertising_inside ">
@@ -185,8 +185,8 @@ export default function SingleAdvertising({
                 <Image
                   className="advertising_pic"
                   alt=""
-                  width={560}
-                  height={700}
+                  width={590}
+                  height={718}
                   src={"/image/right_pic.png"}
                 ></Image>
               </div>
@@ -194,15 +194,15 @@ export default function SingleAdvertising({
                 <Image
                   className="advertising_pic"
                   alt=""
-                  width={560}
-                  height={340}
+                  width={570}
+                  height={350}
                   src={data.image}
                 ></Image>
                 <Image
                   className="advertising_pic"
                   alt=""
-                  width={560}
-                  height={340}
+                  width={570}
+                  height={350}
                   src={data.image}
                 ></Image>
               </div>
@@ -224,7 +224,7 @@ export default function SingleAdvertising({
                   </span>
                 </div>
                 <div className="advertising_details ">
-                  <h2 className="col-4">253,000,000,000 تومان</h2>
+                  <h2>253,000,000,000 تومان</h2>
                   <div className="advertising_home_info">
                     <div>
                       <h2>{data.bed}</h2>
@@ -259,34 +259,38 @@ export default function SingleAdvertising({
                 </div>
               </div>
               <div className="adevrtising_map">
-                <div className="">
-                  <Image alt="" width={150} height={150} src={""}></Image>
-                  <button className="">شماره تماس</button>
-                </div>
+                
+                <iframe
+                className="adevrtising_google_map"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1926.5343485742358!2d51.40660780142441!3d35.70083862676196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1701067571364!5m2!1sen!2s"
+                  loading="lazy"
+                ></iframe>
+                <button>شماره تماس</button>
               </div>
             </div>
             <h1 className="advertising_h ">امکانات و ویژگی ها</h1>
             <div className="advertising_property ">
               {property.map((item) => {
-                return <p className="col-3">{item.text}</p>;
+                return <p>{item.text}</p>;
               })}
             </div>
-            <hr className="" />
+            <hr className="advertising_property_hr" />
             <div className="advertising_carosel ">
               <div className="advertising_carosel_title ">
                 <h1>آگهی های مشابه</h1>
               </div>
               <div className="advertising_carosel_swiper ">
                 <Swiper
-                  slidesPerView={4}
-                  spaceBetween={30}
+                
+                  slidesPerView={3}
+                  spaceBetween={10}
                   dir="rtl"
-                  // navigation={true}
-                  // autoplay={{
-                  //   delay: 2500,
-                  //   disableOnInteraction: false,
-                  // }}
-                  // modules={[ Navigation]}
+                  navigation={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[ Navigation]}
                   className="mySwiper"
                 >
                   {sellItems.map((item, index) => {
@@ -295,7 +299,7 @@ export default function SingleAdvertising({
                         <div className="Advertising_carosel_item">
                           <Image
                             alt=""
-                            width={262}
+                            width={300}
                             height={150}
                             src={item.image}
                           />
@@ -318,7 +322,7 @@ export default function SingleAdvertising({
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     )
   );
