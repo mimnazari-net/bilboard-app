@@ -224,7 +224,7 @@ export default function SingleAdvertising({
                   </span>
                 </div>
                 <div className="advertising_details ">
-                  <h2>253,000,000,000 تومان</h2>
+                  <h2>{data.eachm * data.metrage} تومان</h2>
                   <div className="advertising_home_info">
                     <div>
                       <h2>{data.bed}</h2>
@@ -259,9 +259,8 @@ export default function SingleAdvertising({
                 </div>
               </div>
               <div className="adevrtising_map">
-                
                 <iframe
-                className="adevrtising_google_map"
+                  className="adevrtising_google_map"
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1926.5343485742358!2d51.40660780142441!3d35.70083862676196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1701067571364!5m2!1sen!2s"
                   loading="lazy"
                 ></iframe>
@@ -281,16 +280,15 @@ export default function SingleAdvertising({
               </div>
               <div className="advertising_carosel_swiper ">
                 <Swiper
-                
                   slidesPerView={3}
                   spaceBetween={10}
                   dir="rtl"
-                  navigation={true}
+                  navigation={false}
                   autoplay={{
-                    delay: 2500,
+                    delay: 1000,
                     disableOnInteraction: false,
                   }}
-                  modules={[ Navigation]}
+                  modules={[Navigation, Autoplay]}
                   className="mySwiper"
                 >
                   {sellItems.map((item, index) => {
