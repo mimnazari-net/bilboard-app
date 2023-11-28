@@ -97,7 +97,6 @@ export default function Register() {
               value={username}
               maxLength={30}
               onChange={handleChangeUsername}
-              className="col-12"
               placeholder="نام و نام خانوادگی"
             />
           </div>
@@ -110,7 +109,7 @@ export default function Register() {
               value={phoneNumber}
               maxLength={11}
               onChange={handleChangePhoneNumber}
-              className="col-12"
+              
               placeholder="شماره تماس"
             />
           </div>

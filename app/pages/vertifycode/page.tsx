@@ -94,7 +94,7 @@ export default function VertificationCode() {
           </div>
 
           <button 
-          className="vertificationCode_btn col-12"
+          className="vertificationCode_btn "
             onClick={() => {
               if (
                 digit1 !== "" &&
@@ -111,7 +111,7 @@ export default function VertificationCode() {
           </button>
         </div>
       </div>
-      <div className="vertificationCode_left_side col-6"></div>
+      <div className="vertificationCode_left_side "></div>
     </div>
   );
 }
