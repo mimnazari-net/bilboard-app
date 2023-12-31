@@ -1,6 +1,6 @@
 .vertificationCode_container {
   width: 1440px;
-  height: 804px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 
 .vertificationCode_right_side {
   width: 640px;
-  height: 804px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@
 }
 
 .vertificationCode_right_inputs {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -33,7 +33,7 @@
 }
 
 .vertificationCode_right_inputs input {
-  width: 82px;
+  width: 72px;
   height: 56px;
   text-align: center;
   border-radius: 8px;
@@ -62,7 +62,7 @@
 
 .vertificationCode_left_side {
   width: 800px;
-  height: 804px;
+  height: 100vh;
   background-image: url("../public/image/vertified-img.png");
   background-size: cover;
   background-repeat: no-repeat;
