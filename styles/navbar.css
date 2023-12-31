@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: absolute;
+  z-index: 100;
 }
 .navbar_container_content {
   width: 1440px;
@@ -119,48 +121,8 @@
 
 /* For mobile phones: */
 @media screen and (max-device-width: 600px) {
-  .navbar_container {
-    width: 100%;
-  }
-  .navbar_container_content {
-    width: 100%;
-  }
-  .navbar_contant {
-    width: 90%;
-    margin: 10px 10px;
-  }
-  .navbar_right_side {
-    width: 80px;
-  }
-  .navbar_right_side_group {
-    display: none;
-  }
-  .navbar_btn {
-    display: none;
-  }
-  .navbar_right_side p {
-    display: none;
-  }
-  .navbar_left_side {
-    width: 120px;
-  }
-  .navbar_left_search {
-    display: none;
-  }
-  .navbar_left_side hr {
-    display: none;
-  }
-  .navbar_left_add {
-    display: none;
-  }
-  .navbar_left_user {
-    width: 110px;
-    margin: 0px;
-  }
-  .navbar_left_user_text {
-    margin-right: -10px;
-  }
-  .navbar_category {
-    width: 600px;
-  }
+  
+  .navbar_container{width: 100%;}
+ .navbar_container_content{display: none;}
+  .navbar_maindiv{transform: scale(1);}
 }

@@ -1,0 +1,6 @@
+.hmbrgrmenue{display: flex;
+    transform: scale(0);
+}
+@media screen and (max-device-width: 600px) {
+    .hmbrgrmenue{transform: scale(1);}
+}

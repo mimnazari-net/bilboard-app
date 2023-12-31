@@ -6,11 +6,11 @@ import { FaChevronDown } from "react-icons/fa";
 import { RiSearch2Line } from "react-icons/ri";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { PiUserCircle } from "react-icons/pi";
-
 import CategoryNavbar from "./categoryNavbar";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
+import PersistentDrawerLeft from "./hbrgrmenue";
 
 export default function Navbar() {
   const isLoginUser: boolean = useSelector(
@@ -21,10 +21,13 @@ export default function Navbar() {
 
   const [isHovering, setIsHovering] = useState(false);
 
+
   return (
     <div className="navbar_container">
     <div className="navbar_container_content">
       <div className="navbar_contant ">
+     
+        <div className="navbar_maindiv" style={{display :'flex', justifyContent:'space-between' ,width:'100%', height:'100vh'}}>
         <div className="navbar_right_side ">
           <div className="navbar_right_side_logo">
             <Link href={"/"}>
@@ -87,11 +90,14 @@ export default function Navbar() {
               </div>
             )}
           </div>
-        </div>
+        </div></div>
       </div> 
       </div>
       <div className="navbar_category ">{isHovering && <CategoryNavbar />}
+   
       </div>
+      
+     <PersistentDrawerLeft />
    </div>
   );
 }
