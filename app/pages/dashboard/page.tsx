@@ -19,20 +19,25 @@ export default function UserPage() {
     (state: RootState) => state.bilboardSlice.selectedComp
   );
 
+  const inerWidth = window.innerWidth;
   return (
     <main className="userpage_main">
       <div className="userpage_container  ">
         <div className="userpage_content ">
           <div className="userpage_content_right">
             <div className="userpagebox_box ">
-              <Image
-                alt=""
-                width={100}
-                height={95}
-                src={"/image/userpgelayer.png"}
-              ></Image>
+              {inerWidth <= 320 ? (
+                ""
+              ) : (
+                <Image
+                  alt=""
+                  width={inerWidth >= 600 ? 100 : 40}
+                  height={inerWidth >= 600 ? 95 : 30}
+                  src={"/image/userpgelayer.png"}
+                ></Image>
+              )}
               <div className="userpagebox_link_col">
-                <RiUser6Line size={24} />
+                <RiUser6Line size={inerWidth >= 600 ? 24 : 10} />
                 <button
                   onClick={() => dispatch(showComponents("0"))}
                   className="userpagebox_button"
@@ -42,7 +47,7 @@ export default function UserPage() {
               </div>
               <hr />
               <div className="userpagebox_link_col">
-                <MdOutlineArticle size={24} />
+                <MdOutlineArticle size={inerWidth >= 600 ? 24 : 10} />
                 <button
                   onClick={() => dispatch(showComponents("1"))}
                   className="userpagebox_button"
@@ -52,7 +57,7 @@ export default function UserPage() {
               </div>
               <hr />
               <div className="userpagebox_link_col">
-                <IoRefresh size={24} />
+                <IoRefresh size={inerWidth >= 600 ? 24 : 10} />
                 <button
                   onClick={() => dispatch(showComponents("2"))}
                   className="userpagebox_button"
@@ -62,7 +67,7 @@ export default function UserPage() {
               </div>
               <hr />
               <div className="userpagebox_link_col">
-                <IoExitOutline size={24} />
+                <IoExitOutline size={inerWidth >= 600 ? 24 : 10} />
 
                 <button
                   onClick={() => {

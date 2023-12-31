@@ -1,8 +1,12 @@
 .userPage_header {
+  width: 731px;
+  height: 72px;
   display: flex;
   justify-content: space-between;
 }
 .userPage_header_leftside {
+  width: 190px;
+  height: 100%;
   display: flex;
   align-items: center;
   direction: ltr;
@@ -31,17 +35,23 @@
   border: none;
 }
 .userPage_header_rightside {
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .userPage_header_rightside_text {
-  height: 70px;
+  height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.userPage_header_rightside_text p {
-  margin: 0;
-}
+/* @media screen and (max-width:600px) {
+  .userPage_header {
+    width: 100%;
+  }
+  .userPage_header_leftside {
+    display: none;
+  }
+} */

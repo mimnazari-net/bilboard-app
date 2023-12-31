@@ -77,8 +77,8 @@
   align-items: center;
 }
 
-.swiper {
-  height: 238px;
+.newest_swiperslider {
+  height: 238px !important;
 }
 
 .newest_item_img {

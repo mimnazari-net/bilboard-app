@@ -1,4 +1,5 @@
 .UserAccount_container {
+  width: 889px;
   height: 449px;
   display: flex;
   flex-direction: column;
@@ -8,14 +9,16 @@
   background: #fff;
 }
 .UserAccount_content {
-  height: 90%;
+  width: 731px;
+  height: 376px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .UserAccount_inside {
-  height: 80%;
+  width: 731px;
+  height: 272px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,19 +29,18 @@
   margin-top: 30px;
 }
 .UserAccount_rightside_inputs {
-  height: 85%;
+  width: 203px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .UserAccount_rightside_inputs input {
-  width: 90%;
+  width: 100%;
   height: 40px;
   border-radius: 8px;
   border: 0.5px solid #585858;
   font-size: 14px;
-  font-style: normal;
-  line-height: normal;
   padding-right: 10px;
 }
 .UserAccount_rightside_inputs p {
@@ -46,19 +48,18 @@
   margin-bottom: 5px;
   color: #000;
   font-size: 13px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 .UserAccount_leftside_inputs {
-  height: 85%;
+  width: 203px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .UserAccount_leftside_inputs input {
-  width:90%;
+  width: 100%;
   height: 40px;
   border-radius: 8px;
   border: 0.5px solid #585858;
@@ -78,3 +79,28 @@
   font-weight: 600;
   line-height: normal;
 }
+/* @media screen and (max-width: 600px) {
+  .UserAccount_container {
+    width: 95%;
+    height: 600px;
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+  .UserAccount_content {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .UserAccount_inside {
+    width: 80%;
+    flex-direction: column;
+  }
+  .UserAccount_inside img {
+    display: none;
+  }
+  .UserAccount_rightside_inputs {
+    width: 100%;
+  }
+  .UserAccount_leftside_inputs {
+    width: 100%;
+  }
+} */
