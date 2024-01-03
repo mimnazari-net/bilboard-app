@@ -81,11 +81,11 @@ export default function Newest() {
             loop={true}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper"
+            className="newest_swiperslider"
           >
             {images.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide >
                   <div className="newest_item">
                     <Image
                       className="newest_item_img"

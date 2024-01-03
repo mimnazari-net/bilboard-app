@@ -23,35 +23,9 @@
 }
 
 .consultant_arow_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: none;
 }
 
-.swiper-button-next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: var(--bi-navy);
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.swiper-button-prev {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bi-navy);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
 
 .swiper-slide {
   height: 50px !important;
@@ -176,7 +150,7 @@
   border-radius: 8px;
   background: #023047;
   border: none;
-  color: #faf4f4;
+  color: #ffffff;
   font-size: 14px;
 }
 

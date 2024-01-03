@@ -85,7 +85,7 @@ const initialState: initialState_type = {
       id: 3,
       image: "/image/forushx3.png",
       type: "آپارتمان",
-      loc: "شهرک غرب",
+      loc: "شهران",
       price: 247250000000,
       bed: "6",
       bath: "4",

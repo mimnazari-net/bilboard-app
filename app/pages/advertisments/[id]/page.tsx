@@ -289,7 +289,7 @@ export default function SingleAdvertising({
                     disableOnInteraction: false,
                   }}
                   modules={[Autoplay]}
-                  className="mySwiper"
+                  className="Advertising_swiperSlider"
                 >
                   {sellItems.map((item, index) => {
                     return (

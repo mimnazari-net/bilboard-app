@@ -44,14 +44,14 @@ export default function UserAccount() {
 
 
   return (
-    <div className="UserAccount_container col-12 ">
-      <div className="UserAccount_content col-10">
-        <div className="col-12">
+    <div className="UserAccount_container  ">
+      <div className="UserAccount_content ">
+        <div className="UserAccount_content_header">
           <UserPageHeader />
         </div>
 
-        <div className="UserAccount_inside col-12">
-          <div className="UserAccount_rightside_inputs col-4">
+        <div className="UserAccount_inside ">
+          <div className="UserAccount_rightside_inputs ">
             <p>نام</p>
             <input
               value={name}
@@ -72,10 +72,12 @@ export default function UserAccount() {
               onChange={handleChangePhoneNumber}
               type="text"
               placeholder="+98 |"
-              style={{ direction: "ltr", paddingLeft: "10px" }}
+              style={{ direction: "ltr",
+              paddingRight:"0px" ,
+              paddingLeft: "10px" }}
             ></input>
           </div>
-          <div className="UserAccount_leftside_inputs col-4">
+          <div className="UserAccount_leftside_inputs ">
             <p>رمز عبور قبلی</p>
             <input
               value={password}
@@ -108,7 +110,7 @@ export default function UserAccount() {
               }
               type="email"
               placeholder="abcd@gmail.com"
-              style={{ direction: "ltr", paddingLeft: "10px" }}
+              style={{ direction: "ltr", paddingRight:"0px" ,paddingLeft: "10px" }}
             ></input>
           </div>
           <Image

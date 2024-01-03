@@ -1,6 +1,6 @@
 .register_container {
   width: 1440px;
-  height: 804px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 
 .register_left_side {
   width: 800px;
-  height: 804px;
+  height: 100vh;
   background-image: url("../public/image/register-img.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
 .register_right_side {
   width: 640px;
-  height: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

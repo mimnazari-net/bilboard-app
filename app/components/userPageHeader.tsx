@@ -12,14 +12,15 @@ import Link from "next/link";
 
 export default function UserPageHeader() {
   const userinfo = useSelector((state: RootState) => state.bilboardSlice.user);
+  const inerWidth = window.innerWidth;
   return (
     <div className="userPage_header">
-      <div className="userPage_header_rightside col-4">
+      <div className="userPage_header_rightside">
         <div>
           <Image
             alt=""
-            width={72}
-            height={72}
+            width={inerWidth >=600 ? 72 : 52}
+            height={inerWidth >=600 ? 72 : 52}
             src={"/image/Frame162.png"}
           ></Image>
         </div>
@@ -34,13 +35,13 @@ export default function UserPageHeader() {
           <p style={{ color: "#292D32" }}>{userinfo.phoneNumber}</p>
         </div>
       </div>
-      <div className="userPage_header_leftside col-3">
-        <Link href={""} className=" userpage_header_link col-6">
+      <div className="userPage_header_leftside ">
+        <Link href={""} className=" userpage_header_link ">
           <p>جستجو</p>
           <LuSearch size={24} />
         </Link>
         <hr className="userpage_header_hr" />
-        <Link className="userpage_header_link col-5" href={"/"}>
+        <Link className="userpage_header_link " href={"/"}>
           <p>خانه</p>
           <RiHome5Line size={24} />
         </Link>
