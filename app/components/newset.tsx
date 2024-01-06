@@ -78,7 +78,7 @@ export default function Newest() {
                 : 5
             }
             spaceBetween={10}
-            loop={true}
+            loop={true} 
             className="newest_swiperslider"
           >
             {images.map((item, index) => {
