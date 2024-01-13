@@ -15,7 +15,6 @@ import { Rating } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
 
 export default function Moshaverin() {
-  const windowInnerWidth = window.innerWidth;
 
   // data
   const consultant = [

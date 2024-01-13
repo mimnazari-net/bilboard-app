@@ -23,9 +23,13 @@ export default function DropDown({ title, items, state, setState }: dropdown) {
         }
       }
     };
-    window.addEventListener("click", close);
+    if (typeof window !== "undefined") {
+      window.addEventListener("click", close);
+    }
     return () => {
-      window.removeEventListener("click", close);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("click", close);
+      }
     };
   }, []);
 
@@ -48,7 +52,7 @@ export default function DropDown({ title, items, state, setState }: dropdown) {
         />
         {isActive && (
           <div className="dropdown_dropdown_container">
-            {items.map((item , index) => (
+            {items.map((item, index) => (
               <div
                 key={index}
                 className="dropdown_dropdown_items"

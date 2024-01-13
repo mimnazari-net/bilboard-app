@@ -4,7 +4,7 @@ import "../../styles/searchsection.css";
 import Image from "next/image";
 export default function SearchSection() {
   const router = useRouter();
-  const windowInnerWidth = window.innerWidth;
+
 
   return (
     <div className="searchsection_container">
@@ -12,8 +12,8 @@ export default function SearchSection() {
       <Image
         className="searchsection_img"
         alt=""
-        width={windowInnerWidth >= 600 ? 150 : 50}
-        height={windowInnerWidth >= 600 ? 150 : 50}
+        width={ typeof window !== 'undefined' ? window.innerWidth >= 600 ? 150 : 50 : 50}
+        height={ typeof window !== 'undefined' ?  window.innerWidth >= 600 ? 150 : 50 : 50}
         src={"/image/searchsection.png"}
       ></Image>
       <h1>در پیدا کردن خانه مورد نظر خود، تردید دارید؟</h1>

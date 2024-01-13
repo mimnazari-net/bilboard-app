@@ -12,15 +12,14 @@ import Link from "next/link";
 
 export default function UserPageHeader() {
   const userinfo = useSelector((state: RootState) => state.bilboardSlice.user);
-  const inerWidth = window.innerWidth;
   return (
     <div className="userPage_header">
       <div className="userPage_header_rightside">
         <div>
           <Image
             alt=""
-            width={inerWidth >=600 ? 72 : 52}
-            height={inerWidth >=600 ? 72 : 52}
+            width={ typeof window !== 'undefined' ? window.innerWidth >=600 ? 72 : 52 :52}
+            height={typeof window !== 'undefined' ? window.innerWidth >=600 ? 72 : 52 :52}
             src={"/image/Frame162.png"}
           ></Image>
         </div>

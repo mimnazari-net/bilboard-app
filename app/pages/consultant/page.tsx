@@ -1,6 +1,6 @@
-import Footer from "@/app/components/footer";
-import Moshaverin from "@/app/components/moshaverin";
-import Navbar from "@/app/components/navbar";
+import Footer from "../..//components/footer";
+import Moshaverin from "../..//components/moshaverin";
+import Navbar from "../../components/navbar";
 import "../../../styles/consultantPage.css"
 export default function MoshaverinPage() {
   return (

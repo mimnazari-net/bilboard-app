@@ -39,72 +39,71 @@ export default function HomeSection() {
           </div>
         </div>
         <div className="home_content_text_container">
-            <div className="home_content_text">
-              <h1>خانه دلخواه خود را پیدا کنید!</h1>
-              <p>در کمترین زمان و با کمک متخصصین مشاور مجموعه بیلبورد.</p>
-            </div>
-            <div className="home_container_box ">
-              <div className="homeBox_container ">
-                <div className="homeBox_up_side ">
-                  <div
-                    className="homeBox_buy "
-                    style={{
-                      backgroundColor: type === "خرید" ? "#023047" : "white",
-                      color: type === "خرید" ? "white" : "#023047",
-                    }}
-                    onClick={() => {
-                      setType("خرید");
-                    }}
-                  >
-                    خرید
-                  </div>
-                  <div
-                    className="homeBox_mortage"
-                    style={{
-                      backgroundColor: type === "رهن" ? "#023047" : "white",
-                      color: type === "رهن" ? "white" : "#023047",
-                    }}
-                    onClick={() => {
-                      setType("رهن");
-                    }}
-                  >
-                    رهن
-                  </div>
-                  <div
-                    className="homeBox_rent "
-                    style={{
-                      backgroundColor: type === "اجاره" ? "#023047" : "white",
-                      color: type === "اجاره" ? "white" : "#023047",
-                    }}
-                    onClick={() => {
-                      setType("اجاره");
-                    }}
-                  >
-                    اجاره
-                  </div>
+          <div className="home_content_text">
+            <h1>خانه دلخواه خود را پیدا کنید!</h1>
+            <p>در کمترین زمان و با کمک متخصصین مشاور مجموعه بیلبورد.</p>
+          </div>
+          <div className="home_container_box ">
+            <div className="homeBox_container ">
+              <div className="homeBox_up_side ">
+                <div
+                  className="homeBox_buy "
+                  style={{
+                    backgroundColor: type === "خرید" ? "#023047" : "white",
+                    color: type === "خرید" ? "white" : "#023047",
+                  }}
+                  onClick={() => {
+                    setType("خرید");
+                  }}
+                >
+                  خرید
                 </div>
-
-                <div className="homeBox_down_side">
-                  <div className="homeBox_DetailsBox col-12">
-                    <DetailsBox
-                      type={type}
-                      city={city}
-                      setCity={setCity}
-                      district={district}
-                      setDistrict={setDistrict}
-                      metrage={metrage}
-                      setMetrage={setMetrage}
-                      price={price}
-                      setPrice={setPrice}
-                      deposit={deposit}
-                      setDeposit={setDeposit}
-                      rent={rent}
-                      setRent={setRent}
-                    />
-                  </div>
+                <div
+                  className="homeBox_mortage"
+                  style={{
+                    backgroundColor: type === "رهن" ? "#023047" : "white",
+                    color: type === "رهن" ? "white" : "#023047",
+                  }}
+                  onClick={() => {
+                    setType("رهن");
+                  }}
+                >
+                  رهن
+                </div>
+                <div
+                  className="homeBox_rent "
+                  style={{
+                    backgroundColor: type === "اجاره" ? "#023047" : "white",
+                    color: type === "اجاره" ? "white" : "#023047",
+                  }}
+                  onClick={() => {
+                    setType("اجاره");
+                  }}
+                >
+                  اجاره
                 </div>
               </div>
 
+              <div className="homeBox_down_side">
+                <div className="homeBox_DetailsBox col-12">
+                  <DetailsBox
+                    type={type}
+                    city={city}
+                    setCity={setCity}
+                    district={district}
+                    setDistrict={setDistrict}
+                    metrage={metrage}
+                    setMetrage={setMetrage}
+                    price={price}
+                    setPrice={setPrice}
+                    deposit={deposit}
+                    setDeposit={setDeposit}
+                    rent={rent}
+                    setRent={setRent}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -304,9 +303,13 @@ const DetailItem: React.FC<{
         }
       }
     };
-    window.addEventListener("click", close);
+    if (typeof window !== "undefined") {
+      window.addEventListener("click", close);
+    }
     return () => {
-      window.removeEventListener("click", close);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("click", close);
+      }
     };
   }, []);
 
