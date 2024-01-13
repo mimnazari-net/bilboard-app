@@ -17,15 +17,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import { useSwiper } from "swiper/react";
 
 import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
-import { sellsItemType } from "@/redux/bilboardSlice";
-import Navbar from "@/app/components/navbar";
-import Footer from "@/app/components/footer";
+import { RootState } from "../../../../redux/store";
+import { sellsItemType } from "../../../../redux/bilboardSlice";
+import Navbar from "../../../components/navbar";
+import Footer from "../../../components/footer";
 
 export default function SingleAdvertising({
   params,
