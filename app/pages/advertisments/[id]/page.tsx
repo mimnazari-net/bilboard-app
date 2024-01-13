@@ -293,8 +293,8 @@ export default function SingleAdvertising({
                 >
                   {sellItems.map((item, index) => {
                     return (
-                      <SwiperSlide>
-                        <div className="Advertising_carosel_item" key={index}>
+                      <SwiperSlide key={index}>
+                        <div className="Advertising_carosel_item" >
                           <Image
                             alt=""
                             width={300}
