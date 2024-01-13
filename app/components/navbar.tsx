@@ -50,7 +50,7 @@ export default function Navbar() {
                   className="navbar_btn"
                   onClick={() => setIsHovering(!isHovering)}
                 >
-                  دسته بندی ها{" "}
+                  دسته بندی ها
                   <FaChevronDown
                     style={{
                       rotate: isHovering ? "180deg" : "0deg",

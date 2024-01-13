@@ -45,7 +45,7 @@ export default function HomeGroups() {
       </div>
       <div className="homeGroup_pics ">
         {backgrounds.map((item, index) => (
-          <div className="homeGroup_item">
+          <div className="homeGroup_item"  key={index} >
             <div
               className="homeGroup_pic_container"
               style={{ backgroundImage: `url(${item.cover})` }}

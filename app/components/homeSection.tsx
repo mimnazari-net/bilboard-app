@@ -332,6 +332,7 @@ const DetailItem: React.FC<{
             {items.map((item, index) => (
               <div
                 className="homeBox_dropdown_items"
+                key={index}
                 onClick={() => {
                   setState(item);
                 }}

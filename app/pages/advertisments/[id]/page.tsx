@@ -269,8 +269,8 @@ export default function SingleAdvertising({
             </div>
             <h1 className="advertising_h ">امکانات و ویژگی ها</h1>
             <div className="advertising_property ">
-              {property.map((item) => {
-                return <p>{item.text}</p>;
+              {property.map((item , index) => {
+                return <p key={index}>{item.text}</p>;
               })}
             </div>
             <hr className="advertising_property_hr" />
@@ -294,7 +294,7 @@ export default function SingleAdvertising({
                   {sellItems.map((item, index) => {
                     return (
                       <SwiperSlide>
-                        <div className="Advertising_carosel_item">
+                        <div className="Advertising_carosel_item" key={index}>
                           <Image
                             alt=""
                             width={300}

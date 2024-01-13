@@ -73,7 +73,7 @@ export default function HousesSection() {
         <div className="houseCrad_container ">
           {houseCardData.map((item, index) => {
             return (
-              <div className="houseCrad_container_item">
+              <div className="houseCrad_container_item" key={index}>
                 <div className="houseCrad_up_side">
                   <Image
                     style={{ borderRadius: "8px" }}

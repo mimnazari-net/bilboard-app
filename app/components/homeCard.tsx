@@ -54,7 +54,7 @@ export default function HomeCrad() {
     <div className="houseCrad_container col-12">
       {houseCardData.map((item, index) => {
         return (
-          <div className="houseCrad_container_item">
+          <div className="houseCrad_container_item" key={index}>
             <div className="houseCrad_up_side">
               <Image
                 style={{ borderRadius: "8px" }}

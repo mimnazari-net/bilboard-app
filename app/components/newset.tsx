@@ -84,7 +84,7 @@ export default function Newest() {
             {images.map((item, index) => {
               return (
                 <SwiperSlide >
-                  <div className="newest_item">
+                  <div className="newest_item" key={index}>
                     <Image
                       className="newest_item_img"
                       width={windowInnerWidth >= 600 ? 226 : 130}
