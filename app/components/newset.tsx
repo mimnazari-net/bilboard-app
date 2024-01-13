@@ -8,11 +8,10 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper/modules";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Newest() {
-  const windowInnerWidth = window.innerWidth;
+  const windowInnerWidth : number = window.innerWidth;
 
   // data
   const images = [
