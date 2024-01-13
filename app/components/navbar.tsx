@@ -60,9 +60,15 @@ export default function Navbar() {
                   />
                 </button>
               </div>
-              <p>خرید زمین</p>
-              <p>درخواست مشاور </p>
-              <p>وبلاگ</p>
+              <Link className="navbar_link" href={"/pages/advertisments"}>
+                آگهی ها
+                </Link>
+                <Link className="navbar_link" href={"/pages/consultant"}>
+                  املاک 
+                </Link>
+                <Link className="navbar_link" href={"/"}>
+                  خانه 
+                </Link>
             </div>
             <div className="navbar_left_side">
               <div className="navbar_left_search ">
@@ -78,7 +84,12 @@ export default function Navbar() {
                 <AiOutlinePlusCircle
                   style={{ fontSize: "23px", marginLeft: "16px" }}
                 />
-                <p>افزودن ملک</p>
+                <Link
+                    className="navbar_left_user_text"
+                    href={""}
+                  >
+                  افزودن ملک
+                  </Link>
               </div>
               <hr />
               <div className="navbar_left_user">
