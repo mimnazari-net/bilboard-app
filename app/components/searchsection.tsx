@@ -12,8 +12,8 @@ export default function SearchSection() {
       <Image
         className="searchsection_img"
         alt=""
-        width={ typeof window !== 'undefined' ? window.innerWidth >= 600 ? 150 : 50 : 50}
-        height={ typeof window !== 'undefined' ?  window.innerWidth >= 600 ? 150 : 50 : 50}
+        width={  150 }
+        height={  150 }
         src={"/image/searchsection.png"}
       ></Image>
       <h1>در پیدا کردن خانه مورد نظر خود، تردید دارید؟</h1>

@@ -11,7 +11,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Newest() {
- 
   // data
   const images = [
     {
@@ -68,26 +67,19 @@ export default function Newest() {
 
         <div className="newest_slider ">
           <Swiper
-            slidesPerView={ typeof window !== 'undefined' ? 
-              window.innerWidth <= 415
-                ? 2
-                : window.innerWidth >= 415 && window.innerWidth <= 600
-                ? 3
-                : 5
-                : 5
-            }
+            slidesPerView={5}
             spaceBetween={10}
-            loop={true} 
+            loop={true}
             className="newest_swiperslider"
           >
             {images.map((item, index) => {
               return (
-                <SwiperSlide key={index} >
-                  <div className="newest_item" >
+                <SwiperSlide key={index}>
+                  <div className="newest_item">
                     <Image
                       className="newest_item_img"
-                      width={ typeof window !== 'undefined' ? window.innerWidth >= 600 ? 226 : 130 : 130}
-                      height={ typeof window !== 'undefined' ? window.innerWidth >= 600 ? 226 : 130 : 130}
+                      width={226}
+                      height={238}
                       alt=""
                       src={item.image}
                     />

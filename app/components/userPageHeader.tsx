@@ -18,8 +18,8 @@ export default function UserPageHeader() {
         <div>
           <Image
             alt=""
-            width={ typeof window !== 'undefined' ? window.innerWidth >=600 ? 72 : 52 :52}
-            height={typeof window !== 'undefined' ? window.innerWidth >=600 ? 72 : 52 :52}
+            width={  72 }
+            height={72 }
             src={"/image/Frame162.png"}
           ></Image>
         </div>

@@ -31,20 +31,8 @@ export default function UserPage() {
                 ) : (
                   <Image
                     alt=""
-                    width={
-                      typeof window !== "undefined"
-                        ? window.innerWidth >= 600
-                          ? 100
-                          : 40
-                        : 40
-                    }
-                    height={
-                      typeof window !== "undefined"
-                        ? window.innerWidth >= 600
-                          ? 95
-                          : 30
-                        : 30
-                    }
+                    width={100}
+                    height={95}
                     src={"/image/userpgelayer.png"}
                   ></Image>
                 )
@@ -52,15 +40,7 @@ export default function UserPage() {
                 ""
               )}
               <div className="userpagebox_link_col">
-                <RiUser6Line
-                  size={
-                    typeof window !== "undefined"
-                      ? window.innerWidth >= 600
-                        ? 24
-                        : 10
-                      : 10
-                  }
-                />
+                <RiUser6Line size={24} />
                 <button
                   onClick={() => dispatch(showComponents("0"))}
                   className="userpagebox_button"
@@ -70,15 +50,7 @@ export default function UserPage() {
               </div>
               <hr />
               <div className="userpagebox_link_col">
-                <MdOutlineArticle
-                  size={
-                    typeof window !== "undefined"
-                      ? window.innerWidth >= 600
-                        ? 24
-                        : 10
-                      : 10
-                  }
-                />
+                <MdOutlineArticle size={24} />
                 <button
                   onClick={() => dispatch(showComponents("1"))}
                   className="userpagebox_button"
@@ -90,11 +62,7 @@ export default function UserPage() {
               <div className="userpagebox_link_col">
                 <IoRefresh
                   size={
-                    typeof window !== "undefined"
-                      ? window.innerWidth >= 600
-                        ? 24
-                        : 10
-                      : 10
+                    24
                   }
                 />
                 <button
@@ -108,11 +76,7 @@ export default function UserPage() {
               <div className="userpagebox_link_col">
                 <IoExitOutline
                   size={
-                    typeof window !== "undefined"
-                      ? window.innerWidth >= 600
-                        ? 24
-                        : 10
-                      : 10
+                    24
                   }
                 />
 
