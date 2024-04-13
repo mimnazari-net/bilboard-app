@@ -115,8 +115,7 @@
 /* responsive */
 @media screen and (max-device-width: 600px) {
   .newest_container {
-    margin: 50px 0;
-    width: 90%;
+    display: none;
   }
   .newest_content {
     width: 90%;
